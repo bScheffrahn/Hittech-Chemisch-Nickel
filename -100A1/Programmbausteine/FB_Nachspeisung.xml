@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T18:08:14.8654693Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Niveau_Bad_25_Roh" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Sonde Bad 25, TRUE = Niveau OK (unverzoegert)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_26_OK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Sonde Bad 26, TRUE = Niveau OK (Trockenlaufschutz)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_OK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Motorschutz 275aQ1 und Wartungsschalter</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Not_Halt_Aktiv" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Nachlaufzeit" Datatype="Time" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Nachlauf nach Niveau OK, aus DB_IPC_to_CPU</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="Pumpe_Ein" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Ansteuerung 275aK8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_25_OK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Niveau Bad 25 fuer die Badlogik, Fehler erst nach 30 s</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Zeitueberwachung_Stoerung" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">5 min gepumpt, Niveau Bad 25 immer noch nicht OK</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Timer_Niveau_25" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PT" Datatype="Time" />
+          <Member Name="ET" Datatype="Time" />
+          <Member Name="IN" Datatype="Bool" />
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Timer_Anforderung" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PT" Datatype="Time" />
+          <Member Name="ET" Datatype="Time" />
+          <Member Name="IN" Datatype="Bool" />
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Timer_Quelle" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PT" Datatype="Time" />
+          <Member Name="ET" Datatype="Time" />
+          <Member Name="IN" Datatype="Bool" />
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Timer_Nachlauf" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PT" Datatype="Time" />
+          <Member Name="ET" Datatype="Time" />
+          <Member Name="IN" Datatype="Bool" />
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Timer_Laufzeit" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PT" Datatype="Time" />
+          <Member Name="ET" Datatype="Time" />
+          <Member Name="IN" Datatype="Bool" />
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Anforderung_Aktiv" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Stoerung" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="nachlauf" Datatype="Time" />
+    <Member Name="freigabe" Datatype="Bool" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Nachspeisung</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <NewLine Num="1" UId="21" />
+  <Blank Num="4" UId="22" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="23">
+    <Text UId="24">== 1) Niveau Bad 25 fuer die Badlogik: Fehler erst wenn 30 s nicht OK ==</Text>
+  </LineComment>
+  <NewLine Num="1" UId="25" />
+  <Blank Num="4" UId="26" />
+  <Access Scope="LocalVariable" UId="27">
+    <Symbol UId="28">
+      <Component Name="Timer_Niveau_25" UId="29" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="30">
+    <Instruction UId="31">
+      <Token Text="(" UId="32" />
+      <Parameter Name="IN" UId="33">
+        <Blank Num="1" UId="34" />
+        <Token Text=":=" UId="35" />
+        <Blank Num="1" UId="36" />
+        <Token Text="NOT" UId="37" />
+        <Blank Num="1" UId="38" />
+        <Access Scope="LocalVariable" UId="39">
+          <Symbol UId="40">
+            <Component Name="Niveau_Bad_25_Roh" UId="41" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="42" />
+      <Blank Num="1" UId="43" />
+      <Parameter Name="PT" UId="44">
+        <Blank Num="1" UId="45" />
+        <Token Text=":=" UId="46" />
+        <Blank Num="1" UId="47" />
+        <Access Scope="TypedConstant" UId="48">
+          <Constant UId="49">
+            <ConstantValue UId="50">T#30s</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="51" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="52" />
+  <NewLine Num="1" UId="53" />
+  <Blank Num="4" UId="54" />
+  <Access Scope="LocalVariable" UId="55">
+    <Symbol UId="56">
+      <Component Name="Niveau_Bad_25_OK" UId="57" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="58" />
+  <Token Text=":=" UId="59" />
+  <Blank Num="1" UId="60" />
+  <Token Text="NOT" UId="61" />
+  <Blank Num="1" UId="62" />
+  <Access Scope="LocalVariable" UId="63">
+    <Symbol UId="64">
+      <Component Name="Timer_Niveau_25" UId="65" />
+      <Token Text="." UId="66" />
+      <Component Name="Q" UId="67" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="68" />
+  <NewLine Num="2" UId="69" />
+  <Blank Num="4" UId="70" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="71">
+    <Text UId="72">== 2) Nachlaufzeit (negative Werte wie 0 behandeln) ==</Text>
+  </LineComment>
+  <NewLine Num="1" UId="73" />
+  <Blank Num="4" UId="74" />
+  <Token Text="IF" UId="75" />
+  <Blank Num="1" UId="76" />
+  <Access Scope="LocalVariable" UId="77">
+    <Symbol UId="78">
+      <Component Name="Nachlaufzeit" UId="79" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="80" />
+  <Token Text="&lt;" UId="81" />
+  <Blank Num="1" UId="82" />
+  <Access Scope="TypedConstant" UId="83">
+    <Constant UId="84">
+      <ConstantValue UId="85">T#0s</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="86" />
+  <Token Text="THEN" UId="87" />
+  <Blank Num="1" UId="88" />
+  <Access Scope="LocalVariable" UId="89">
+    <Symbol UId="90">
+      <Component Name="nachlauf" UId="91" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="92" />
+  <Token Text=":=" UId="93" />
+  <Blank Num="1" UId="94" />
+  <Access Scope="TypedConstant" UId="95">
+    <Constant UId="96">
+      <ConstantValue UId="97">T#0s</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="98" />
+  <Blank Num="1" UId="99" />
+  <Token Text="ELSE" UId="100" />
+  <Blank Num="1" UId="101" />
+  <Access Scope="LocalVariable" UId="102">
+    <Symbol UId="103">
+      <Component Name="nachlauf" UId="104" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="105" />
+  <Token Text=":=" UId="106" />
+  <Blank Num="1" UId="107" />
+  <Access Scope="LocalVariable" UId="108">
+    <Symbol UId="109">
+      <Component Name="Nachlaufzeit" UId="110" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="111" />
+  <Blank Num="1" UId="112" />
+  <Token Text="END_IF" UId="113" />
+  <Token Text=";" UId="114" />
+  <NewLine Num="2" UId="115" />
+  <Blank Num="4" UId="116" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="117">
+    <Text UId="118">== 3) Freigabe: Niveau Bad 26 mind. 5 s OK (Abfall sofort = Trockenlaufschutz), Motorschutz, kein Not-Halt ==</Text>
+  </LineComment>
+  <NewLine Num="1" UId="119" />
+  <Blank Num="4" UId="120" />
+  <Access Scope="LocalVariable" UId="121">
+    <Symbol UId="122">
+      <Component Name="Timer_Quelle" UId="123" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="124">
+    <Instruction UId="125">
+      <Token Text="(" UId="126" />
+      <Parameter Name="IN" UId="127">
+        <Blank Num="1" UId="128" />
+        <Token Text=":=" UId="129" />
+        <Blank Num="1" UId="130" />
+        <Access Scope="LocalVariable" UId="131">
+          <Symbol UId="132">
+            <Component Name="Niveau_Bad_26_OK" UId="133" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="134" />
+      <Blank Num="1" UId="135" />
+      <Parameter Name="PT" UId="136">
+        <Blank Num="1" UId="137" />
+        <Token Text=":=" UId="138" />
+        <Blank Num="1" UId="139" />
+        <Access Scope="TypedConstant" UId="140">
+          <Constant UId="141">
+            <ConstantValue UId="142">T#5s</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="143" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="144" />
+  <NewLine Num="1" UId="145" />
+  <Blank Num="4" UId="146" />
+  <Access Scope="LocalVariable" UId="147">
+    <Symbol UId="148">
+      <Component Name="freigabe" UId="149" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="150" />
+  <Token Text=":=" UId="151" />
+  <Blank Num="1" UId="152" />
+  <Access Scope="LocalVariable" UId="153">
+    <Symbol UId="154">
+      <Component Name="Timer_Quelle" UId="155" />
+      <Token Text="." UId="156" />
+      <Component Name="Q" UId="157" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="158" />
+  <Token Text="AND" UId="159" />
+  <Blank Num="1" UId="160" />
+  <Access Scope="LocalVariable" UId="161">
+    <Symbol UId="162">
+      <Component Name="Motorschutz_OK" UId="163" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="164" />
+  <Token Text="AND" UId="165" />
+  <Blank Num="1" UId="166" />
+  <Token Text="NOT" UId="167" />
+  <Blank Num="1" UId="168" />
+  <Access Scope="LocalVariable" UId="169">
+    <Symbol UId="170">
+      <Component Name="Not_Halt_Aktiv" UId="171" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="172" />
+  <NewLine Num="2" UId="173" />
+  <Blank Num="4" UId="174" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="175">
+    <Text UId="176">== 4) Anforderung: Niveau Bad 25 5 s nicht OK -&gt; an; Niveau OK + Nachlaufzeit -&gt; aus ==</Text>
+  </LineComment>
+  <NewLine Num="1" UId="177" />
+  <Blank Num="4" UId="178" />
+  <Access Scope="LocalVariable" UId="179">
+    <Symbol UId="180">
+      <Component Name="Timer_Anforderung" UId="181" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="182">
+    <Instruction UId="183">
+      <Token Text="(" UId="184" />
+      <Parameter Name="IN" UId="185">
+        <Blank Num="1" UId="186" />
+        <Token Text=":=" UId="187" />
+        <Blank Num="1" UId="188" />
+        <Token Text="NOT" UId="189" />
+        <Blank Num="1" UId="190" />
+        <Access Scope="LocalVariable" UId="191">
+          <Symbol UId="192">
+            <Component Name="Niveau_Bad_25_Roh" UId="193" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="194" />
+      <Blank Num="1" UId="195" />
+      <Parameter Name="PT" UId="196">
+        <Blank Num="1" UId="197" />
+        <Token Text=":=" UId="198" />
+        <Blank Num="1" UId="199" />
+        <Access Scope="TypedConstant" UId="200">
+          <Constant UId="201">
+            <ConstantValue UId="202">T#5s</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="203" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="204" />
+  <NewLine Num="1" UId="205" />
+  <Blank Num="4" UId="206" />
+  <Token Text="IF" UId="207" />
+  <Blank Num="1" UId="208" />
+  <Access Scope="LocalVariable" UId="209">
+    <Symbol UId="210">
+      <Component Name="Anforderung_Aktiv" UId="211" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="212" />
+  <Token Text="THEN" UId="213" />
+  <NewLine Num="1" UId="214" />
+  <Blank Num="8" UId="215" />
+  <Access Scope="LocalVariable" UId="216">
+    <Symbol UId="217">
+      <Component Name="Timer_Nachlauf" UId="218" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="219">
+    <Instruction UId="220">
+      <Token Text="(" UId="221" />
+      <Parameter Name="IN" UId="222">
+        <Blank Num="1" UId="223" />
+        <Token Text=":=" UId="224" />
+        <Blank Num="1" UId="225" />
+        <Access Scope="LocalVariable" UId="226">
+          <Symbol UId="227">
+            <Component Name="Niveau_Bad_25_Roh" UId="228" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="229" />
+      <Blank Num="1" UId="230" />
+      <Parameter Name="PT" UId="231">
+        <Blank Num="1" UId="232" />
+        <Token Text=":=" UId="233" />
+        <Blank Num="1" UId="234" />
+        <Access Scope="LocalVariable" UId="235">
+          <Symbol UId="236">
+            <Component Name="nachlauf" UId="237" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="238" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="239" />
+  <NewLine Num="1" UId="240" />
+  <Blank Num="8" UId="241" />
+  <Token Text="IF" UId="242" />
+  <Blank Num="1" UId="243" />
+  <Access Scope="LocalVariable" UId="244">
+    <Symbol UId="245">
+      <Component Name="Timer_Nachlauf" UId="246" />
+      <Token Text="." UId="247" />
+      <Component Name="Q" UId="248" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="249" />
+  <Token Text="THEN" UId="250" />
+  <Blank Num="1" UId="251" />
+  <Access Scope="LocalVariable" UId="252">
+    <Symbol UId="253">
+      <Component Name="Anforderung_Aktiv" UId="254" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="255" />
+  <Token Text=":=" UId="256" />
+  <Blank Num="1" UId="257" />
+  <Access Scope="LiteralConstant" UId="258">
+    <Constant UId="259">
+      <ConstantValue UId="261">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="262" />
+  <Blank Num="1" UId="263" />
+  <Token Text="END_IF" UId="264" />
+  <Token Text=";" UId="265" />
+  <NewLine Num="1" UId="266" />
+  <Blank Num="4" UId="267" />
+  <Token Text="ELSE" UId="268" />
+  <NewLine Num="1" UId="269" />
+  <Blank Num="8" UId="270" />
+  <Access Scope="LocalVariable" UId="271">
+    <Symbol UId="272">
+      <Component Name="Timer_Nachlauf" UId="273" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="274">
+    <Instruction UId="275">
+      <Token Text="(" UId="276" />
+      <Parameter Name="IN" UId="277">
+        <Blank Num="1" UId="278" />
+        <Token Text=":=" UId="279" />
+        <Blank Num="1" UId="280" />
+        <Access Scope="LiteralConstant" UId="281">
+          <Constant UId="282">
+            <ConstantValue UId="284">FALSE</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="285" />
+      <Blank Num="1" UId="286" />
+      <Parameter Name="PT" UId="287">
+        <Blank Num="1" UId="288" />
+        <Token Text=":=" UId="289" />
+        <Blank Num="1" UId="290" />
+        <Access Scope="LocalVariable" UId="291">
+          <Symbol UId="292">
+            <Component Name="nachlauf" UId="293" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="294" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="295" />
+  <NewLine Num="1" UId="296" />
+  <Blank Num="8" UId="297" />
+  <Token Text="IF" UId="298" />
+  <Blank Num="1" UId="299" />
+  <Access Scope="LocalVariable" UId="300">
+    <Symbol UId="301">
+      <Component Name="Timer_Anforderung" UId="302" />
+      <Token Text="." UId="303" />
+      <Component Name="Q" UId="304" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="305" />
+  <Token Text="AND" UId="306" />
+  <Blank Num="1" UId="307" />
+  <Token Text="NOT" UId="308" />
+  <Blank Num="1" UId="309" />
+  <Access Scope="LocalVariable" UId="310">
+    <Symbol UId="311">
+      <Component Name="Stoerung" UId="312" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="313" />
+  <Token Text="THEN" UId="314" />
+  <Blank Num="1" UId="315" />
+  <Access Scope="LocalVariable" UId="316">
+    <Symbol UId="317">
+      <Component Name="Anforderung_Aktiv" UId="318" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="319" />
+  <Token Text=":=" UId="320" />
+  <Blank Num="1" UId="321" />
+  <Access Scope="LiteralConstant" UId="322">
+    <Constant UId="323">
+      <ConstantValue UId="325">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="326" />
+  <Blank Num="1" UId="327" />
+  <Token Text="END_IF" UId="328" />
+  <Token Text=";" UId="329" />
+  <NewLine Num="1" UId="330" />
+  <Blank Num="4" UId="331" />
+  <Token Text="END_IF" UId="332" />
+  <Token Text=";" UId="333" />
+  <NewLine Num="2" UId="334" />
+  <Blank Num="4" UId="335" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="336">
+    <Text UId="337">== 5) Pumpe ==</Text>
+  </LineComment>
+  <NewLine Num="1" UId="338" />
+  <Blank Num="4" UId="339" />
+  <Access Scope="LocalVariable" UId="340">
+    <Symbol UId="341">
+      <Component Name="Pumpe_Ein" UId="342" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="343" />
+  <Token Text=":=" UId="344" />
+  <Blank Num="1" UId="345" />
+  <Access Scope="LocalVariable" UId="346">
+    <Symbol UId="347">
+      <Component Name="Anforderung_Aktiv" UId="348" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="349" />
+  <Token Text="AND" UId="350" />
+  <Blank Num="1" UId="351" />
+  <Access Scope="LocalVariable" UId="352">
+    <Symbol UId="353">
+      <Component Name="freigabe" UId="354" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="355" />
+  <Token Text="AND" UId="356" />
+  <Blank Num="1" UId="357" />
+  <Token Text="NOT" UId="358" />
+  <Blank Num="1" UId="359" />
+  <Access Scope="LocalVariable" UId="360">
+    <Symbol UId="361">
+      <Component Name="Stoerung" UId="362" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="363" />
+  <NewLine Num="2" UId="364" />
+  <Blank Num="4" UId="365" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="366">
+    <Text UId="367">== 6) Zeitueberwachung: 5 min gepumpt und Niveau Bad 25 immer noch nicht OK ==</Text>
+  </LineComment>
+  <NewLine Num="1" UId="368" />
+  <Blank Num="4" UId="369" />
+  <Access Scope="LocalVariable" UId="370">
+    <Symbol UId="371">
+      <Component Name="Timer_Laufzeit" UId="372" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="373">
+    <Instruction UId="374">
+      <Token Text="(" UId="375" />
+      <Parameter Name="IN" UId="376">
+        <Blank Num="1" UId="377" />
+        <Token Text=":=" UId="378" />
+        <Blank Num="1" UId="379" />
+        <Access Scope="LocalVariable" UId="380">
+          <Symbol UId="381">
+            <Component Name="Pumpe_Ein" UId="382" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="383" />
+        <Token Text="AND" UId="384" />
+        <Blank Num="1" UId="385" />
+        <Token Text="NOT" UId="386" />
+        <Blank Num="1" UId="387" />
+        <Access Scope="LocalVariable" UId="388">
+          <Symbol UId="389">
+            <Component Name="Niveau_Bad_25_Roh" UId="390" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="391" />
+      <Blank Num="1" UId="392" />
+      <Parameter Name="PT" UId="393">
+        <Blank Num="1" UId="394" />
+        <Token Text=":=" UId="395" />
+        <Blank Num="1" UId="396" />
+        <Access Scope="TypedConstant" UId="397">
+          <Constant UId="398">
+            <ConstantValue UId="399">T#5m</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="400" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="401" />
+  <NewLine Num="1" UId="402" />
+  <Blank Num="4" UId="403" />
+  <Token Text="IF" UId="404" />
+  <Blank Num="1" UId="405" />
+  <Access Scope="LocalVariable" UId="406">
+    <Symbol UId="407">
+      <Component Name="Timer_Laufzeit" UId="408" />
+      <Token Text="." UId="409" />
+      <Component Name="Q" UId="410" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="411" />
+  <Token Text="THEN" UId="412" />
+  <NewLine Num="1" UId="413" />
+  <Blank Num="8" UId="414" />
+  <Access Scope="LocalVariable" UId="415">
+    <Symbol UId="416">
+      <Component Name="Stoerung" UId="417" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="418" />
+  <Token Text=":=" UId="419" />
+  <Blank Num="1" UId="420" />
+  <Access Scope="LiteralConstant" UId="421">
+    <Constant UId="422">
+      <ConstantValue UId="424">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="425" />
+  <NewLine Num="1" UId="426" />
+  <Blank Num="8" UId="427" />
+  <Access Scope="LocalVariable" UId="428">
+    <Symbol UId="429">
+      <Component Name="Anforderung_Aktiv" UId="430" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="431" />
+  <Token Text=":=" UId="432" />
+  <Blank Num="1" UId="433" />
+  <Access Scope="LiteralConstant" UId="434">
+    <Constant UId="435">
+      <ConstantValue UId="437">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="438" />
+  <NewLine Num="1" UId="439" />
+  <Blank Num="4" UId="440" />
+  <Token Text="END_IF" UId="441" />
+  <Token Text=";" UId="442" />
+  <NewLine Num="1" UId="443" />
+  <Blank Num="4" UId="444" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="445">
+    <Text UId="446"> automatische Quittierung: Niveau Bad 25 wieder OK</Text>
+  </LineComment>
+  <NewLine Num="1" UId="447" />
+  <Blank Num="4" UId="448" />
+  <Token Text="IF" UId="449" />
+  <Blank Num="1" UId="450" />
+  <Access Scope="LocalVariable" UId="451">
+    <Symbol UId="452">
+      <Component Name="Stoerung" UId="453" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="454" />
+  <Token Text="AND" UId="455" />
+  <Blank Num="1" UId="456" />
+  <Access Scope="LocalVariable" UId="457">
+    <Symbol UId="458">
+      <Component Name="Niveau_Bad_25_Roh" UId="459" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="460" />
+  <Token Text="THEN" UId="461" />
+  <NewLine Num="1" UId="462" />
+  <Blank Num="8" UId="463" />
+  <Access Scope="LocalVariable" UId="464">
+    <Symbol UId="465">
+      <Component Name="Stoerung" UId="466" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="467" />
+  <Token Text=":=" UId="468" />
+  <Blank Num="1" UId="469" />
+  <Access Scope="LiteralConstant" UId="470">
+    <Constant UId="471">
+      <ConstantValue UId="473">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="474" />
+  <NewLine Num="1" UId="475" />
+  <Blank Num="4" UId="476" />
+  <Token Text="END_IF" UId="477" />
+  <Token Text=";" UId="478" />
+  <NewLine Num="1" UId="479" />
+  <Blank Num="4" UId="480" />
+  <Access Scope="LocalVariable" UId="481">
+    <Symbol UId="482">
+      <Component Name="Pumpe_Ein" UId="483" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="484" />
+  <Token Text=":=" UId="485" />
+  <Blank Num="1" UId="486" />
+  <Access Scope="LocalVariable" UId="487">
+    <Symbol UId="488">
+      <Component Name="Pumpe_Ein" UId="489" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="490" />
+  <Token Text="AND" UId="491" />
+  <Blank Num="1" UId="492" />
+  <Token Text="NOT" UId="493" />
+  <Blank Num="1" UId="494" />
+  <Access Scope="LocalVariable" UId="495">
+    <Symbol UId="496">
+      <Component Name="Stoerung" UId="497" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="498" />
+  <NewLine Num="2" UId="499" />
+  <Blank Num="4" UId="500" />
+  <Access Scope="LocalVariable" UId="501">
+    <Symbol UId="502">
+      <Component Name="Zeitueberwachung_Stoerung" UId="503" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="504" />
+  <Token Text=":=" UId="505" />
+  <Blank Num="1" UId="506" />
+  <Access Scope="LocalVariable" UId="507">
+    <Symbol UId="508">
+      <Component Name="Stoerung" UId="509" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="510" />
+  <NewLine Num="1" UId="511" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="9" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

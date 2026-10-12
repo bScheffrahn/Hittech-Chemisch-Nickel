@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V20" />
   <DocumentInfo>
-    <Created>2026-10-12T16:46:21.1158683Z</Created>
+    <Created>2026-10-12T18:08:14.4709652Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -698,6 +698,50 @@
       </AttributeList>
       <Comment>
         <MultiLanguageText Lang="de-DE">58 - Not-Halt ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_26" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">59 - Niveau Bad 26 nicht OK (Nachspeisung gesperrt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Nachspeisepumpe_Bad_26" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">60 - Motorschutz 275aQ1 Nachspeisepumpe Bad 26 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Nachspeisepumpe_Bad_26" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">61 - Wartungsschalter Nachspeisepumpe Bad 26 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Nachspeisung_Bad_26_Zeitueberwachung" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">62 - Nachspeisung Bad 26 nach Bad 25: Niveau Bad 25 nach 5 min nicht OK</MultiLanguageText>
       </Comment>
     </Member>
   </Section>

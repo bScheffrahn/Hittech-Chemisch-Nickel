@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V20" />
   <DocumentInfo>
-    <Created>2026-10-12T16:46:21.1494625Z</Created>
+    <Created>2026-10-12T18:08:14.8972404Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -1003,514 +1003,621 @@
   <Blank Num="1" UId="724" />
   <Access Scope="GlobalVariable" UId="725">
     <Symbol UId="726">
-      <Component Name="Niveau Bad 25 OK" UId="727" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="728" />
-  <NewLine Num="1" UId="729" />
-  <Blank Num="4" UId="730" />
-  <Access Scope="GlobalVariable" UId="731">
-    <Symbol UId="732">
-      <Component Name="DB_Fehlermeldungen" UId="733">
-        <BooleanAttribute Name="HasQuotes" UId="734">true</BooleanAttribute>
+      <Component Name="FB_Anlagensteuerung_DB" UId="727">
+        <BooleanAttribute Name="HasQuotes" UId="728">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="735" />
-      <Component Name="Niveau_Bad_36" UId="736" />
+      <Token Text="." UId="729" />
+      <Component Name="Nachspeisung" UId="730" />
+      <Token Text="." UId="731" />
+      <Component Name="Niveau_Bad_25_OK" UId="732" />
     </Symbol>
   </Access>
-  <Blank Num="1" UId="737" />
-  <Token Text=":=" UId="738" />
-  <Blank Num="1" UId="739" />
-  <Token Text="NOT" UId="740" />
-  <Blank Num="1" UId="741" />
-  <Access Scope="GlobalVariable" UId="742">
-    <Symbol UId="743">
-      <Component Name="Niveau Bad 36 OK" UId="744" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="745" />
-  <NewLine Num="1" UId="746" />
-  <Blank Num="4" UId="747" />
-  <Access Scope="GlobalVariable" UId="748">
-    <Symbol UId="749">
-      <Component Name="DB_Fehlermeldungen" UId="750">
-        <BooleanAttribute Name="HasQuotes" UId="751">true</BooleanAttribute>
-      </Component>
-      <Token Text="." UId="752" />
-      <Component Name="Niveau_Bad_40" UId="753" />
-    </Symbol>
-  </Access>
-  <Blank Num="1" UId="754" />
-  <Token Text=":=" UId="755" />
-  <Blank Num="1" UId="756" />
-  <Token Text="NOT" UId="757" />
-  <Blank Num="1" UId="758" />
-  <Access Scope="GlobalVariable" UId="759">
-    <Symbol UId="760">
-      <Component Name="Niveau Bad 40 OK" UId="761" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="762" />
-  <NewLine Num="1" UId="763" />
-  <Blank Num="4" UId="764" />
-  <Access Scope="GlobalVariable" UId="765">
-    <Symbol UId="766">
-      <Component Name="DB_Fehlermeldungen" UId="767">
-        <BooleanAttribute Name="HasQuotes" UId="768">true</BooleanAttribute>
-      </Component>
-      <Token Text="." UId="769" />
-      <Component Name="Niveau_Bad_46" UId="770" />
-    </Symbol>
-  </Access>
-  <Blank Num="1" UId="771" />
-  <Token Text=":=" UId="772" />
-  <Blank Num="1" UId="773" />
-  <Token Text="NOT" UId="774" />
-  <Blank Num="1" UId="775" />
-  <Access Scope="GlobalVariable" UId="776">
-    <Symbol UId="777">
-      <Component Name="Niveau Bad 46 OK" UId="778" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="779" />
-  <NewLine Num="2" UId="780" />
-  <Blank Num="4" UId="781" />
-  <LineComment Inserted="false" NoClosingBracket="false" UId="782">
-    <Text UId="783"> FU Stoerung (aus FB_Bad, 3s verzoegert: angesteuert aber nicht bereit)</Text>
+  <Token Text=";" UId="733" />
+  <Blank Num="3" UId="734" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="735">
+    <Text UId="736"> erst nach 30 s nicht OK</Text>
   </LineComment>
-  <NewLine Num="1" UId="784" />
-  <Blank Num="4" UId="785" />
-  <Access Scope="GlobalVariable" UId="786">
-    <Symbol UId="787">
-      <Component Name="DB_Fehlermeldungen" UId="788">
-        <BooleanAttribute Name="HasQuotes" UId="789">true</BooleanAttribute>
+  <NewLine Num="1" UId="737" />
+  <Blank Num="4" UId="738" />
+  <Access Scope="GlobalVariable" UId="739">
+    <Symbol UId="740">
+      <Component Name="DB_Fehlermeldungen" UId="741">
+        <BooleanAttribute Name="HasQuotes" UId="742">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="790" />
-      <Component Name="FU_Pumpe_Bad_25" UId="791" />
+      <Token Text="." UId="743" />
+      <Component Name="Niveau_Bad_36" UId="744" />
     </Symbol>
   </Access>
-  <Blank Num="1" UId="792" />
-  <Token Text=":=" UId="793" />
-  <Blank Num="1" UId="794" />
-  <Access Scope="GlobalVariable" UId="795">
-    <Symbol UId="796">
-      <Component Name="DB_Bad_Konfig" UId="797">
-        <BooleanAttribute Name="HasQuotes" UId="798">true</BooleanAttribute>
+  <Blank Num="1" UId="745" />
+  <Token Text=":=" UId="746" />
+  <Blank Num="1" UId="747" />
+  <Token Text="NOT" UId="748" />
+  <Blank Num="1" UId="749" />
+  <Access Scope="GlobalVariable" UId="750">
+    <Symbol UId="751">
+      <Component Name="Niveau Bad 36 OK" UId="752" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="753" />
+  <NewLine Num="1" UId="754" />
+  <Blank Num="4" UId="755" />
+  <Access Scope="GlobalVariable" UId="756">
+    <Symbol UId="757">
+      <Component Name="DB_Fehlermeldungen" UId="758">
+        <BooleanAttribute Name="HasQuotes" UId="759">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="799" />
-      <Component Name="Bad_Konfig" UId="800">
-        <Token Text="[" UId="801" />
-        <Access Scope="LiteralConstant" UId="802">
-          <Constant UId="803">
-            <ConstantValue UId="805">25</ConstantValue>
-          </Constant>
-        </Access>
-        <Token Text="]" UId="806" />
+      <Token Text="." UId="760" />
+      <Component Name="Niveau_Bad_40" UId="761" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="762" />
+  <Token Text=":=" UId="763" />
+  <Blank Num="1" UId="764" />
+  <Token Text="NOT" UId="765" />
+  <Blank Num="1" UId="766" />
+  <Access Scope="GlobalVariable" UId="767">
+    <Symbol UId="768">
+      <Component Name="Niveau Bad 40 OK" UId="769" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="770" />
+  <NewLine Num="1" UId="771" />
+  <Blank Num="4" UId="772" />
+  <Access Scope="GlobalVariable" UId="773">
+    <Symbol UId="774">
+      <Component Name="DB_Fehlermeldungen" UId="775">
+        <BooleanAttribute Name="HasQuotes" UId="776">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="777" />
+      <Component Name="Niveau_Bad_46" UId="778" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="779" />
+  <Token Text=":=" UId="780" />
+  <Blank Num="1" UId="781" />
+  <Token Text="NOT" UId="782" />
+  <Blank Num="1" UId="783" />
+  <Access Scope="GlobalVariable" UId="784">
+    <Symbol UId="785">
+      <Component Name="Niveau Bad 46 OK" UId="786" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="787" />
+  <NewLine Num="2" UId="788" />
+  <Blank Num="4" UId="789" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="790">
+    <Text UId="791"> FU Stoerung (aus FB_Bad, 3s verzoegert: angesteuert aber nicht bereit)</Text>
+  </LineComment>
+  <NewLine Num="1" UId="792" />
+  <Blank Num="4" UId="793" />
+  <Access Scope="GlobalVariable" UId="794">
+    <Symbol UId="795">
+      <Component Name="DB_Fehlermeldungen" UId="796">
+        <BooleanAttribute Name="HasQuotes" UId="797">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="798" />
+      <Component Name="FU_Pumpe_Bad_25" UId="799" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="800" />
+  <Token Text=":=" UId="801" />
+  <Blank Num="1" UId="802" />
+  <Access Scope="GlobalVariable" UId="803">
+    <Symbol UId="804">
+      <Component Name="DB_Bad_Konfig" UId="805">
+        <BooleanAttribute Name="HasQuotes" UId="806">true</BooleanAttribute>
       </Component>
       <Token Text="." UId="807" />
-      <Component Name="FU_Pumpe_Stoerung" UId="808" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="809" />
-  <NewLine Num="1" UId="810" />
-  <Blank Num="4" UId="811" />
-  <Access Scope="GlobalVariable" UId="812">
-    <Symbol UId="813">
-      <Component Name="DB_Fehlermeldungen" UId="814">
-        <BooleanAttribute Name="HasQuotes" UId="815">true</BooleanAttribute>
-      </Component>
-      <Token Text="." UId="816" />
-      <Component Name="FU_WB1_Bad_25" UId="817" />
-    </Symbol>
-  </Access>
-  <Blank Num="3" UId="818" />
-  <Token Text=":=" UId="819" />
-  <Blank Num="1" UId="820" />
-  <Access Scope="GlobalVariable" UId="821">
-    <Symbol UId="822">
-      <Component Name="DB_Bad_Konfig" UId="823">
-        <BooleanAttribute Name="HasQuotes" UId="824">true</BooleanAttribute>
-      </Component>
-      <Token Text="." UId="825" />
-      <Component Name="Bad_Konfig" UId="826">
-        <Token Text="[" UId="827" />
-        <Access Scope="LiteralConstant" UId="828">
-          <Constant UId="829">
-            <ConstantValue UId="831">25</ConstantValue>
+      <Component Name="Bad_Konfig" UId="808">
+        <Token Text="[" UId="809" />
+        <Access Scope="LiteralConstant" UId="810">
+          <Constant UId="811">
+            <ConstantValue UId="813">25</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="832" />
+        <Token Text="]" UId="814" />
+      </Component>
+      <Token Text="." UId="815" />
+      <Component Name="FU_Pumpe_Stoerung" UId="816" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="817" />
+  <NewLine Num="1" UId="818" />
+  <Blank Num="4" UId="819" />
+  <Access Scope="GlobalVariable" UId="820">
+    <Symbol UId="821">
+      <Component Name="DB_Fehlermeldungen" UId="822">
+        <BooleanAttribute Name="HasQuotes" UId="823">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="824" />
+      <Component Name="FU_WB1_Bad_25" UId="825" />
+    </Symbol>
+  </Access>
+  <Blank Num="3" UId="826" />
+  <Token Text=":=" UId="827" />
+  <Blank Num="1" UId="828" />
+  <Access Scope="GlobalVariable" UId="829">
+    <Symbol UId="830">
+      <Component Name="DB_Bad_Konfig" UId="831">
+        <BooleanAttribute Name="HasQuotes" UId="832">true</BooleanAttribute>
       </Component>
       <Token Text="." UId="833" />
-      <Component Name="FU_WB1_Stoerung" UId="834" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="835" />
-  <NewLine Num="1" UId="836" />
-  <Blank Num="4" UId="837" />
-  <Access Scope="GlobalVariable" UId="838">
-    <Symbol UId="839">
-      <Component Name="DB_Fehlermeldungen" UId="840">
-        <BooleanAttribute Name="HasQuotes" UId="841">true</BooleanAttribute>
-      </Component>
-      <Token Text="." UId="842" />
-      <Component Name="FU_WB2_Bad_25" UId="843" />
-    </Symbol>
-  </Access>
-  <Blank Num="3" UId="844" />
-  <Token Text=":=" UId="845" />
-  <Blank Num="1" UId="846" />
-  <Access Scope="GlobalVariable" UId="847">
-    <Symbol UId="848">
-      <Component Name="DB_Bad_Konfig" UId="849">
-        <BooleanAttribute Name="HasQuotes" UId="850">true</BooleanAttribute>
-      </Component>
-      <Token Text="." UId="851" />
-      <Component Name="Bad_Konfig" UId="852">
-        <Token Text="[" UId="853" />
-        <Access Scope="LiteralConstant" UId="854">
-          <Constant UId="855">
-            <ConstantValue UId="857">25</ConstantValue>
+      <Component Name="Bad_Konfig" UId="834">
+        <Token Text="[" UId="835" />
+        <Access Scope="LiteralConstant" UId="836">
+          <Constant UId="837">
+            <ConstantValue UId="839">25</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="858" />
+        <Token Text="]" UId="840" />
+      </Component>
+      <Token Text="." UId="841" />
+      <Component Name="FU_WB1_Stoerung" UId="842" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="843" />
+  <NewLine Num="1" UId="844" />
+  <Blank Num="4" UId="845" />
+  <Access Scope="GlobalVariable" UId="846">
+    <Symbol UId="847">
+      <Component Name="DB_Fehlermeldungen" UId="848">
+        <BooleanAttribute Name="HasQuotes" UId="849">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="850" />
+      <Component Name="FU_WB2_Bad_25" UId="851" />
+    </Symbol>
+  </Access>
+  <Blank Num="3" UId="852" />
+  <Token Text=":=" UId="853" />
+  <Blank Num="1" UId="854" />
+  <Access Scope="GlobalVariable" UId="855">
+    <Symbol UId="856">
+      <Component Name="DB_Bad_Konfig" UId="857">
+        <BooleanAttribute Name="HasQuotes" UId="858">true</BooleanAttribute>
       </Component>
       <Token Text="." UId="859" />
-      <Component Name="FU_WB2_Stoerung" UId="860" />
+      <Component Name="Bad_Konfig" UId="860">
+        <Token Text="[" UId="861" />
+        <Access Scope="LiteralConstant" UId="862">
+          <Constant UId="863">
+            <ConstantValue UId="865">25</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="866" />
+      </Component>
+      <Token Text="." UId="867" />
+      <Component Name="FU_WB2_Stoerung" UId="868" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="861" />
-  <NewLine Num="2" UId="862" />
-  <Blank Num="4" UId="863" />
-  <LineComment Inserted="false" NoClosingBracket="false" UId="864">
-    <Text UId="865"> Motorschutz Warenbewegung (invertiert)</Text>
+  <Token Text=";" UId="869" />
+  <NewLine Num="2" UId="870" />
+  <Blank Num="4" UId="871" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="872">
+    <Text UId="873"> Motorschutz Warenbewegung (invertiert)</Text>
   </LineComment>
-  <NewLine Num="1" UId="866" />
-  <Blank Num="4" UId="867" />
-  <Access Scope="GlobalVariable" UId="868">
-    <Symbol UId="869">
-      <Component Name="DB_Fehlermeldungen" UId="870">
-        <BooleanAttribute Name="HasQuotes" UId="871">true</BooleanAttribute>
+  <NewLine Num="1" UId="874" />
+  <Blank Num="4" UId="875" />
+  <Access Scope="GlobalVariable" UId="876">
+    <Symbol UId="877">
+      <Component Name="DB_Fehlermeldungen" UId="878">
+        <BooleanAttribute Name="HasQuotes" UId="879">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="872" />
-      <Component Name="Motorschutz_WB1_Bad_25" UId="873" />
+      <Token Text="." UId="880" />
+      <Component Name="Motorschutz_WB1_Bad_25" UId="881" />
     </Symbol>
   </Access>
-  <Blank Num="1" UId="874" />
-  <Token Text=":=" UId="875" />
-  <Blank Num="1" UId="876" />
-  <Token Text="NOT" UId="877" />
-  <Blank Num="1" UId="878" />
-  <Access Scope="GlobalVariable" UId="879">
-    <Symbol UId="880">
-      <Component Name="Motorschutz 276Q1 Warenbewegung 1 Bad 25 ist O.K." UId="881" />
+  <Blank Num="1" UId="882" />
+  <Token Text=":=" UId="883" />
+  <Blank Num="1" UId="884" />
+  <Token Text="NOT" UId="885" />
+  <Blank Num="1" UId="886" />
+  <Access Scope="GlobalVariable" UId="887">
+    <Symbol UId="888">
+      <Component Name="Motorschutz 276Q1 Warenbewegung 1 Bad 25 ist O.K." UId="889" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="882" />
-  <NewLine Num="1" UId="883" />
-  <Blank Num="4" UId="884" />
-  <Access Scope="GlobalVariable" UId="885">
-    <Symbol UId="886">
-      <Component Name="DB_Fehlermeldungen" UId="887">
-        <BooleanAttribute Name="HasQuotes" UId="888">true</BooleanAttribute>
+  <Token Text=";" UId="890" />
+  <NewLine Num="1" UId="891" />
+  <Blank Num="4" UId="892" />
+  <Access Scope="GlobalVariable" UId="893">
+    <Symbol UId="894">
+      <Component Name="DB_Fehlermeldungen" UId="895">
+        <BooleanAttribute Name="HasQuotes" UId="896">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="889" />
-      <Component Name="Motorschutz_WB2_Bad_25" UId="890" />
+      <Token Text="." UId="897" />
+      <Component Name="Motorschutz_WB2_Bad_25" UId="898" />
     </Symbol>
   </Access>
-  <Blank Num="1" UId="891" />
-  <Token Text=":=" UId="892" />
-  <Blank Num="1" UId="893" />
-  <Token Text="NOT" UId="894" />
-  <Blank Num="1" UId="895" />
-  <Access Scope="GlobalVariable" UId="896">
-    <Symbol UId="897">
-      <Component Name="Motorschutz 277Q1 Warenbewegung 2 Bad 25 ist O.K." UId="898" />
+  <Blank Num="1" UId="899" />
+  <Token Text=":=" UId="900" />
+  <Blank Num="1" UId="901" />
+  <Token Text="NOT" UId="902" />
+  <Blank Num="1" UId="903" />
+  <Access Scope="GlobalVariable" UId="904">
+    <Symbol UId="905">
+      <Component Name="Motorschutz 277Q1 Warenbewegung 2 Bad 25 ist O.K." UId="906" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="899" />
-  <NewLine Num="2" UId="900" />
-  <Blank Num="4" UId="901" />
-  <LineComment Inserted="false" NoClosingBracket="false" UId="902">
-    <Text UId="903"> PT100 Sensorstoerung (direkt aus Heizungsregelung)</Text>
+  <Token Text=";" UId="907" />
+  <NewLine Num="2" UId="908" />
+  <Blank Num="4" UId="909" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="910">
+    <Text UId="911"> PT100 Sensorstoerung (direkt aus Heizungsregelung)</Text>
   </LineComment>
-  <NewLine Num="1" UId="904" />
-  <Blank Num="4" UId="905" />
-  <Access Scope="GlobalVariable" UId="906">
-    <Symbol UId="907">
-      <Component Name="DB_Fehlermeldungen" UId="908">
-        <BooleanAttribute Name="HasQuotes" UId="909">true</BooleanAttribute>
+  <NewLine Num="1" UId="912" />
+  <Blank Num="4" UId="913" />
+  <Access Scope="GlobalVariable" UId="914">
+    <Symbol UId="915">
+      <Component Name="DB_Fehlermeldungen" UId="916">
+        <BooleanAttribute Name="HasQuotes" UId="917">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="910" />
-      <Component Name="PT100_Bad_7" UId="911" />
+      <Token Text="." UId="918" />
+      <Component Name="PT100_Bad_7" UId="919" />
     </Symbol>
   </Access>
-  <Blank Num="5" UId="912" />
-  <Token Text=":=" UId="913" />
-  <Blank Num="1" UId="914" />
-  <Access Scope="GlobalVariable" UId="915">
-    <Symbol UId="916">
-      <Component Name="FB_Anlagensteuerung_DB" UId="917">
-        <BooleanAttribute Name="HasQuotes" UId="918">true</BooleanAttribute>
+  <Blank Num="5" UId="920" />
+  <Token Text=":=" UId="921" />
+  <Blank Num="1" UId="922" />
+  <Access Scope="GlobalVariable" UId="923">
+    <Symbol UId="924">
+      <Component Name="FB_Anlagensteuerung_DB" UId="925">
+        <BooleanAttribute Name="HasQuotes" UId="926">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="919" />
-      <Component Name="Heizung" UId="920" />
-      <Token Text="." UId="921" />
-      <Component Name="Regler_Bad_7" UId="922" />
-      <Token Text="." UId="923" />
-      <Component Name="PT100_Stoerung" UId="924" />
+      <Token Text="." UId="927" />
+      <Component Name="Heizung" UId="928" />
+      <Token Text="." UId="929" />
+      <Component Name="Regler_Bad_7" UId="930" />
+      <Token Text="." UId="931" />
+      <Component Name="PT100_Stoerung" UId="932" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="925" />
-  <NewLine Num="1" UId="926" />
-  <Blank Num="4" UId="927" />
-  <Access Scope="GlobalVariable" UId="928">
-    <Symbol UId="929">
-      <Component Name="DB_Fehlermeldungen" UId="930">
-        <BooleanAttribute Name="HasQuotes" UId="931">true</BooleanAttribute>
+  <Token Text=";" UId="933" />
+  <NewLine Num="1" UId="934" />
+  <Blank Num="4" UId="935" />
+  <Access Scope="GlobalVariable" UId="936">
+    <Symbol UId="937">
+      <Component Name="DB_Fehlermeldungen" UId="938">
+        <BooleanAttribute Name="HasQuotes" UId="939">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="932" />
-      <Component Name="PT100_Bad_8" UId="933" />
+      <Token Text="." UId="940" />
+      <Component Name="PT100_Bad_8" UId="941" />
     </Symbol>
   </Access>
-  <Blank Num="5" UId="934" />
-  <Token Text=":=" UId="935" />
-  <Blank Num="1" UId="936" />
-  <Access Scope="GlobalVariable" UId="937">
-    <Symbol UId="938">
-      <Component Name="FB_Anlagensteuerung_DB" UId="939">
-        <BooleanAttribute Name="HasQuotes" UId="940">true</BooleanAttribute>
+  <Blank Num="5" UId="942" />
+  <Token Text=":=" UId="943" />
+  <Blank Num="1" UId="944" />
+  <Access Scope="GlobalVariable" UId="945">
+    <Symbol UId="946">
+      <Component Name="FB_Anlagensteuerung_DB" UId="947">
+        <BooleanAttribute Name="HasQuotes" UId="948">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="941" />
-      <Component Name="Heizung" UId="942" />
-      <Token Text="." UId="943" />
-      <Component Name="Regler_Bad_8" UId="944" />
-      <Token Text="." UId="945" />
-      <Component Name="PT100_Stoerung" UId="946" />
+      <Token Text="." UId="949" />
+      <Component Name="Heizung" UId="950" />
+      <Token Text="." UId="951" />
+      <Component Name="Regler_Bad_8" UId="952" />
+      <Token Text="." UId="953" />
+      <Component Name="PT100_Stoerung" UId="954" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="947" />
-  <NewLine Num="1" UId="948" />
-  <Blank Num="4" UId="949" />
-  <Access Scope="GlobalVariable" UId="950">
-    <Symbol UId="951">
-      <Component Name="DB_Fehlermeldungen" UId="952">
-        <BooleanAttribute Name="HasQuotes" UId="953">true</BooleanAttribute>
+  <Token Text=";" UId="955" />
+  <NewLine Num="1" UId="956" />
+  <Blank Num="4" UId="957" />
+  <Access Scope="GlobalVariable" UId="958">
+    <Symbol UId="959">
+      <Component Name="DB_Fehlermeldungen" UId="960">
+        <BooleanAttribute Name="HasQuotes" UId="961">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="954" />
-      <Component Name="PT100_Bad_12" UId="955" />
+      <Token Text="." UId="962" />
+      <Component Name="PT100_Bad_12" UId="963" />
     </Symbol>
   </Access>
-  <Blank Num="4" UId="956" />
-  <Token Text=":=" UId="957" />
-  <Blank Num="1" UId="958" />
-  <Access Scope="GlobalVariable" UId="959">
-    <Symbol UId="960">
-      <Component Name="FB_Anlagensteuerung_DB" UId="961">
-        <BooleanAttribute Name="HasQuotes" UId="962">true</BooleanAttribute>
+  <Blank Num="4" UId="964" />
+  <Token Text=":=" UId="965" />
+  <Blank Num="1" UId="966" />
+  <Access Scope="GlobalVariable" UId="967">
+    <Symbol UId="968">
+      <Component Name="FB_Anlagensteuerung_DB" UId="969">
+        <BooleanAttribute Name="HasQuotes" UId="970">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="963" />
-      <Component Name="Heizung" UId="964" />
-      <Token Text="." UId="965" />
-      <Component Name="Regler_Bad_12" UId="966" />
-      <Token Text="." UId="967" />
-      <Component Name="PT100_Stoerung" UId="968" />
+      <Token Text="." UId="971" />
+      <Component Name="Heizung" UId="972" />
+      <Token Text="." UId="973" />
+      <Component Name="Regler_Bad_12" UId="974" />
+      <Token Text="." UId="975" />
+      <Component Name="PT100_Stoerung" UId="976" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="969" />
-  <NewLine Num="1" UId="970" />
-  <Blank Num="4" UId="971" />
-  <Access Scope="GlobalVariable" UId="972">
-    <Symbol UId="973">
-      <Component Name="DB_Fehlermeldungen" UId="974">
-        <BooleanAttribute Name="HasQuotes" UId="975">true</BooleanAttribute>
+  <Token Text=";" UId="977" />
+  <NewLine Num="1" UId="978" />
+  <Blank Num="4" UId="979" />
+  <Access Scope="GlobalVariable" UId="980">
+    <Symbol UId="981">
+      <Component Name="DB_Fehlermeldungen" UId="982">
+        <BooleanAttribute Name="HasQuotes" UId="983">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="976" />
-      <Component Name="PT100_Bad_25_H1" UId="977" />
+      <Token Text="." UId="984" />
+      <Component Name="PT100_Bad_25_H1" UId="985" />
     </Symbol>
   </Access>
-  <Blank Num="1" UId="978" />
-  <Token Text=":=" UId="979" />
-  <Blank Num="1" UId="980" />
-  <Access Scope="GlobalVariable" UId="981">
-    <Symbol UId="982">
-      <Component Name="FB_Anlagensteuerung_DB" UId="983">
-        <BooleanAttribute Name="HasQuotes" UId="984">true</BooleanAttribute>
+  <Blank Num="1" UId="986" />
+  <Token Text=":=" UId="987" />
+  <Blank Num="1" UId="988" />
+  <Access Scope="GlobalVariable" UId="989">
+    <Symbol UId="990">
+      <Component Name="FB_Anlagensteuerung_DB" UId="991">
+        <BooleanAttribute Name="HasQuotes" UId="992">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="985" />
-      <Component Name="Heizung" UId="986" />
-      <Token Text="." UId="987" />
-      <Component Name="Regler_Bad_25_H1" UId="988" />
-      <Token Text="." UId="989" />
-      <Component Name="PT100_Stoerung" UId="990" />
+      <Token Text="." UId="993" />
+      <Component Name="Heizung" UId="994" />
+      <Token Text="." UId="995" />
+      <Component Name="Regler_Bad_25_H1" UId="996" />
+      <Token Text="." UId="997" />
+      <Component Name="PT100_Stoerung" UId="998" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="991" />
-  <NewLine Num="1" UId="992" />
-  <Blank Num="4" UId="993" />
-  <Access Scope="GlobalVariable" UId="994">
-    <Symbol UId="995">
-      <Component Name="DB_Fehlermeldungen" UId="996">
-        <BooleanAttribute Name="HasQuotes" UId="997">true</BooleanAttribute>
+  <Token Text=";" UId="999" />
+  <NewLine Num="1" UId="1000" />
+  <Blank Num="4" UId="1001" />
+  <Access Scope="GlobalVariable" UId="1002">
+    <Symbol UId="1003">
+      <Component Name="DB_Fehlermeldungen" UId="1004">
+        <BooleanAttribute Name="HasQuotes" UId="1005">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="998" />
-      <Component Name="PT100_Bad_25_H2" UId="999" />
+      <Token Text="." UId="1006" />
+      <Component Name="PT100_Bad_25_H2" UId="1007" />
     </Symbol>
   </Access>
-  <Blank Num="1" UId="1000" />
-  <Token Text=":=" UId="1001" />
-  <Blank Num="1" UId="1002" />
-  <Access Scope="GlobalVariable" UId="1003">
-    <Symbol UId="1004">
-      <Component Name="FB_Anlagensteuerung_DB" UId="1005">
-        <BooleanAttribute Name="HasQuotes" UId="1006">true</BooleanAttribute>
+  <Blank Num="1" UId="1008" />
+  <Token Text=":=" UId="1009" />
+  <Blank Num="1" UId="1010" />
+  <Access Scope="GlobalVariable" UId="1011">
+    <Symbol UId="1012">
+      <Component Name="FB_Anlagensteuerung_DB" UId="1013">
+        <BooleanAttribute Name="HasQuotes" UId="1014">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1007" />
-      <Component Name="Heizung" UId="1008" />
-      <Token Text="." UId="1009" />
-      <Component Name="Regler_Bad_25_H2" UId="1010" />
-      <Token Text="." UId="1011" />
-      <Component Name="PT100_Stoerung" UId="1012" />
+      <Token Text="." UId="1015" />
+      <Component Name="Heizung" UId="1016" />
+      <Token Text="." UId="1017" />
+      <Component Name="Regler_Bad_25_H2" UId="1018" />
+      <Token Text="." UId="1019" />
+      <Component Name="PT100_Stoerung" UId="1020" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="1013" />
-  <NewLine Num="1" UId="1014" />
-  <Blank Num="4" UId="1015" />
-  <Access Scope="GlobalVariable" UId="1016">
-    <Symbol UId="1017">
-      <Component Name="DB_Fehlermeldungen" UId="1018">
-        <BooleanAttribute Name="HasQuotes" UId="1019">true</BooleanAttribute>
+  <Token Text=";" UId="1021" />
+  <NewLine Num="1" UId="1022" />
+  <Blank Num="4" UId="1023" />
+  <Access Scope="GlobalVariable" UId="1024">
+    <Symbol UId="1025">
+      <Component Name="DB_Fehlermeldungen" UId="1026">
+        <BooleanAttribute Name="HasQuotes" UId="1027">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1020" />
-      <Component Name="PT100_Bad_36" UId="1021" />
+      <Token Text="." UId="1028" />
+      <Component Name="PT100_Bad_36" UId="1029" />
     </Symbol>
   </Access>
-  <Blank Num="4" UId="1022" />
-  <Token Text=":=" UId="1023" />
-  <Blank Num="1" UId="1024" />
-  <Access Scope="GlobalVariable" UId="1025">
-    <Symbol UId="1026">
-      <Component Name="FB_Anlagensteuerung_DB" UId="1027">
-        <BooleanAttribute Name="HasQuotes" UId="1028">true</BooleanAttribute>
+  <Blank Num="4" UId="1030" />
+  <Token Text=":=" UId="1031" />
+  <Blank Num="1" UId="1032" />
+  <Access Scope="GlobalVariable" UId="1033">
+    <Symbol UId="1034">
+      <Component Name="FB_Anlagensteuerung_DB" UId="1035">
+        <BooleanAttribute Name="HasQuotes" UId="1036">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1029" />
-      <Component Name="Heizung" UId="1030" />
-      <Token Text="." UId="1031" />
-      <Component Name="Regler_Bad_36" UId="1032" />
-      <Token Text="." UId="1033" />
-      <Component Name="PT100_Stoerung" UId="1034" />
+      <Token Text="." UId="1037" />
+      <Component Name="Heizung" UId="1038" />
+      <Token Text="." UId="1039" />
+      <Component Name="Regler_Bad_36" UId="1040" />
+      <Token Text="." UId="1041" />
+      <Component Name="PT100_Stoerung" UId="1042" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="1035" />
-  <NewLine Num="1" UId="1036" />
-  <Blank Num="4" UId="1037" />
-  <Access Scope="GlobalVariable" UId="1038">
-    <Symbol UId="1039">
-      <Component Name="DB_Fehlermeldungen" UId="1040">
-        <BooleanAttribute Name="HasQuotes" UId="1041">true</BooleanAttribute>
+  <Token Text=";" UId="1043" />
+  <NewLine Num="1" UId="1044" />
+  <Blank Num="4" UId="1045" />
+  <Access Scope="GlobalVariable" UId="1046">
+    <Symbol UId="1047">
+      <Component Name="DB_Fehlermeldungen" UId="1048">
+        <BooleanAttribute Name="HasQuotes" UId="1049">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1042" />
-      <Component Name="PT100_Bad_40" UId="1043" />
+      <Token Text="." UId="1050" />
+      <Component Name="PT100_Bad_40" UId="1051" />
     </Symbol>
   </Access>
-  <Blank Num="4" UId="1044" />
-  <Token Text=":=" UId="1045" />
-  <Blank Num="1" UId="1046" />
-  <Access Scope="GlobalVariable" UId="1047">
-    <Symbol UId="1048">
-      <Component Name="FB_Anlagensteuerung_DB" UId="1049">
-        <BooleanAttribute Name="HasQuotes" UId="1050">true</BooleanAttribute>
+  <Blank Num="4" UId="1052" />
+  <Token Text=":=" UId="1053" />
+  <Blank Num="1" UId="1054" />
+  <Access Scope="GlobalVariable" UId="1055">
+    <Symbol UId="1056">
+      <Component Name="FB_Anlagensteuerung_DB" UId="1057">
+        <BooleanAttribute Name="HasQuotes" UId="1058">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1051" />
-      <Component Name="Heizung" UId="1052" />
-      <Token Text="." UId="1053" />
-      <Component Name="Regler_Bad_40" UId="1054" />
-      <Token Text="." UId="1055" />
-      <Component Name="PT100_Stoerung" UId="1056" />
+      <Token Text="." UId="1059" />
+      <Component Name="Heizung" UId="1060" />
+      <Token Text="." UId="1061" />
+      <Component Name="Regler_Bad_40" UId="1062" />
+      <Token Text="." UId="1063" />
+      <Component Name="PT100_Stoerung" UId="1064" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="1057" />
-  <NewLine Num="1" UId="1058" />
-  <Blank Num="4" UId="1059" />
-  <Access Scope="GlobalVariable" UId="1060">
-    <Symbol UId="1061">
-      <Component Name="DB_Fehlermeldungen" UId="1062">
-        <BooleanAttribute Name="HasQuotes" UId="1063">true</BooleanAttribute>
+  <Token Text=";" UId="1065" />
+  <NewLine Num="1" UId="1066" />
+  <Blank Num="4" UId="1067" />
+  <Access Scope="GlobalVariable" UId="1068">
+    <Symbol UId="1069">
+      <Component Name="DB_Fehlermeldungen" UId="1070">
+        <BooleanAttribute Name="HasQuotes" UId="1071">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1064" />
-      <Component Name="PT100_Bad_46" UId="1065" />
+      <Token Text="." UId="1072" />
+      <Component Name="PT100_Bad_46" UId="1073" />
     </Symbol>
   </Access>
-  <Blank Num="4" UId="1066" />
-  <Token Text=":=" UId="1067" />
-  <Blank Num="1" UId="1068" />
-  <Access Scope="GlobalVariable" UId="1069">
-    <Symbol UId="1070">
-      <Component Name="FB_Anlagensteuerung_DB" UId="1071">
-        <BooleanAttribute Name="HasQuotes" UId="1072">true</BooleanAttribute>
+  <Blank Num="4" UId="1074" />
+  <Token Text=":=" UId="1075" />
+  <Blank Num="1" UId="1076" />
+  <Access Scope="GlobalVariable" UId="1077">
+    <Symbol UId="1078">
+      <Component Name="FB_Anlagensteuerung_DB" UId="1079">
+        <BooleanAttribute Name="HasQuotes" UId="1080">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1073" />
-      <Component Name="Heizung" UId="1074" />
-      <Token Text="." UId="1075" />
-      <Component Name="Regler_Bad_46" UId="1076" />
-      <Token Text="." UId="1077" />
-      <Component Name="PT100_Stoerung" UId="1078" />
+      <Token Text="." UId="1081" />
+      <Component Name="Heizung" UId="1082" />
+      <Token Text="." UId="1083" />
+      <Component Name="Regler_Bad_46" UId="1084" />
+      <Token Text="." UId="1085" />
+      <Component Name="PT100_Stoerung" UId="1086" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="1079" />
-  <NewLine Num="2" UId="1080" />
-  <Blank Num="4" UId="1081" />
-  <LineComment Inserted="false" NoClosingBracket="false" UId="1082">
-    <Text UId="1083"> Walchem Controller (TRUE = Alarm, keine Invertierung)</Text>
+  <Token Text=";" UId="1087" />
+  <NewLine Num="2" UId="1088" />
+  <Blank Num="4" UId="1089" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1090">
+    <Text UId="1091"> Walchem Controller (TRUE = Alarm, keine Invertierung)</Text>
   </LineComment>
-  <NewLine Num="1" UId="1084" />
-  <Blank Num="4" UId="1085" />
-  <Access Scope="GlobalVariable" UId="1086">
-    <Symbol UId="1087">
-      <Component Name="DB_Fehlermeldungen" UId="1088">
-        <BooleanAttribute Name="HasQuotes" UId="1089">true</BooleanAttribute>
+  <NewLine Num="1" UId="1092" />
+  <Blank Num="4" UId="1093" />
+  <Access Scope="GlobalVariable" UId="1094">
+    <Symbol UId="1095">
+      <Component Name="DB_Fehlermeldungen" UId="1096">
+        <BooleanAttribute Name="HasQuotes" UId="1097">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1090" />
-      <Component Name="Fehler_Walchem_Controller" UId="1091" />
+      <Token Text="." UId="1098" />
+      <Component Name="Fehler_Walchem_Controller" UId="1099" />
     </Symbol>
   </Access>
-  <Blank Num="1" UId="1092" />
-  <Token Text=":=" UId="1093" />
-  <Blank Num="1" UId="1094" />
-  <Access Scope="GlobalVariable" UId="1095">
-    <Symbol UId="1096">
-      <Component Name="Alarm Walchem Controller" UId="1097" />
+  <Blank Num="1" UId="1100" />
+  <Token Text=":=" UId="1101" />
+  <Blank Num="1" UId="1102" />
+  <Access Scope="GlobalVariable" UId="1103">
+    <Symbol UId="1104">
+      <Component Name="Alarm Walchem Controller" UId="1105" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="1098" />
-  <NewLine Num="2" UId="1099" />
-  <Blank Num="4" UId="1100" />
-  <LineComment Inserted="false" NoClosingBracket="false" UId="1101">
-    <Text UId="1102"> Not-Halt</Text>
+  <Token Text=";" UId="1106" />
+  <NewLine Num="2" UId="1107" />
+  <Blank Num="4" UId="1108" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1109">
+    <Text UId="1110"> Nachspeisung Bad 26 -&gt; Bad 25 (invertiert; Zeitueberwachung direkt aus FB_Nachspeisung)</Text>
   </LineComment>
-  <NewLine Num="1" UId="1103" />
-  <Blank Num="4" UId="1104" />
-  <Access Scope="GlobalVariable" UId="1105">
-    <Symbol UId="1106">
-      <Component Name="DB_Fehlermeldungen" UId="1107">
-        <BooleanAttribute Name="HasQuotes" UId="1108">true</BooleanAttribute>
+  <NewLine Num="1" UId="1111" />
+  <Blank Num="4" UId="1112" />
+  <Access Scope="GlobalVariable" UId="1113">
+    <Symbol UId="1114">
+      <Component Name="DB_Fehlermeldungen" UId="1115">
+        <BooleanAttribute Name="HasQuotes" UId="1116">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1109" />
-      <Component Name="Not_Halt" UId="1110" />
+      <Token Text="." UId="1117" />
+      <Component Name="Niveau_Bad_26" UId="1118" />
     </Symbol>
   </Access>
-  <Blank Num="1" UId="1111" />
-  <Token Text=":=" UId="1112" />
-  <Blank Num="1" UId="1113" />
-  <Token Text="NOT" UId="1114" />
-  <Blank Num="1" UId="1115" />
-  <Access Scope="GlobalVariable" UId="1116">
-    <Symbol UId="1117">
-      <Component Name="Not-Aus ist OK" UId="1118" />
+  <Blank Num="1" UId="1119" />
+  <Token Text=":=" UId="1120" />
+  <Blank Num="1" UId="1121" />
+  <Token Text="NOT" UId="1122" />
+  <Blank Num="1" UId="1123" />
+  <Access Scope="GlobalVariable" UId="1124">
+    <Symbol UId="1125">
+      <Component Name="Niveau Bad 26 OK" UId="1126" />
     </Symbol>
   </Access>
-  <Token Text=";" UId="1119" />
-  <NewLine Num="2" UId="1120" />
+  <Token Text=";" UId="1127" />
+  <NewLine Num="1" UId="1128" />
+  <Blank Num="4" UId="1129" />
+  <Access Scope="GlobalVariable" UId="1130">
+    <Symbol UId="1131">
+      <Component Name="DB_Fehlermeldungen" UId="1132">
+        <BooleanAttribute Name="HasQuotes" UId="1133">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1134" />
+      <Component Name="Motorschutz_Nachspeisepumpe_Bad_26" UId="1135" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1136" />
+  <Token Text=":=" UId="1137" />
+  <Blank Num="1" UId="1138" />
+  <Token Text="NOT" UId="1139" />
+  <Blank Num="1" UId="1140" />
+  <Access Scope="GlobalVariable" UId="1141">
+    <Symbol UId="1142">
+      <Component Name="Motorschutz 275aQ1 Pumpe Bad 25 ist O.K." UId="1143" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1144" />
+  <NewLine Num="1" UId="1145" />
+  <Blank Num="4" UId="1146" />
+  <Access Scope="GlobalVariable" UId="1147">
+    <Symbol UId="1148">
+      <Component Name="DB_Fehlermeldungen" UId="1149">
+        <BooleanAttribute Name="HasQuotes" UId="1150">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1151" />
+      <Component Name="Wartungsschalter_Nachspeisepumpe_Bad_26" UId="1152" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1153" />
+  <Token Text=":=" UId="1154" />
+  <Blank Num="1" UId="1155" />
+  <Token Text="NOT" UId="1156" />
+  <Blank Num="1" UId="1157" />
+  <Access Scope="GlobalVariable" UId="1158">
+    <Symbol UId="1159">
+      <Component Name="Wartungsschalter Pumpe Bad 25 ist eingeschaltet(1)" UId="1160" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1161" />
+  <NewLine Num="1" UId="1162" />
+  <Blank Num="4" UId="1163" />
+  <Access Scope="GlobalVariable" UId="1164">
+    <Symbol UId="1165">
+      <Component Name="DB_Fehlermeldungen" UId="1166">
+        <BooleanAttribute Name="HasQuotes" UId="1167">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1168" />
+      <Component Name="Nachspeisung_Bad_26_Zeitueberwachung" UId="1169" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1170" />
+  <Token Text=":=" UId="1171" />
+  <Blank Num="1" UId="1172" />
+  <Access Scope="GlobalVariable" UId="1173">
+    <Symbol UId="1174">
+      <Component Name="FB_Anlagensteuerung_DB" UId="1175">
+        <BooleanAttribute Name="HasQuotes" UId="1176">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1177" />
+      <Component Name="Nachspeisung" UId="1178" />
+      <Token Text="." UId="1179" />
+      <Component Name="Zeitueberwachung_Stoerung" UId="1180" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1181" />
+  <NewLine Num="2" UId="1182" />
+  <Blank Num="4" UId="1183" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1184">
+    <Text UId="1185"> Not-Halt</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1186" />
+  <Blank Num="4" UId="1187" />
+  <Access Scope="GlobalVariable" UId="1188">
+    <Symbol UId="1189">
+      <Component Name="DB_Fehlermeldungen" UId="1190">
+        <BooleanAttribute Name="HasQuotes" UId="1191">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1192" />
+      <Component Name="Not_Halt" UId="1193" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1194" />
+  <Token Text=":=" UId="1195" />
+  <Blank Num="1" UId="1196" />
+  <Token Text="NOT" UId="1197" />
+  <Blank Num="1" UId="1198" />
+  <Access Scope="GlobalVariable" UId="1199">
+    <Symbol UId="1200">
+      <Component Name="Not-Aus ist OK" UId="1201" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1202" />
+  <NewLine Num="2" UId="1203" />
 </StructuredText></NetworkSource>
           <ProgrammingLanguage>SCL</ProgrammingLanguage>
         </AttributeList>
