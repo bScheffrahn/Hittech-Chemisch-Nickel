@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>FB_FlexKraft</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="bOn" Datatype="Bool" />
+    <Member Name="bStartA" Datatype="Bool" />
+    <Member Name="bBlockA" Datatype="Bool" />
+    <Member Name="bRunProgA" Datatype="Bool" />
+    <Member Name="bReverseA" Datatype="Bool" />
+    <Member Name="bReverseB" Datatype="Bool" />
+    <Member Name="bStartB" Datatype="Bool" />
+    <Member Name="bClrAhA" Datatype="Bool" />
+    <Member Name="bClrAhB" Datatype="Bool" />
+    <Member Name="bClrTimer" Datatype="Bool" />
+    <Member Name="bBlockB" Datatype="Bool" />
+    <Member Name="bAuxOutA" Datatype="Bool" />
+    <Member Name="bAuxOutB" Datatype="Bool" />
+    <Member Name="bRunProgB" Datatype="Bool" />
+    <Member Name="iSetVoltage_cV" Datatype="Int" />
+    <Member Name="iSetCurrent_raw" Datatype="Int" />
+    <Member Name="wStartramp_dS" Datatype="Word" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="bAlarm" Datatype="Bool" />
+    <Member Name="bWarning" Datatype="Bool" />
+    <Member Name="bRemote" Datatype="Bool" />
+    <Member Name="bRunningA" Datatype="Bool" />
+    <Member Name="bAhLimitA" Datatype="Bool" />
+    <Member Name="bAhLimitB" Datatype="Bool" />
+    <Member Name="bTimerLimitA" Datatype="Bool" />
+    <Member Name="bVoltageModeA" Datatype="Bool" />
+    <Member Name="bVoltageModeB" Datatype="Bool" />
+    <Member Name="bUnitOn" Datatype="Bool" />
+    <Member Name="bHiRes" Datatype="Bool" />
+    <Member Name="bRunningB" Datatype="Bool" />
+    <Member Name="iOutVoltage_cV" Datatype="Int" />
+    <Member Name="iOutCurrent_raw" Datatype="Int" />
+    <Member Name="wWarnings" Datatype="Word" />
+    <Member Name="wAlarms" Datatype="Word" />
+  </Section>
+  <Section Name="InOut">
+    <Member Name="stDev" Datatype="&quot;UDT_FlexKraft_Device&quot;" />
+  </Section>
+  <Section Name="Static" />
+</Sections></Interface>
+      <Name>FB_FlexKraft_DB_1</Name>
+      <Namespace />
+      <Number>7</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

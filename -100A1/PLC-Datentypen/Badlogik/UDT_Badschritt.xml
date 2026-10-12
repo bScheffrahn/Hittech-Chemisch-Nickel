@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="BadNr" Datatype="Int" />
+    <Member Name="Verweilzeit" Datatype="Time" />
+    <Member Name="Vorwarnzeit" Datatype="Time" />
+    <Member Name="Kritische_Zeit" Datatype="Time" />
+    <Member Name="Pumpe" Datatype="Bool" />
+    <Member Name="Pumpe_FU_Soll" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Umwaelzpumpe Drehzahl (%)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Ultraschall" Datatype="Bool" />
+    <Member Name="Heizung" Datatype="Real" />
+    <Member Name="Heizung_Toleranz" Datatype="Real" />
+    <Member Name="Warenbewegung_X" Datatype="Real" />
+    <Member Name="Warenbewegung_Y" Datatype="Real" />
+    <Member Name="GR_Aktiv" Datatype="Bool" />
+    <Member Name="GR_Strom_Soll" Datatype="Real" />
+    <Member Name="GR_Spannung_Soll" Datatype="Real" />
+    <Member Name="GR_Pulsfrequenz" Datatype="Real" />
+    <Member Name="GR_DutyCycle" Datatype="Real" />
+    <Member Name="Alarm_Aktiv" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>UDT_Badschritt</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>==========================================================================
+ Badlogik Chemisch Nickel - Gesamtquelle v0.9
+
+ Aenderungen v0.9:
+   - Pumpe_FU (Umwaelzpumpe Bad 25): Sollwert, Netzschuetz, Freigabe, Reset
+   - FU-Resets (WB1, WB2, Pumpe) im Handbetrieb steuerbar
+   - "Pumpe Bad 25(1)" entfernt (Relikt)
+   - "Motorschutz 275aQ1" und "Wartungsschalter (1)" entfernt (Relikt)
+   - FU-Steuerwerte in Rueckmeldung
+   - Tag-Aenderung: A0.6 = "Netzschuetz Pumpe Bad 25" (war "Pumpe Bad 25")
+   - Neue Tags: "FU Pumpe Freigabe" A4.5, "Reset FU Pumpe" A4.6,
+                "Pumpen_FU_Steuerwert" QW64, "FU Pumpe bereit" E0.7
+   - Auftrag_Abgeschlossen[0..9] im DB_CPU_to_IPC (Handshake fuer IPC)
+==========================================================================</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

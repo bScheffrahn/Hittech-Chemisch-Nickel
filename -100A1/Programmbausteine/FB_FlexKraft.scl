@@ -1,0 +1,110 @@
+﻿FUNCTION_BLOCK "FB_FlexKraft"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+//==============================================================================
+// FB: Komfort-Wrapper fÃ¼r ein FlexKraft-GerÃ¤t
+//------------------------------------------------------------------------------
+//  PflÃ¼ckt das Status-Register in einzelne BOOLs auseinander, baut umgekehrt
+//  aus einzelnen BOOLs das Control-Register zusammen und reicht die Sollwerte
+//  durch. Es findet KEINE Skalierung statt - der Aufrufer Ã¼bergibt direkt die
+//  Modbus-Rohwerte (Spannung in 1/100 V, Strom in 1 A bzw. 0,1 A je HiRes).
+//==============================================================================
+   VAR_INPUT 
+      bOn : Bool;   // Bit 0   On/Off
+      bStartA : Bool;   // Bit 1   Start A
+      bBlockA : Bool;   // Bit 2   Block A (Pause)
+      bRunProgA : Bool;   // Bit 3   Programm A laufen lassen
+      bReverseA : Bool;   // Bit 4   Polung A umkehren
+      bReverseB : Bool;   // Bit 5   Polung B umkehren
+      bStartB : Bool;   // Bit 7   Start B
+      bClrAhA : Bool;   // Bit 8   AhCounter A lÃ¶schen
+      bClrAhB : Bool;   // Bit 9   AhCounter B lÃ¶schen
+      bClrTimer : Bool;   // Bit 10  ProcessTimer lÃ¶schen
+      bBlockB : Bool;   // Bit 12  Block B (Pause)
+      bAuxOutA : Bool;   // Bit 13  Auxiliary Out A
+      bAuxOutB : Bool;   // Bit 14  Auxiliary Out B
+      bRunProgB : Bool;   // Bit 15  Programm B laufen lassen --- Sollwerte (roh, ohne Skalierung) ---
+      iSetVoltage_cV : Int;   // Sollspannung 1/100 V (1500 = 15,00 V)
+      iSetCurrent_raw : Int;   // Sollstrom 1 A bzw. 0,1 A (siehe HiRes)
+      wStartramp_dS : Word;   // Anlauframpe 1/10 s (50 = 5,0 s) --- Bits StatusRegister (Reg 1) ---
+   END_VAR
+
+   VAR_OUTPUT 
+      bAlarm : Bool;   // Bit 0
+      bWarning : Bool;   // Bit 1
+      bRemote : Bool;   // Bit 2  -> nur wenn TRUE Ã¼bernimmt FK Sollwerte
+      bRunningA : Bool;   // Bit 3
+      bAhLimitA : Bool;   // Bit 4
+      bAhLimitB : Bool;   // Bit 5
+      bTimerLimitA : Bool;   // Bit 6
+      bVoltageModeA : Bool;   // Bit 7  TRUE = Last zu hochohmig (V-Begrenzung)
+      bVoltageModeB : Bool;   // Bit 8
+      bUnitOn : Bool;   // Bit 9  (entspricht der grÃ¼nen LED am GerÃ¤t)
+      bHiRes : Bool;   // Bit 10 TRUE = Strom in 0,1 A statt 1 A
+      bRunningB : Bool;   // Bit 11 --- Istwerte (roh) ---
+      iOutVoltage_cV : Int;
+      iOutCurrent_raw : Int;   // --- Roh-Bitregister fÃ¼r Detailauswertung in der Applikation ---
+      wWarnings : Word;
+      wAlarms : Word;
+   END_VAR
+
+   VAR_IN_OUT 
+      stDev : "UDT_FlexKraft_Device";
+   END_VAR
+
+
+BEGIN
+	
+	//--------------------------------------------------------------------------
+	// 1) Output zusammenbauen
+	//--------------------------------------------------------------------------
+	#stDev.Out.PageNo := 16#0000;
+	
+	#stDev.Out.ControlRegister.%X0 := #bOn;
+	#stDev.Out.ControlRegister.%X1 := #bStartA;
+	#stDev.Out.ControlRegister.%X2 := #bBlockA;
+	#stDev.Out.ControlRegister.%X3 := #bRunProgA;
+	#stDev.Out.ControlRegister.%X4 := #bReverseA;
+	#stDev.Out.ControlRegister.%X5 := #bReverseB;
+	#stDev.Out.ControlRegister.%X6 := FALSE;       // reserviert
+	#stDev.Out.ControlRegister.%X7 := #bStartB;
+	#stDev.Out.ControlRegister.%X8 := #bClrAhA;
+	#stDev.Out.ControlRegister.%X9 := #bClrAhB;
+	#stDev.Out.ControlRegister.%X10 := #bClrTimer;
+	#stDev.Out.ControlRegister.%X11 := FALSE;       // reserviert
+	#stDev.Out.ControlRegister.%X12 := #bBlockB;
+	#stDev.Out.ControlRegister.%X13 := #bAuxOutA;
+	#stDev.Out.ControlRegister.%X14 := #bAuxOutB;
+	#stDev.Out.ControlRegister.%X15 := #bRunProgB;
+	
+	#stDev.Out.SetVoltage := #iSetVoltage_cV;
+	#stDev.Out.SetCurrent := #iSetCurrent_raw;
+	#stDev.Out.Startramp := #wStartramp_dS;
+	
+	//--------------------------------------------------------------------------
+	// 2) StatusRegister auseinanderpflÃ¼cken
+	//--------------------------------------------------------------------------
+	#bAlarm := #stDev.In.StatusRegister.%X0;
+	#bWarning := #stDev.In.StatusRegister.%X1;
+	#bRemote := #stDev.In.StatusRegister.%X2;
+	#bRunningA := #stDev.In.StatusRegister.%X3;
+	#bAhLimitA := #stDev.In.StatusRegister.%X4;
+	#bAhLimitB := #stDev.In.StatusRegister.%X5;
+	#bTimerLimitA := #stDev.In.StatusRegister.%X6;
+	#bVoltageModeA := #stDev.In.StatusRegister.%X7;
+	#bVoltageModeB := #stDev.In.StatusRegister.%X8;
+	#bUnitOn := #stDev.In.StatusRegister.%X9;
+	#bHiRes := #stDev.In.StatusRegister.%X10;
+	#bRunningB := #stDev.In.StatusRegister.%X11;
+	
+	//--------------------------------------------------------------------------
+	// 3) Istwerte und Roh-Bitregister durchreichen
+	//--------------------------------------------------------------------------
+	#iOutVoltage_cV := #stDev.In.OutputVoltage;
+	#iOutCurrent_raw := #stDev.In.OutputCurrent;
+	#wWarnings := #stDev.In.WarningsRegister;
+	#wAlarms := #stDev.In.AlarmsRegister;
+	
+	
+END_FUNCTION_BLOCK
+

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Heizung_Soll" Datatype="Real" />
+    <Member Name="Pumpe" Datatype="Bool" />
+    <Member Name="Pumpe_FU_Soll" Datatype="Real" />
+    <Member Name="Ultraschall" Datatype="Bool" />
+    <Member Name="Warenbewegung_X" Datatype="Real" />
+    <Member Name="Warenbewegung_Y" Datatype="Real" />
+    <Member Name="GR_Aktiv" Datatype="Bool" />
+    <Member Name="GR_Strom_Soll" Datatype="Real" />
+    <Member Name="GR_Spannung_Soll" Datatype="Real" />
+  </Section>
+</Sections></Interface>
+      <Name>UDT_Peripherie_Soll</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

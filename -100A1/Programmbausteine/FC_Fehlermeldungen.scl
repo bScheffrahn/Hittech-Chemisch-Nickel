@@ -1,0 +1,87 @@
+﻿FUNCTION "FC_Fehlermeldungen" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	
+	    // FI-Schutz (invertiert: Eingang TRUE = OK, Fehler = NOT)
+	    "DB_Fehlermeldungen".FI_Heizung_Bad_7  := NOT "FI-Schutz 200F1 Heizung Bad 7 ist O.K.";
+	    "DB_Fehlermeldungen".FI_Heizung_Bad_8  := NOT "FI-Schutz 210F1 Heizung Bad 8 ist O.K.";
+	    "DB_Fehlermeldungen".FI_Heizung_Bad_12 := NOT "FI-Schutz 220F1 Heizung Bad 12 ist O.K.";
+	    "DB_Fehlermeldungen".FI_Heizung_Bad_25 := NOT ("Motorschutz und FI-Schutz 270Q1, 270F1 Heizung Bad 25 sind O.K." AND "Motorschutz und FI-Schutz 271Q1, 271F1 Heizung Bad 25 sind O.K.");
+	    "DB_Fehlermeldungen".FI_Heizung_Bad_36 := NOT "FI-Schutz 300F1 Heizung Bad 36 ist O.K.";
+	    "DB_Fehlermeldungen".FI_Heizung_Bad_40 := NOT "FI-Schutz 310F1 Heizung Bad 40 ist O.K.";
+	    "DB_Fehlermeldungen".FI_Heizung_Bad_46 := NOT "FI-Schutz 340F1 Heizung Bad 46 ist O.K.";
+	
+	    // Uebertemperatur (invertiert)
+	    "DB_Fehlermeldungen".Uebertemp_Bad_7  := NOT "Heizung Bad 7 Keine uebertemperatur";
+	    "DB_Fehlermeldungen".Uebertemp_Bad_8  := NOT "Heizung Bad 8 Keine uebertemperatur";
+	    "DB_Fehlermeldungen".Uebertemp_Bad_12 := NOT "Heizung Bad 12 Keine uebertemperatur";
+	    "DB_Fehlermeldungen".Uebertemp_Bad_25 := NOT "Heizung Bad 25 Keine uebertemperatur";
+	    "DB_Fehlermeldungen".Uebertemp_Bad_36 := NOT "Heizung Bad 36 Keine uebertemperatur";
+	    "DB_Fehlermeldungen".Uebertemp_Bad_40 := NOT "Heizung Bad 40 Keine uebertemperatur";
+	    "DB_Fehlermeldungen".Uebertemp_Bad_46 := NOT "Heizung Bad 46 Keine uebertemperatur";
+	
+	    // Motorschutz Pumpe (invertiert)
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_8  := NOT "Motorschutz 215Q1 Pumpe Bad 8 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_12 := NOT "Motorschutz 225Q1 Pumpe Bad 12 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_14 := NOT "Motorschutz 235Q1 Pumpe Bad 14 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_18 := NOT "Motorschutz 245Q1 Pumpe Bad 18 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_19 := NOT "Motorschutz 255Q1 Pumpe Bad 19 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_21 := NOT "Motorschutz 265Q1 Pumpe Bad 21 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_25 := NOT "Motorschutz 275Q1 Pumpe Bad 25 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_26 := NOT "Motorschutz 285Q1 Pumpe Bad 26 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_31 := NOT "Motorschutz 295Q1 Pumpe Bad 31 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_41 := NOT "Motorschutz 325Q1 Pumpe Bad 41 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_Pumpe_Bad_45 := NOT "Motorschutz 335Q1 Pumpe Bad 45 ist O.K.";
+	
+	    // Wartungsschalter Pumpe (invertiert)
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_8  := NOT "Wartungsschalter Pumpe Bad 8 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_12 := NOT "Wartungsschalter Pumpe Bad 12 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_14 := NOT "Wartungsschalter Pumpe Bad 14 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_18 := NOT "Wartungsschalter Pumpe Bad 18 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_19 := NOT "Wartungsschalter Pumpe Bad 19 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_21 := NOT "Wartungsschalter Pumpe Bad 21 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_25 := NOT "Wartungsschalter Pumpe Bad 25 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_26 := NOT "Wartungsschalter Pumpe Bad 26 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_31 := NOT "Wartungsschalter Pumpe Bad 31 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_41 := NOT "Wartungsschalter Pumpe Bad 41 ist eingeschaltet";
+	    "DB_Fehlermeldungen".Wartungsschalter_Pumpe_Bad_45 := NOT "Wartungsschalter Pumpe Bad 45 ist eingeschaltet";
+	
+	    // Niveau (invertiert)
+	    "DB_Fehlermeldungen".Niveau_Bad_7  := NOT "Niveau Bad 7 OK";
+	    "DB_Fehlermeldungen".Niveau_Bad_8  := NOT "Niveau Bad 8 OK";
+	    "DB_Fehlermeldungen".Niveau_Bad_12 := NOT "Niveau Bad 12 OK";
+	    "DB_Fehlermeldungen".Niveau_Bad_25 := NOT "Niveau Bad 25 OK";
+	    "DB_Fehlermeldungen".Niveau_Bad_36 := NOT "Niveau Bad 36 OK";
+	    "DB_Fehlermeldungen".Niveau_Bad_40 := NOT "Niveau Bad 40 OK";
+	    "DB_Fehlermeldungen".Niveau_Bad_46 := NOT "Niveau Bad 46 OK";
+	
+	    // FU Stoerung (aus FB_Bad, 3s verzoegert: angesteuert aber nicht bereit)
+	    "DB_Fehlermeldungen".FU_Pumpe_Bad_25 := "DB_Bad_Konfig".Bad_Konfig[25].FU_Pumpe_Stoerung;
+	    "DB_Fehlermeldungen".FU_WB1_Bad_25   := "DB_Bad_Konfig".Bad_Konfig[25].FU_WB1_Stoerung;
+	    "DB_Fehlermeldungen".FU_WB2_Bad_25   := "DB_Bad_Konfig".Bad_Konfig[25].FU_WB2_Stoerung;
+	
+	    // Motorschutz Warenbewegung (invertiert)
+	    "DB_Fehlermeldungen".Motorschutz_WB1_Bad_25 := NOT "Motorschutz 276Q1 Warenbewegung 1 Bad 25 ist O.K.";
+	    "DB_Fehlermeldungen".Motorschutz_WB2_Bad_25 := NOT "Motorschutz 277Q1 Warenbewegung 2 Bad 25 ist O.K.";
+	
+	    // PT100 Sensorstoerung (direkt aus Heizungsregelung)
+	    "DB_Fehlermeldungen".PT100_Bad_7     := "FB_Anlagensteuerung_DB".Heizung.Regler_Bad_7.PT100_Stoerung;
+	    "DB_Fehlermeldungen".PT100_Bad_8     := "FB_Anlagensteuerung_DB".Heizung.Regler_Bad_8.PT100_Stoerung;
+	    "DB_Fehlermeldungen".PT100_Bad_12    := "FB_Anlagensteuerung_DB".Heizung.Regler_Bad_12.PT100_Stoerung;
+	    "DB_Fehlermeldungen".PT100_Bad_25_H1 := "FB_Anlagensteuerung_DB".Heizung.Regler_Bad_25_H1.PT100_Stoerung;
+	    "DB_Fehlermeldungen".PT100_Bad_25_H2 := "FB_Anlagensteuerung_DB".Heizung.Regler_Bad_25_H2.PT100_Stoerung;
+	    "DB_Fehlermeldungen".PT100_Bad_36    := "FB_Anlagensteuerung_DB".Heizung.Regler_Bad_36.PT100_Stoerung;
+	    "DB_Fehlermeldungen".PT100_Bad_40    := "FB_Anlagensteuerung_DB".Heizung.Regler_Bad_40.PT100_Stoerung;
+	    "DB_Fehlermeldungen".PT100_Bad_46    := "FB_Anlagensteuerung_DB".Heizung.Regler_Bad_46.PT100_Stoerung;
+	
+	    // Walchem Controller (TRUE = Alarm, keine Invertierung)
+	    "DB_Fehlermeldungen".Fehler_Walchem_Controller := "Alarm Walchem Controller";
+	
+	    // Not-Halt
+	    "DB_Fehlermeldungen".Not_Halt := NOT "Not-Aus ist OK";
+	
+	
+END_FUNCTION
+

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Auftrag" Datatype="Array[0..9] of &quot;UDT_Prozessroute&quot;" />
+    <Member Name="Handbetrieb" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Handbetrieb&quot;" />
+    <Member Name="Not_Halt_Reset" Datatype="Bool" />
+    <Member Name="Lampentest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Virtuelle Tasten fuer Baeder ohne KP8 (Bad 2, 20, 47)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Virtuelle_Tasten" Datatype="Struct">
+      <Member Name="Bad_2" Datatype="Struct">
+        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool" />
+        <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool" />
+      </Member>
+      <Member Name="Bad_20" Datatype="Struct">
+        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool" />
+        <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool" />
+      </Member>
+      <Member Name="Bad_47" Datatype="Struct">
+        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool" />
+        <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool">
+          <Comment>
+            <MultiLanguageText Lang="de-DE">Leerlauf-Parameter pro Bad (Zustand 1: betriebsbereit halten)</MultiLanguageText>
+          </Comment>
+        </Member>
+      </Member>
+    </Member>
+    <Member Name="Leerlauf" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Peripherie_Soll&quot;" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Standby-Parameter pro Bad (Zustand 2: abgesenkt, Energie sparen)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Standby" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Peripherie_Soll&quot;" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Anlagenzustand: 0=undefiniert/alles aus, 1=Leerlauf, 2=Standby</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Zustand" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">PT100 Offset pro Bad (vom IPC einstellbar, in Grad Celsius)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Offset" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of Real">
+      <Subelement Path="7">
+        <StartValue>-4.0</StartValue>
+      </Subelement>
+      <Subelement Path="8">
+        <StartValue>-3.8</StartValue>
+      </Subelement>
+      <Subelement Path="12">
+        <StartValue>-4.0</StartValue>
+      </Subelement>
+      <Subelement Path="25">
+        <StartValue>-5.8</StartValue>
+      </Subelement>
+      <Subelement Path="36">
+        <StartValue>-3.4</StartValue>
+      </Subelement>
+      <Subelement Path="40">
+        <StartValue>-3.2</StartValue>
+      </Subelement>
+      <Subelement Path="46">
+        <StartValue>-3.0</StartValue>
+      </Subelement>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_IPC_to_CPU</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

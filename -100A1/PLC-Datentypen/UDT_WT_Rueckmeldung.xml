@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Belegt" Datatype="Bool" />
+    <Member Name="Auftragsindex" Datatype="Int" />
+    <Member Name="SchrittIndex" Datatype="Int" />
+    <Member Name="Artikel_ID" Datatype="Int" />
+    <Member Name="BadNr" Datatype="Int" />
+    <Member Name="Personal_ID" Datatype="Int" />
+    <Member Name="WT_Eingesetzt" Datatype="Bool" />
+    <Member Name="Istzeit" Datatype="Time" />
+    <Member Name="Restzeit" Datatype="Time" />
+    <Member Name="Verweilzeit_Soll" Datatype="Time" />
+    <Member Name="Vorwarn_Erreicht" Datatype="Bool" />
+    <Member Name="Zeit_Abgelaufen" Datatype="Bool" />
+    <Member Name="Krit_Zeit_Abgelaufen" Datatype="Bool" />
+    <Member Name="Stoerung_Aufgetreten" Datatype="Bool" />
+    <Member Name="Temp_Abweichung_Max" Datatype="Real" />
+    <Member Name="Temp_Toleranz_Eingehalten" Datatype="Bool" />
+    <Member Name="Zeitueberschreitung" Datatype="Time" />
+    <Member Name="Zeitstempel_Eingesetzt" Datatype="DTL" Version="1.0" />
+    <Member Name="Zeitstempel_Entnommen" Datatype="DTL" Version="1.0" />
+    <Member Name="Protokoll_Neu" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>UDT_WT_Rueckmeldung</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

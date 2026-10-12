@@ -1,0 +1,65 @@
+﻿FUNCTION "FC_Rueckmeldung" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.2
+   VAR_INPUT 
+      Not_Halt_Aktiv : Bool;
+   END_VAR
+
+   VAR_TEMP 
+      b : Int;
+      w : Int;
+      ai : Int;
+      si : Int;
+   END_VAR
+
+
+BEGIN
+	
+	    "DB_CPU_to_IPC".Not_Halt_Aktiv := #Not_Halt_Aktiv;
+	    "DB_CPU_to_IPC".Not_Aus_OK := "Not-Aus ist OK";
+	    FOR #b:=1 TO "c_Anzahl_Bad" DO
+	        "DB_CPU_to_IPC".Bad[#b].Ampel_Status := "DB_Bad_Konfig".Bad_Konfig[#b].Ampel_Status;
+	        "DB_CPU_to_IPC".Bad[#b].Betriebsbereit := "DB_Bad_Konfig".Bad_Konfig[#b].Betriebsbereit;
+	        "DB_CPU_to_IPC".Bad[#b].Heizung_1_Ist := "DB_Bad_Konfig".Bad_Konfig[#b].Heizung_1_Ist;
+	        "DB_CPU_to_IPC".Bad[#b].Heizung_1_Soll := "DB_Bad_Konfig".Bad_Konfig[#b].Heizung_1_Soll;
+	        "DB_CPU_to_IPC".Bad[#b].Heizung_2_Ist := "DB_Bad_Konfig".Bad_Konfig[#b].Heizung_2_Ist;
+	        "DB_CPU_to_IPC".Bad[#b].Heizung_2_Soll := "DB_Bad_Konfig".Bad_Konfig[#b].Heizung_2_Soll;
+	        "DB_CPU_to_IPC".Bad[#b].Pumpe_Laeuft := "DB_Bad_Konfig".Bad_Konfig[#b].IO_Aus.Pumpe;
+	        "DB_CPU_to_IPC".Bad[#b].Pumpe_FU_Soll := "DB_Bad_Konfig".Bad_Konfig[#b].Pumpe_FU_Soll;
+	        "DB_CPU_to_IPC".Bad[#b].US_Laeuft := "DB_Bad_Konfig".Bad_Konfig[#b].IO_Aus.Ultraschall_Freigabe;
+	        "DB_CPU_to_IPC".Bad[#b].GR_Aktiv := "DB_Bad_Konfig".Bad_Konfig[#b].GR_Aktiv;
+	        "DB_CPU_to_IPC".Bad[#b].GR_Strom_Ist := "DB_Bad_Konfig".Bad_Konfig[#b].GR_Strom_Ist;
+	        "DB_CPU_to_IPC".Bad[#b].GR_Spannung_Ist := "DB_Bad_Konfig".Bad_Konfig[#b].GR_Spannung_Ist;
+	        "DB_CPU_to_IPC".Bad[#b].WB_X_Soll := "DB_Bad_Konfig".Bad_Konfig[#b].Warenbewegung_X_Soll;
+	        "DB_CPU_to_IPC".Bad[#b].WB_Y_Soll := "DB_Bad_Konfig".Bad_Konfig[#b].Warenbewegung_Y_Soll;
+	        "DB_CPU_to_IPC".Bad[#b].Hand_Aktiv := "DB_Bad_Konfig".Bad_Konfig[#b].Hand_Aktiv_Intern;
+	        "DB_CPU_to_IPC".Bad[#b].Hand_Abgelehnt := "DB_IPC_to_CPU".Handbetrieb[#b].Hand_Aktiv
+	            AND ("DB_Bad_Konfig".Bad_Konfig[#b].WT[1].Belegt OR "DB_Bad_Konfig".Bad_Konfig[#b].WT[2].Belegt OR "DB_Bad_Konfig".Bad_Konfig[#b].WT[3].Belegt);
+	        FOR #w:=1 TO 3 DO
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Belegt := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Belegt;
+	            #ai := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Auftragsindex; #si := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].SchrittIndex;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Auftragsindex := #ai; "DB_CPU_to_IPC".Bad[#b].WT[#w].SchrittIndex := #si;
+	            IF (#ai>=0)AND(#ai<=9)AND(#si>=0)AND(#si<=50) THEN
+	                "DB_CPU_to_IPC".Bad[#b].WT[#w].Artikel_ID := "DB_IPC_to_CPU".Auftrag[#ai].ID_Artikel;
+	                "DB_CPU_to_IPC".Bad[#b].WT[#w].Personal_ID := "DB_IPC_to_CPU".Auftrag[#ai].Personal_ID;
+	                "DB_CPU_to_IPC".Bad[#b].WT[#w].BadNr := "DB_IPC_to_CPU".Auftrag[#ai].Schritte[#si].BadNr;
+	                "DB_CPU_to_IPC".Bad[#b].WT[#w].Verweilzeit_Soll := "DB_IPC_to_CPU".Auftrag[#ai].Schritte[#si].Verweilzeit;
+	            END_IF;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].WT_Eingesetzt := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].WT_Eingesetzt;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Istzeit := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Istzeit;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Restzeit := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Restzeit;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Vorwarn_Erreicht := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Vorwarn_Erreicht;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Zeit_Abgelaufen := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Zeit_Abgelaufen;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Krit_Zeit_Abgelaufen := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Krit_Zeit_Abgelaufen;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Stoerung_Aufgetreten := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Stoerung_Aufgetreten;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Temp_Abweichung_Max := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Temp_Abweichung_Max;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Temp_Toleranz_Eingehalten := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Temp_Toleranz_Eingehalten;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Zeitueberschreitung := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Zeitueberschreitung;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Zeitstempel_Eingesetzt := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Zeitstempel_Eingesetzt;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Zeitstempel_Entnommen := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Zeitstempel_Entnommen;
+	            "DB_CPU_to_IPC".Bad[#b].WT[#w].Protokoll_Neu := "DB_Bad_Konfig".Bad_Konfig[#b].WT[#w].Protokoll_Neu;
+	        END_FOR;
+	    END_FOR;
+	
+END_FUNCTION
+

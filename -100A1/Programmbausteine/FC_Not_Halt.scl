@@ -1,0 +1,33 @@
+﻿FUNCTION "FC_Not_Halt" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.2
+   VAR_INPUT 
+      Not_Halt : Bool;
+   END_VAR
+
+
+BEGIN
+	
+	    IF NOT #Not_Halt THEN RETURN; END_IF;
+	    "Pumpe Bad 8":=FALSE; "Pumpe Bad 12":=FALSE; "Pumpe Bad 14":=FALSE;
+	    "Pumpe Bad 18":=FALSE; "Pumpe Bad 19":=FALSE; "Pumpe Bad 21":=FALSE;
+	    "Netzschuetz Pumpe Bad 25":=FALSE;
+	    "FU Pumpe Freigabe":=FALSE; "Reset FU Pumpe":=FALSE;
+	    "Pumpen_FU_Steuerwert":=W#16#0;
+	    "Pumpe Bad 26":=FALSE; "Pumpe Bad 31":=FALSE; "Pumpe Bad 41":=FALSE; "Pumpe Bad 45":=FALSE;
+	    "Regelung Heizung Bad 7":=FALSE; "Sicherheitsschuetz Heizung Bad 7":=FALSE;
+	    "Regelung Heizung Bad 8":=FALSE; "Sicherheitsschuetz Heizung Bad 8":=FALSE;
+	    "Regelung Heizung Bad 12":=FALSE; "Sicherheitsschuetz Heizung Bad 12":=FALSE;
+	    "Regelung Heizung 1 Bad 25":=FALSE; "Regelung Heizung 2 Bad 25":=FALSE;
+	    "Sicherheitsschuetze Heizung 1 + 2 Bad 25":=FALSE;
+	    "Regelung Heizung Bad 36":=FALSE; "Sicherheitsschuetz Heizung Bad 36":=FALSE;
+	    "Regelung Heizung Bad 40":=FALSE; "Sicherheitsschuetz Heizung Bad 40":=FALSE;
+	    "Regelung Heizung Bad 46":=FALSE; "Sicherheitsschuetz Heizung Bad 46":=FALSE;
+	    "Freigabe Ultraschall Pos. 8":=FALSE; "Freigabe Ultraschall Pos. 12":=FALSE;
+	    "Warenbewegung 1 Bad 25 Freigabe FU":=FALSE; "Warenbewegung 1 Bad 25 Netzschuetz":=FALSE;
+	    "Warenbewegung 2 Bad 25 Freigabe FU":=FALSE; "Warenbewegung 2 Bad 25 Netzschuetz":=FALSE;
+	    "Warenbewegung 1 Bad 25 Sollwert FU":=W#16#0; "Warenbewegung 2 Bad 25 Sollwert FU":=W#16#0;
+	    "Masch.Leuchte 1 Anlage Hupe":=FALSE;
+	
+END_FUNCTION
+

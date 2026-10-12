@@ -1,0 +1,48 @@
+﻿FUNCTION_BLOCK "FB_Anlagensteuerung"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.9
+   VAR_INPUT 
+      Blink_Takt : Bool;
+      Clock_10Hz : Bool;
+      Not_Halt_Aktiv : Bool;
+   END_VAR
+
+   VAR 
+      Auftragsmanager : "FB_Auftragsmanager";
+      Bad : Array[1.."c_Anzahl_Bad"] of "FB_Bad";
+      Heizung : "FB_Heizungssteuerung";
+      Blink_Zaehler : Int;
+      M_10Hz_Alt : Bool;
+   END_VAR
+
+   VAR_TEMP 
+      b : Int;
+      lampentest : Bool;
+   END_VAR
+
+
+BEGIN
+	
+	    IF #Clock_10Hz AND NOT #M_10Hz_Alt THEN #Blink_Zaehler:=#Blink_Zaehler+1; IF #Blink_Zaehler>19 THEN #Blink_Zaehler:=0; END_IF; END_IF;
+	    #M_10Hz_Alt:=#Clock_10Hz;
+	    #lampentest:="DB_IPC_to_CPU".Lampentest;
+	    
+	
+	    "FC_IO_Mapping"(Richtung:=1);
+	    #Auftragsmanager(Auftraege:="DB_IPC_to_CPU".Auftrag, Bad_Konfig:="DB_Bad_Konfig".Bad_Konfig);
+	    FOR #b:=1 TO "c_Anzahl_Bad" DO
+	        #Bad[#b](Blink_Takt:=#Blink_Takt, Lampentest:=#lampentest, Blink_Zaehler:=#Blink_Zaehler,
+	                 Not_Halt_Aktiv:=#Not_Halt_Aktiv, Zustand:="DB_IPC_to_CPU".Zustand[#b], BadNr:=#b,
+	                 Bad_Konfig:="DB_Bad_Konfig".Bad_Konfig[#b],
+	                 Auftraege:="DB_IPC_to_CPU".Auftrag,
+	                 Handbetrieb:="DB_IPC_to_CPU".Handbetrieb[#b],
+	                 Leerlauf:="DB_IPC_to_CPU".Leerlauf[#b],
+	                 Standby:="DB_IPC_to_CPU".Standby[#b]);
+	    END_FOR;
+	    #Heizung();
+	    "FC_IO_Mapping"(Richtung:=2);
+	    "FC_KP8_Override"(Lampentest:=#lampentest, Blink_Takt:=#Blink_Takt);
+	    "FC_Rueckmeldung"(Not_Halt_Aktiv:=#Not_Halt_Aktiv);
+	
+END_FUNCTION_BLOCK
+

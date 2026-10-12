@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Ausstattung" Datatype="Struct">
+      <Member Name="HatHeizung_1" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="HatHeizung_2" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="HatPumpe" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="HatPumpe_FU" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="HatWarenbewegung_X" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="HatWarenbewegung_Y" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="HatUltraschall" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="HatGleichrichter" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="HatNiveau" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+    </Member>
+    <Member Name="IO_Ein" Datatype="Struct">
+      <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool" />
+      <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool" />
+      <Member Name="Ist_Temperatur_1" Datatype="Real" />
+      <Member Name="Ist_Temperatur_2" Datatype="Real" />
+      <Member Name="Niveau_OK" Datatype="Bool" />
+      <Member Name="Motorschutz_OK" Datatype="Bool" />
+      <Member Name="FI_Schutz_OK" Datatype="Bool" />
+      <Member Name="Kein_Uebertemp" Datatype="Bool" />
+      <Member Name="FU_Pumpe_Bereit" Datatype="Bool" />
+      <Member Name="FU_WB1_Bereit" Datatype="Bool" />
+      <Member Name="FU_WB2_Bereit" Datatype="Bool" />
+    </Member>
+    <Member Name="IO_Aus" Datatype="Struct">
+      <Member Name="Ampel_Gruen" Datatype="Bool" />
+      <Member Name="Ampel_Orange" Datatype="Bool" />
+      <Member Name="Ampel_Rot" Datatype="Bool" />
+      <Member Name="Pumpe" Datatype="Bool" />
+      <Member Name="Pumpe_FU_Freigabe" Datatype="Bool" />
+      <Member Name="Pumpe_FU_Netzschuetz" Datatype="Bool" />
+      <Member Name="Pumpe_FU_Reset" Datatype="Bool" />
+      <Member Name="Heizung_1_Regelung" Datatype="Bool" />
+      <Member Name="Heizung_1_Sicherheit" Datatype="Bool" />
+      <Member Name="Heizung_2_Regelung" Datatype="Bool" />
+      <Member Name="Heizung_2_Sicherheit" Datatype="Bool" />
+      <Member Name="Ultraschall_Freigabe" Datatype="Bool" />
+      <Member Name="LED_Einsetzen" Datatype="Array[1..3] of Bool" />
+      <Member Name="LED_Entnehmen" Datatype="Array[1..3] of Bool" />
+      <Member Name="LED_Vorwarn" Datatype="Array[1..3] of Bool" />
+      <Member Name="LED_Heizung_Aktiv" Datatype="Bool" />
+      <Member Name="LED_Stoerung" Datatype="Bool" />
+      <Member Name="LED_Handbetrieb" Datatype="Bool" />
+      <Member Name="Prio_Einsetzen_WT" Datatype="Int" />
+      <Member Name="Prio_Entnehmen_WT" Datatype="Int" />
+    </Member>
+    <Member Name="Pumpe_Ein" Datatype="Bool" />
+    <Member Name="Pumpe_FU_Soll" Datatype="Real" />
+    <Member Name="Ultraschall_Ein" Datatype="Bool" />
+    <Member Name="Heizung_1_Soll" Datatype="Real" />
+    <Member Name="Heizung_1_Ist" Datatype="Real" />
+    <Member Name="Heizung_2_Soll" Datatype="Real" />
+    <Member Name="Heizung_2_Ist" Datatype="Real" />
+    <Member Name="Warenbewegung_X_Soll" Datatype="Real" />
+    <Member Name="Warenbewegung_X_Ist" Datatype="Real" />
+    <Member Name="Warenbewegung_Y_Soll" Datatype="Real" />
+    <Member Name="Warenbewegung_Y_Ist" Datatype="Real" />
+    <Member Name="WB1_Reset" Datatype="Bool" />
+    <Member Name="WB2_Reset" Datatype="Bool" />
+    <Member Name="GR_Aktiv" Datatype="Bool" />
+    <Member Name="GR_Strom_Soll" Datatype="Real" />
+    <Member Name="GR_Strom_Ist" Datatype="Real" />
+    <Member Name="GR_Spannung_Soll" Datatype="Real" />
+    <Member Name="GR_Spannung_Ist" Datatype="Real" />
+    <Member Name="GR_Pulsfrequenz" Datatype="Real" />
+    <Member Name="GR_DutyCycle" Datatype="Real" />
+    <Member Name="WT" Datatype="Array[1..3] of &quot;UDT_WT_Platz&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Ampel_Status" Datatype="Int" />
+    <Member Name="Hupe" Datatype="Bool" />
+    <Member Name="Betriebsbereit" Datatype="Bool" />
+    <Member Name="Hand_Aktiv_Intern" Datatype="Bool" />
+    <Member Name="FU_Pumpe_Stoerung" Datatype="Bool" />
+    <Member Name="FU_WB1_Stoerung" Datatype="Bool" />
+    <Member Name="FU_WB2_Stoerung" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>UDT_Bad_Konfig</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

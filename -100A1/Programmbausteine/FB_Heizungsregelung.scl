@@ -1,0 +1,40 @@
+﻿FUNCTION_BLOCK "FB_Heizungsregelung"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      Soll : Real;
+      Ist : Real;
+      Freigabe : Bool;
+   END_VAR
+
+   VAR_OUTPUT 
+      Schuetz : Bool;
+      PT100_Stoerung : Bool;
+   END_VAR
+
+   VAR 
+      Schuetz_Intern : Bool;
+   END_VAR
+
+   VAR_TEMP 
+      einschaltSchwelle : Real;
+      ausschaltSchwelle : Real;
+   END_VAR
+
+   VAR CONSTANT 
+      HYSTERESE : Real := 0.2;
+      PT100_MIN : Real := -10.0;
+      PT100_MAX : Real := 200.0;
+   END_VAR
+
+
+BEGIN
+	
+	    #PT100_Stoerung:=(#Ist<#PT100_MIN)OR(#Ist>#PT100_MAX);
+	    IF NOT #Freigabe OR(#Soll<=0.0)OR #PT100_Stoerung THEN #Schuetz_Intern:=FALSE; #Schuetz:=FALSE; RETURN; END_IF;
+	    #einschaltSchwelle:=#Soll-(#HYSTERESE/2.0); #ausschaltSchwelle:=#Soll+(#HYSTERESE/2.0);
+	    IF #Ist<#einschaltSchwelle THEN #Schuetz_Intern:=TRUE; ELSIF #Ist>#ausschaltSchwelle THEN #Schuetz_Intern:=FALSE; END_IF;
+	    #Schuetz:=#Schuetz_Intern;
+	
+END_FUNCTION_BLOCK
+

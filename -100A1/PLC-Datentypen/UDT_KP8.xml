@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Rohdaten" Datatype="Struct">
+      <Member Name="IB_Tasten" Datatype="Byte" />
+      <Member Name="IB_DI" Datatype="Byte" />
+      <Member Name="QB_Rot" Datatype="Byte" />
+      <Member Name="QB_Gruen" Datatype="Byte" />
+      <Member Name="QB_Blau" Datatype="Byte" />
+      <Member Name="QB_DO" Datatype="Byte" />
+    </Member>
+    <Member Name="Taste" Datatype="Array[0..7] of Bool" />
+    <Member Name="LED" Datatype="Array[0..7] of USInt">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">0=Aus, 1=Rot, 2=Grün, 3=Blau, 4=Gelb, 5=Weiß</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="DI" Datatype="Array[0..7] of Bool" />
+    <Member Name="DO" Datatype="Array[0..7] of Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>UDT_KP8</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

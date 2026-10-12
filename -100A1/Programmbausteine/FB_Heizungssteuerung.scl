@@ -1,0 +1,55 @@
+﻿FUNCTION_BLOCK "FB_Heizungssteuerung"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR 
+      Regler_Bad_7 : "FB_Heizungsregelung";
+      Regler_Bad_8 : "FB_Heizungsregelung";
+      Regler_Bad_12 : "FB_Heizungsregelung";
+      Regler_Bad_25_H1 : "FB_Heizungsregelung";
+      Regler_Bad_25_H2 : "FB_Heizungsregelung";
+      Regler_Bad_36 : "FB_Heizungsregelung";
+      Regler_Bad_40 : "FB_Heizungsregelung";
+      Regler_Bad_46 : "FB_Heizungsregelung";
+   END_VAR
+
+   VAR_TEMP 
+      sf : Bool;
+   END_VAR
+
+
+BEGIN
+	
+	    #sf:="DB_Bad_Konfig".Bad_Konfig[7].IO_Ein.FI_Schutz_OK AND "DB_Bad_Konfig".Bad_Konfig[7].IO_Ein.Kein_Uebertemp AND("DB_Bad_Konfig".Bad_Konfig[7].IO_Ein.Niveau_OK OR NOT "DB_Bad_Konfig".Bad_Konfig[7].Ausstattung.HatNiveau);
+	    #Regler_Bad_7(Soll:="DB_Bad_Konfig".Bad_Konfig[7].Heizung_1_Soll,Ist:="DB_Bad_Konfig".Bad_Konfig[7].Heizung_1_Ist,Freigabe:=#sf);
+	    "DB_Bad_Konfig".Bad_Konfig[7].IO_Aus.Heizung_1_Regelung:=#Regler_Bad_7.Schuetz;
+	    "DB_Bad_Konfig".Bad_Konfig[7].IO_Aus.Heizung_1_Sicherheit:=#sf AND("DB_Bad_Konfig".Bad_Konfig[7].Heizung_1_Soll>0.0);
+	    #sf:="DB_Bad_Konfig".Bad_Konfig[8].IO_Ein.FI_Schutz_OK AND "DB_Bad_Konfig".Bad_Konfig[8].IO_Ein.Kein_Uebertemp AND("DB_Bad_Konfig".Bad_Konfig[8].IO_Ein.Niveau_OK OR NOT "DB_Bad_Konfig".Bad_Konfig[8].Ausstattung.HatNiveau);
+	    #Regler_Bad_8(Soll:="DB_Bad_Konfig".Bad_Konfig[8].Heizung_1_Soll,Ist:="DB_Bad_Konfig".Bad_Konfig[8].Heizung_1_Ist,Freigabe:=#sf);
+	    "DB_Bad_Konfig".Bad_Konfig[8].IO_Aus.Heizung_1_Regelung:=#Regler_Bad_8.Schuetz;
+	    "DB_Bad_Konfig".Bad_Konfig[8].IO_Aus.Heizung_1_Sicherheit:=#sf AND("DB_Bad_Konfig".Bad_Konfig[8].Heizung_1_Soll>0.0);
+	    #sf:="DB_Bad_Konfig".Bad_Konfig[12].IO_Ein.FI_Schutz_OK AND "DB_Bad_Konfig".Bad_Konfig[12].IO_Ein.Kein_Uebertemp AND("DB_Bad_Konfig".Bad_Konfig[12].IO_Ein.Niveau_OK OR NOT "DB_Bad_Konfig".Bad_Konfig[12].Ausstattung.HatNiveau);
+	    #Regler_Bad_12(Soll:="DB_Bad_Konfig".Bad_Konfig[12].Heizung_1_Soll,Ist:="DB_Bad_Konfig".Bad_Konfig[12].Heizung_1_Ist,Freigabe:=#sf);
+	    "DB_Bad_Konfig".Bad_Konfig[12].IO_Aus.Heizung_1_Regelung:=#Regler_Bad_12.Schuetz;
+	    "DB_Bad_Konfig".Bad_Konfig[12].IO_Aus.Heizung_1_Sicherheit:=#sf AND("DB_Bad_Konfig".Bad_Konfig[12].Heizung_1_Soll>0.0);
+	    #sf:="DB_Bad_Konfig".Bad_Konfig[25].IO_Ein.FI_Schutz_OK AND "DB_Bad_Konfig".Bad_Konfig[25].IO_Ein.Kein_Uebertemp AND("DB_Bad_Konfig".Bad_Konfig[25].IO_Ein.Niveau_OK OR NOT "DB_Bad_Konfig".Bad_Konfig[25].Ausstattung.HatNiveau);
+	    #Regler_Bad_25_H1(Soll:="DB_Bad_Konfig".Bad_Konfig[25].Heizung_1_Soll,Ist:="DB_Bad_Konfig".Bad_Konfig[25].Heizung_1_Ist,Freigabe:=#sf);
+	    "DB_Bad_Konfig".Bad_Konfig[25].IO_Aus.Heizung_1_Regelung:=#Regler_Bad_25_H1.Schuetz;
+	    #Regler_Bad_25_H2(Soll:="DB_Bad_Konfig".Bad_Konfig[25].Heizung_2_Soll,Ist:="DB_Bad_Konfig".Bad_Konfig[25].Heizung_2_Ist,Freigabe:=#sf);
+	    "DB_Bad_Konfig".Bad_Konfig[25].IO_Aus.Heizung_2_Regelung:=#Regler_Bad_25_H2.Schuetz;
+	    "DB_Bad_Konfig".Bad_Konfig[25].IO_Aus.Heizung_1_Sicherheit:=#sf AND(("DB_Bad_Konfig".Bad_Konfig[25].Heizung_1_Soll>0.0)OR("DB_Bad_Konfig".Bad_Konfig[25].Heizung_2_Soll>0.0));
+	    "DB_Bad_Konfig".Bad_Konfig[25].IO_Aus.Heizung_2_Sicherheit:="DB_Bad_Konfig".Bad_Konfig[25].IO_Aus.Heizung_1_Sicherheit;
+	    #sf:="DB_Bad_Konfig".Bad_Konfig[36].IO_Ein.FI_Schutz_OK AND "DB_Bad_Konfig".Bad_Konfig[36].IO_Ein.Kein_Uebertemp AND("DB_Bad_Konfig".Bad_Konfig[36].IO_Ein.Niveau_OK OR NOT "DB_Bad_Konfig".Bad_Konfig[36].Ausstattung.HatNiveau);
+	    #Regler_Bad_36(Soll:="DB_Bad_Konfig".Bad_Konfig[36].Heizung_1_Soll,Ist:="DB_Bad_Konfig".Bad_Konfig[36].Heizung_1_Ist,Freigabe:=#sf);
+	    "DB_Bad_Konfig".Bad_Konfig[36].IO_Aus.Heizung_1_Regelung:=#Regler_Bad_36.Schuetz;
+	    "DB_Bad_Konfig".Bad_Konfig[36].IO_Aus.Heizung_1_Sicherheit:=#sf AND("DB_Bad_Konfig".Bad_Konfig[36].Heizung_1_Soll>0.0);
+	    #sf:="DB_Bad_Konfig".Bad_Konfig[40].IO_Ein.FI_Schutz_OK AND "DB_Bad_Konfig".Bad_Konfig[40].IO_Ein.Kein_Uebertemp AND("DB_Bad_Konfig".Bad_Konfig[40].IO_Ein.Niveau_OK OR NOT "DB_Bad_Konfig".Bad_Konfig[40].Ausstattung.HatNiveau);
+	    #Regler_Bad_40(Soll:="DB_Bad_Konfig".Bad_Konfig[40].Heizung_1_Soll,Ist:="DB_Bad_Konfig".Bad_Konfig[40].Heizung_1_Ist,Freigabe:=#sf);
+	    "DB_Bad_Konfig".Bad_Konfig[40].IO_Aus.Heizung_1_Regelung:=#Regler_Bad_40.Schuetz;
+	    "DB_Bad_Konfig".Bad_Konfig[40].IO_Aus.Heizung_1_Sicherheit:=#sf AND("DB_Bad_Konfig".Bad_Konfig[40].Heizung_1_Soll>0.0);
+	    #sf:="DB_Bad_Konfig".Bad_Konfig[46].IO_Ein.FI_Schutz_OK AND "DB_Bad_Konfig".Bad_Konfig[46].IO_Ein.Kein_Uebertemp AND("DB_Bad_Konfig".Bad_Konfig[46].IO_Ein.Niveau_OK OR NOT "DB_Bad_Konfig".Bad_Konfig[46].Ausstattung.HatNiveau);
+	    #Regler_Bad_46(Soll:="DB_Bad_Konfig".Bad_Konfig[46].Heizung_1_Soll,Ist:="DB_Bad_Konfig".Bad_Konfig[46].Heizung_1_Ist,Freigabe:=#sf);
+	    "DB_Bad_Konfig".Bad_Konfig[46].IO_Aus.Heizung_1_Regelung:=#Regler_Bad_46.Schuetz;
+	    "DB_Bad_Konfig".Bad_Konfig[46].IO_Aus.Heizung_1_Sicherheit:=#sf AND("DB_Bad_Konfig".Bad_Konfig[46].Heizung_1_Soll>0.0);
+	
+END_FUNCTION_BLOCK
+

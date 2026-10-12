@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <HeaderVersion>0.2</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="FI_Heizung_Bad_7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">1 - FI-Schutz 200F1 Heizung Bad 7 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FI_Heizung_Bad_8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">2 - FI-Schutz 210F1 Heizung Bad 8 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FI_Heizung_Bad_12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">3 - FI-Schutz 220F1 Heizung Bad 12 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FI_Heizung_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">4 - FI+Motorschutz 270/271 Heizung Bad 25 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FI_Heizung_Bad_36" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">5 - FI-Schutz 300F1 Heizung Bad 36 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FI_Heizung_Bad_40" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">6 - FI-Schutz 310F1 Heizung Bad 40 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FI_Heizung_Bad_46" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">7 - FI-Schutz 340F1 Heizung Bad 46 ausgeloest Uebertemperatur (Heizungen)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Uebertemp_Bad_7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">8 - Uebertemperatur Heizung Bad 7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Uebertemp_Bad_8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">9 - Uebertemperatur Heizung Bad 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Uebertemp_Bad_12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">10 - Uebertemperatur Heizung Bad 12</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Uebertemp_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">11 - Uebertemperatur Heizung Bad 25</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Uebertemp_Bad_36" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">12 - Uebertemperatur Heizung Bad 36</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Uebertemp_Bad_40" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">13 - Uebertemperatur Heizung Bad 40</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Uebertemp_Bad_46" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">14 - Uebertemperatur Heizung Bad 46 Motorschutz Pumpe ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">15 - Motorschutz 215Q1 Pumpe Bad 8 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">16 - Motorschutz 225Q1 Pumpe Bad 12 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_14" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">17 - Motorschutz 235Q1 Pumpe Bad 14 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_18" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">18 - Motorschutz 245Q1 Pumpe Bad 18 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_19" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">19 - Motorschutz 255Q1 Pumpe Bad 19 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_21" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">20 - Motorschutz 265Q1 Pumpe Bad 21 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">21 - Motorschutz 275Q1 Pumpe Bad 25 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_26" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">22 - Motorschutz 285Q1 Pumpe Bad 26 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_31" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">23 - Motorschutz 295Q1 Pumpe Bad 31 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_41" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">24 - Motorschutz 325Q1 Pumpe Bad 41 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_Pumpe_Bad_45" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">25 - Motorschutz 335Q1 Pumpe Bad 45 ausgeloest Wartungsschalter Pumpe nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">26 - Wartungsschalter Pumpe Bad 8 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">27 - Wartungsschalter Pumpe Bad 12 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_14" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">28 - Wartungsschalter Pumpe Bad 14 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_18" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">29 - Wartungsschalter Pumpe Bad 18 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_19" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">30 - Wartungsschalter Pumpe Bad 19 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_21" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">31 - Wartungsschalter Pumpe Bad 21 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">32 - Wartungsschalter Pumpe Bad 25 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_26" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">33 - Wartungsschalter Pumpe Bad 26 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_31" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">34 - Wartungsschalter Pumpe Bad 31 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_41" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">35 - Wartungsschalter Pumpe Bad 41 nicht eingeschaltet</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Wartungsschalter_Pumpe_Bad_45" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">36 - Wartungsschalter Pumpe Bad 45 nicht eingeschaltet Niveau nicht OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">37 - Niveau Bad 7 nicht OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">38 - Niveau Bad 8 nicht OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">39 - Niveau Bad 12 nicht OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">40 - Niveau Bad 25 nicht OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_36" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">41 - Niveau Bad 36 nicht OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_40" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">42 - Niveau Bad 40 nicht OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Niveau_Bad_46" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">43 - Niveau Bad 46 nicht OK Frequenzumrichter Stoerung (angesteuert aber nicht bereit, 3s verzoegert)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FU_Pumpe_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">44 - FU Umwaelzpumpe Bad 25 Stoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FU_WB1_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">45 - FU Warenbewegung 1 Bad 25 Stoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FU_WB2_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">46 - FU Warenbewegung 2 Bad 25 Stoerung Motorschutz Warenbewegung ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_WB1_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">47 - Motorschutz 276Q1 Warenbewegung 1 Bad 25 ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Motorschutz_WB2_Bad_25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">48 - Motorschutz 277Q1 Warenbewegung 2 Bad 25 ausgeloest PT100 Sensorstoerung (Drahtbruch oder Kurzschluss)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Bad_7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">49 - PT100 Heizung Bad 7 Sensorstoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Bad_8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">50 - PT100 Heizung Bad 8 Sensorstoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Bad_12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">51 - PT100 Heizung Bad 12 Sensorstoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Bad_25_H1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">52 - PT100 Heizung 1 Bad 25 Sensorstoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Bad_25_H2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">53 - PT100 Heizung 2 Bad 25 Sensorstoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Bad_36" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">54 - PT100 Heizung Bad 36 Sensorstoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Bad_40" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">55 - PT100 Heizung Bad 40 Sensorstoerung</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PT100_Bad_46" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">56 - PT100 Heizung Bad 46 Sensorstoerung Walchem Controller</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Fehler_Walchem_Controller" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">57 - Alarm Walchem Controller Bad 25 Not-Halt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Not_Halt" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">58 - Not-Halt ausgeloest</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_Fehlermeldungen</Name>
+      <Namespace />
+      <Number>39</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text> FI-Schutz ausgeloest (Heizungen)</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

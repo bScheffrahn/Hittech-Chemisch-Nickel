@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Benutzerverwaltung_User_Daten" Datatype="&quot;UDT_Benutzer&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Benutzerverwaltung_User_create" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Benutzerverwaltung_User_update" Datatype="Bool" />
+    <Member Name="Benutzerverwaltung_User_delete" Datatype="Bool" />
+    <Member Name="Benutzerverwaltung_Freigaben_Prozessgruppen_User_change" Datatype="Bool" />
+    <Member Name="Benutzerverwaltung_Status" Datatype="Int" />
+    <Member Name="Benutzerverwaltung_Freigabe_Prozessgruppen_User_ID_ausgewählt" Datatype="Int" />
+    <Member Name="Benutzerverwaltung_Freigabe_Prozessgruppen_Prozessgruppen" Datatype="Array[1..&quot;c_Prozessgruppen&quot;] of Bool" />
+    <Member Name="Benutzerverwaltung_Login_Name" Datatype="String" />
+    <Member Name="Benutzerverwaltung_Login_Passwort" Datatype="String" />
+    <Member Name="Benutzerverwaltung_Login_Loginbutton" Datatype="Bool" />
+    <Member Name="Benutzerverwaltung_Login_Logoutbutton" Datatype="Bool" />
+    <Member Name="Benutzerverwaltung_Login_Login_Ok" Datatype="Bool" />
+    <Member Name="Prozessparameter_Status" Datatype="Int" />
+    <Member Name="Prozessparameter_Prozessgruppen_save" Datatype="Bool" />
+    <Member Name="Prozessparameter_Prozessgruppen_Prozessgruppe" Datatype="&quot;UDT_Prozessgruppen&quot;" />
+    <Member Name="Prozessparameter_Artikel_add" Datatype="&quot;UDT_Artikel&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Prozessparameter_Artikel_save" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Prozessparameter_Artikel_delete" Datatype="Bool" />
+    <Member Name="Prozessparameter_Artikel_assign" Datatype="Bool" />
+    <Member Name="Prozessparameter_Artikel_remove" Datatype="Bool" />
+    <Member Name="Prozessparameter_Prozessgruppe_ID_assign/remove" Datatype="Int" />
+    <Member Name="Prozessparameter_Artikel_ID_assign/remove" Datatype="Int" />
+    <Member Name="Angewähltes_Bad" Datatype="USInt" />
+    <Member Name="Handbetrieb" Datatype="&quot;UDT_Handbetrieb&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_HMI</Name>
+      <Namespace />
+      <Number>4</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

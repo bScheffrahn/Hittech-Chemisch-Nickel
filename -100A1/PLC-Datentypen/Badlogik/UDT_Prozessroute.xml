@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="AuftragsNr" Datatype="String" />
+    <Member Name="Kunden" Datatype="String" />
+    <Member Name="ID_Artikel" Datatype="Int" />
+    <Member Name="ID_Prozessgruppe" Datatype="Int" />
+    <Member Name="Personal_ID" Datatype="Int" />
+    <Member Name="Anzahl_Schritte" Datatype="Int" />
+    <Member Name="Schritte" Datatype="Array[0..50] of &quot;UDT_Badschritt&quot;" />
+    <Member Name="Freigabe" Datatype="Bool" />
+    <Member Name="Abbruch" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>UDT_Prozessroute</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

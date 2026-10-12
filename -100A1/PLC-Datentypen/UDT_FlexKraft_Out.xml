@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="PageNo" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 0   reserviert, immer 16#0000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ControlRegister" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 1   Bitfeld, siehe FB / Bittabelle</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SetVoltage" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 2   Sollspannung   *0,01 V (signed)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SetCurrent" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 3   Sollstrom      *1 A bzw. *0,1 A (HiRes)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ProcessTimerLimit_HW" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 4   *65535 s</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ProcessTimerLimit_LW" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 5   *1 s</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AhLimit_HW" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 6   *65536 Ah</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AhLimit_LW" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 7   *1 Ah</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Startramp" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 8   Anlauframpe *0,1 s</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Reserved" Datatype="Array[9..15] of Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 9..15 ungenutzt</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_FlexKraft_Out</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>==============================================================================
+  FlexKraft via Anybus Communicator (PROFINET)  -  SCL-Quelldatei
+------------------------------------------------------------------------------
+  Erzeugt 3 UDTs, 1 globalen DB und 1 FB:
+      UDT_FlexKraft_Out      (32 Byte, SPS  -> FK Holding-Register 0..15)
+      UDT_FlexKraft_In       (32 Byte, FK Input-Register 0..15  -> SPS)
+      UDT_FlexKraft_Device   (Wrapper Out + In, 64 Byte)
+      DB_FlexKraft_Data      (3 x Device  -> FK_1, FK_2, FK_3)
+      FB_FlexKraft           (Komfort-Bitzerlegung des Control-/Statusworts)
+
+  Voraussetzungen:
+    - Anybus Communicator (PROFINET-Firmware) als IO-Device in TIA eingebunden
+    - I/O-Map gemÃ¤ÃŸ Gateway-Export:
+          FK_1  Modbus 2  Bytes  0..31
+          FK_2  Modbus 3  Bytes 32..63
+          FK_3  Modbus 4  Bytes 64..95
+    - FK im Output Mode "Series/Parallel"; bei Dual-Mode UDT-Layout anpassen
+    - Am Gleichrichter: PROTOCOL=MODBUS RTU, POWERONMODE=Remote, eindeutige Adr.
+
+  Wichtig zum Datenaustausch:
+    - DB ist mit "Optimierter Bausteinzugriff = FALSE" deklariert, damit das
+      Byte-Layout vorhersagbar ist und ein direkter Word-Copy aus/in die
+      Peripherie mÃ¶glich ist. Beispiel-OB1-Snippet ganz unten.
+    - Als sichere Alternative bei optimierten Bausteinen:
+      DPRD_DAT / DPWR_DAT mit der HW-Kennung des Submoduls.
+==============================================================================
+==============================================================================
+ UDT 1: Output (SPS -> Gateway -> FK Holding Register 0..15)
+==============================================================================</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

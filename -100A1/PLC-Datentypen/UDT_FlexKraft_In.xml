@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Reserved0" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 0   immer 16#0000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="StatusRegister" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 1   Bitfeld</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="WarningsRegister" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 2   Bitfeld</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AlarmsRegister" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 3   Bitfeld</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OutputVoltage" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 4   Istspannung *0,01 V</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OutputCurrent" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 5   Iststrom    *1 A bzw. *0,1 A (HiRes)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ProcessTime_HW" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ProcessTime_LW" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Ah_HW" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Ah_LW" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Reserved" Datatype="Array[10..15] of Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Reg 10..15 ungenutzt</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_FlexKraft_In</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>==============================================================================
+ UDT 2: Input  (FK Input Register 0..15 -> Gateway -> SPS)
+==============================================================================</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

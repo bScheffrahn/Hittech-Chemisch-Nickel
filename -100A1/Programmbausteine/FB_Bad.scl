@@ -1,0 +1,448 @@
+﻿FUNCTION_BLOCK "FB_Bad"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.9
+   VAR_INPUT 
+      Blink_Takt : Bool;
+      Lampentest : Bool;
+      Blink_Zaehler : Int;
+      Not_Halt_Aktiv : Bool;
+      Zustand : Int;   // 0=aus, 1=Leerlauf, 2=Standby
+      BadNr : Int;
+   END_VAR
+
+   VAR_IN_OUT 
+      Bad_Konfig : "UDT_Bad_Konfig";
+      Auftraege : Array[0..9] of "UDT_Prozessroute";
+      Handbetrieb : "UDT_Handbetrieb";
+      Leerlauf : "UDT_Peripherie_Soll";
+      Standby : "UDT_Peripherie_Soll";
+   END_VAR
+
+   VAR 
+      Timer_WT {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : Array[1..3] of TON_TIME;
+      Timer_FU_Pause {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      Timer_FU_Pumpe_Stoerung {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      Timer_FU_WB1_Stoerung {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      Timer_FU_WB2_Stoerung {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      M_Ein_Any_Alt : Bool;
+      M_Ent_Any_Alt : Bool;
+   END_VAR
+
+   VAR_TEMP 
+      w : Int;
+      flanke_Ein : Bool;
+      flanke_Ent : Bool;
+      any_ein : Bool;
+      any_ent : Bool;
+      aktSchritt : "UDT_Badschritt";
+      hat_Schritt : Bool;
+      hw_ok : Bool;
+      temp_ok : Bool;
+      hw_ok_ohne_niveau : Bool;
+      heiz1_ok : Bool;
+      heiz2_ok : Bool;
+      heiz_soll_max : Real;
+      heiz_tol : Real;
+      irgend_belegt : Bool;
+      worst_ampel : Int;
+      any_hupe : Bool;
+      blink : Array[1..3] of Bool;
+      pumpe_ein_any : Bool;
+      us_ein_any : Bool;
+      pumpe_fu_max : Real;
+      irgend_eingesetzt : Bool;
+      ent_prio_rest : Time;
+      hand_aktiv : Bool;
+      leerlauf_aktiv : Bool;
+      standby_aktiv : Bool;
+      irgend_aktiv : Bool;
+      temp_abw : Real;
+      aktZeit {InstructionName := 'DTL'; LibVersion := '1.0'} : DTL;
+      retval : Int;
+   END_VAR
+
+
+BEGIN
+	
+	    //== 1) Blinkmuster ==
+	    #blink[1] := (#Blink_Zaehler <= 9);
+	    #blink[2] := (#Blink_Zaehler <= 3) OR ((#Blink_Zaehler >= 8) AND (#Blink_Zaehler <= 11));
+	    #blink[3] := (#Blink_Zaehler <= 2) OR ((#Blink_Zaehler >= 6) AND (#Blink_Zaehler <= 8))
+	                OR ((#Blink_Zaehler >= 12) AND (#Blink_Zaehler <= 14));
+	
+	    //== 2) Ist-Werte ==
+	    #Bad_Konfig.Heizung_1_Ist := #Bad_Konfig.IO_Ein.Ist_Temperatur_1;
+	    #Bad_Konfig.Heizung_2_Ist := #Bad_Konfig.IO_Ein.Ist_Temperatur_2;
+	
+	    //== 3) hw_ok ==
+	    #hw_ok := (#Bad_Konfig.IO_Ein.Niveau_OK      OR NOT #Bad_Konfig.Ausstattung.HatNiveau)
+	         AND (#Bad_Konfig.IO_Ein.Motorschutz_OK OR NOT #Bad_Konfig.Ausstattung.HatPumpe)
+	         AND (#Bad_Konfig.IO_Ein.FI_Schutz_OK   OR NOT (#Bad_Konfig.Ausstattung.HatHeizung_1 OR #Bad_Konfig.Ausstattung.HatHeizung_2))
+	         AND (#Bad_Konfig.IO_Ein.Kein_Uebertemp OR NOT (#Bad_Konfig.Ausstattung.HatHeizung_1 OR #Bad_Konfig.Ausstattung.HatHeizung_2))
+	         AND NOT #Not_Halt_Aktiv;
+	
+	    // Pumpe darf auch ohne Niveau laufen (Niveau schuetzt nur die Heizung)
+	    #hw_ok_ohne_niveau :=
+	             (#Bad_Konfig.IO_Ein.Motorschutz_OK OR NOT #Bad_Konfig.Ausstattung.HatPumpe)
+	         AND (#Bad_Konfig.IO_Ein.FI_Schutz_OK   OR NOT (#Bad_Konfig.Ausstattung.HatHeizung_1 OR #Bad_Konfig.Ausstattung.HatHeizung_2))
+	         AND (#Bad_Konfig.IO_Ein.Kein_Uebertemp OR NOT (#Bad_Konfig.Ausstattung.HatHeizung_1 OR #Bad_Konfig.Ausstattung.HatHeizung_2))
+	         AND NOT #Not_Halt_Aktiv;
+	
+	    //== 4) Belegung + Soll-Werte ==
+	    #irgend_belegt := FALSE;
+	    #pumpe_ein_any := FALSE; #us_ein_any := FALSE;
+	    #heiz_soll_max := 0.0; #heiz_tol := 5.0;
+	    #pumpe_fu_max := 0.0;
+	
+	    FOR #w := 1 TO 3 DO
+	        IF #Bad_Konfig.WT[#w].Belegt THEN
+	            #irgend_belegt := TRUE;
+	            #hat_Schritt := (#Bad_Konfig.WT[#w].Auftragsindex >= 0) AND (#Bad_Konfig.WT[#w].Auftragsindex <= 9)
+	                       AND (#Bad_Konfig.WT[#w].SchrittIndex >= 0) AND (#Bad_Konfig.WT[#w].SchrittIndex <= 50);
+	            IF #hat_Schritt THEN
+	                #aktSchritt := #Auftraege[#Bad_Konfig.WT[#w].Auftragsindex].Schritte[#Bad_Konfig.WT[#w].SchrittIndex];
+	                IF #aktSchritt.Pumpe THEN #pumpe_ein_any := TRUE; END_IF;
+	                IF #aktSchritt.Ultraschall THEN #us_ein_any := TRUE; END_IF;
+	                IF #aktSchritt.Pumpe_FU_Soll > #pumpe_fu_max THEN #pumpe_fu_max := #aktSchritt.Pumpe_FU_Soll; END_IF;
+	                IF #aktSchritt.Heizung > #heiz_soll_max THEN
+	                    #heiz_soll_max := #aktSchritt.Heizung;
+	                    #heiz_tol := #aktSchritt.Heizung_Toleranz;
+	                END_IF;
+	            END_IF;
+	        END_IF;
+	    END_FOR;
+	
+	    //== 5) Betriebsmodi ==
+	    #hand_aktiv := #Handbetrieb.Hand_Aktiv AND NOT #irgend_belegt AND NOT #Not_Halt_Aktiv;
+	    #Bad_Konfig.Hand_Aktiv_Intern := #hand_aktiv;
+	    #leerlauf_aktiv := (#Zustand = 1) AND NOT #irgend_belegt AND NOT #hand_aktiv
+	                      AND NOT #Not_Halt_Aktiv;
+	    #standby_aktiv := (#Zustand = 2) AND NOT #irgend_belegt AND NOT #hand_aktiv
+	                     AND NOT #Not_Halt_Aktiv;
+	    #irgend_aktiv := #irgend_belegt OR #hand_aktiv OR #leerlauf_aktiv OR #standby_aktiv;
+	
+	    // Pruefen ob mindestens 1 WT eingesetzt ist
+	    #irgend_eingesetzt := FALSE;
+	    FOR #w := 1 TO 3 DO
+	        IF #Bad_Konfig.WT[#w].Belegt AND #Bad_Konfig.WT[#w].WT_Eingesetzt THEN #irgend_eingesetzt := TRUE; END_IF;
+	    END_FOR;
+	
+	    IF #irgend_belegt THEN
+	        // Automatik: Heizung SOFORT bei Belegung (Vorheizen)
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_1 THEN #Bad_Konfig.Heizung_1_Soll := #heiz_soll_max; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_2 THEN #Bad_Konfig.Heizung_2_Soll := #heiz_soll_max; END_IF;
+	        // FU-Pause: 10s Ausrollzeit nach Auftragsstart (Uebergang Leerlauf->Automatik)
+	        #Timer_FU_Pause(IN := TRUE, PT := T#10s);
+	        // Alles andere ERST wenn mindestens 1 WT eingesetzt
+	        IF #irgend_eingesetzt THEN
+	            IF #Bad_Konfig.Ausstattung.HatPumpe THEN #Bad_Konfig.Pumpe_Ein := #pumpe_ein_any; END_IF;
+	            // Pumpe FU erst nach Ablauf der 10s Pause
+	            IF #Bad_Konfig.Ausstattung.HatPumpe_FU AND #Timer_FU_Pause.Q THEN
+	                #Bad_Konfig.Pumpe_FU_Soll := #pumpe_fu_max;
+	            ELSIF #Bad_Konfig.Ausstattung.HatPumpe_FU THEN
+	                #Bad_Konfig.Pumpe_FU_Soll := 0.0;
+	            END_IF;
+	            IF #Bad_Konfig.Ausstattung.HatUltraschall THEN #Bad_Konfig.Ultraschall_Ein := #us_ein_any; END_IF;
+	            IF #Bad_Konfig.Ausstattung.HatGleichrichter THEN
+	                #Bad_Konfig.GR_Aktiv := #aktSchritt.GR_Aktiv;
+	                #Bad_Konfig.GR_Strom_Soll := #aktSchritt.GR_Strom_Soll;
+	                #Bad_Konfig.GR_Spannung_Soll := #aktSchritt.GR_Spannung_Soll;
+	                #Bad_Konfig.GR_Pulsfrequenz := #aktSchritt.GR_Pulsfrequenz;
+	                #Bad_Konfig.GR_DutyCycle := #aktSchritt.GR_DutyCycle;
+	            END_IF;
+	            IF #Bad_Konfig.Ausstattung.HatWarenbewegung_X AND #Timer_FU_Pause.Q THEN
+	                #Bad_Konfig.Warenbewegung_X_Soll := #aktSchritt.Warenbewegung_X;
+	            ELSIF #Bad_Konfig.Ausstattung.HatWarenbewegung_X THEN
+	                #Bad_Konfig.Warenbewegung_X_Soll := 0.0;
+	            END_IF;
+	            IF #Bad_Konfig.Ausstattung.HatWarenbewegung_Y AND #Timer_FU_Pause.Q THEN
+	                #Bad_Konfig.Warenbewegung_Y_Soll := #aktSchritt.Warenbewegung_Y;
+	            ELSIF #Bad_Konfig.Ausstattung.HatWarenbewegung_Y THEN
+	                #Bad_Konfig.Warenbewegung_Y_Soll := 0.0;
+	            END_IF;
+	        ELSE
+	            // Belegt aber kein WT eingesetzt: Aggregate aus
+	            #Bad_Konfig.Pumpe_Ein := FALSE;
+	            #Bad_Konfig.Pumpe_FU_Soll := 0.0;
+	            #Bad_Konfig.Ultraschall_Ein := FALSE;
+	            #Bad_Konfig.GR_Aktiv := FALSE;
+	            #Bad_Konfig.GR_Strom_Soll := 0.0; #Bad_Konfig.GR_Spannung_Soll := 0.0;
+	            #Bad_Konfig.GR_Pulsfrequenz := 0.0; #Bad_Konfig.GR_DutyCycle := 0.0;
+	        END_IF;
+	        // FU-Resets im Automatik immer FALSE
+	        #Bad_Konfig.WB1_Reset := FALSE;
+	        #Bad_Konfig.WB2_Reset := FALSE;
+	        #Bad_Konfig.IO_Aus.Pumpe_FU_Reset := FALSE;
+	    ELSIF #hand_aktiv THEN
+	        // Handbetrieb
+	        #Timer_FU_Pause(IN := FALSE, PT := T#10s);
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_1 THEN #Bad_Konfig.Heizung_1_Soll := #Handbetrieb.Heizung_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_2 THEN #Bad_Konfig.Heizung_2_Soll := #Handbetrieb.Heizung_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatPumpe THEN #Bad_Konfig.Pumpe_Ein := #Handbetrieb.Pumpe; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatPumpe_FU THEN #Bad_Konfig.Pumpe_FU_Soll := #Handbetrieb.Pumpe_FU_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatUltraschall THEN #Bad_Konfig.Ultraschall_Ein := #Handbetrieb.Ultraschall; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatGleichrichter THEN
+	            #Bad_Konfig.GR_Aktiv := #Handbetrieb.GR_Aktiv;
+	            #Bad_Konfig.GR_Strom_Soll := #Handbetrieb.GR_Strom_Soll;
+	            #Bad_Konfig.GR_Spannung_Soll := #Handbetrieb.GR_Spannung_Soll;
+	            #Bad_Konfig.GR_Pulsfrequenz := #Handbetrieb.GR_Pulsfrequenz;
+	            #Bad_Konfig.GR_DutyCycle := #Handbetrieb.GR_DutyCycle;
+	        END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatWarenbewegung_X THEN #Bad_Konfig.Warenbewegung_X_Soll := #Handbetrieb.Warenbewegung_X; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatWarenbewegung_Y THEN #Bad_Konfig.Warenbewegung_Y_Soll := #Handbetrieb.Warenbewegung_Y; END_IF;
+	        #heiz_soll_max := #Handbetrieb.Heizung_Soll;
+	        // FU-Resets vom IPC durchreichen
+	        #Bad_Konfig.WB1_Reset := #Handbetrieb.WB1_Reset;
+	        #Bad_Konfig.WB2_Reset := #Handbetrieb.WB2_Reset;
+	        #Bad_Konfig.IO_Aus.Pumpe_FU_Reset := #Handbetrieb.Pumpe_FU_Reset;
+	    ELSIF #leerlauf_aktiv THEN
+	        // Leerlauf (Zustand 1): Bad betriebsbereit halten
+	        #Timer_FU_Pause(IN := FALSE, PT := T#10s);
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_1 THEN #Bad_Konfig.Heizung_1_Soll := #Leerlauf.Heizung_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_2 THEN #Bad_Konfig.Heizung_2_Soll := #Leerlauf.Heizung_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatPumpe THEN #Bad_Konfig.Pumpe_Ein := #Leerlauf.Pumpe; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatPumpe_FU THEN #Bad_Konfig.Pumpe_FU_Soll := #Leerlauf.Pumpe_FU_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatUltraschall THEN #Bad_Konfig.Ultraschall_Ein := #Leerlauf.Ultraschall; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatWarenbewegung_X THEN #Bad_Konfig.Warenbewegung_X_Soll := #Leerlauf.Warenbewegung_X; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatWarenbewegung_Y THEN #Bad_Konfig.Warenbewegung_Y_Soll := #Leerlauf.Warenbewegung_Y; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatGleichrichter THEN
+	            #Bad_Konfig.GR_Aktiv := #Leerlauf.GR_Aktiv;
+	            #Bad_Konfig.GR_Strom_Soll := #Leerlauf.GR_Strom_Soll;
+	            #Bad_Konfig.GR_Spannung_Soll := #Leerlauf.GR_Spannung_Soll;
+	        END_IF;
+	        #heiz_soll_max := #Leerlauf.Heizung_Soll;
+	        #Bad_Konfig.WB1_Reset := FALSE; #Bad_Konfig.WB2_Reset := FALSE;
+	        #Bad_Konfig.IO_Aus.Pumpe_FU_Reset := FALSE;
+	    ELSIF (#Zustand = 2) AND NOT #irgend_belegt AND NOT #hand_aktiv AND NOT #Not_Halt_Aktiv THEN
+	        // Standby (Zustand 2): Abgesenkte Temperatur, Aggregate pro Bad konfigurierbar
+	        #Timer_FU_Pause(IN := FALSE, PT := T#10s);
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_1 THEN #Bad_Konfig.Heizung_1_Soll := #Standby.Heizung_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_2 THEN #Bad_Konfig.Heizung_2_Soll := #Standby.Heizung_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatPumpe THEN #Bad_Konfig.Pumpe_Ein := #Standby.Pumpe; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatPumpe_FU THEN #Bad_Konfig.Pumpe_FU_Soll := #Standby.Pumpe_FU_Soll; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatUltraschall THEN #Bad_Konfig.Ultraschall_Ein := #Standby.Ultraschall; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatWarenbewegung_X THEN #Bad_Konfig.Warenbewegung_X_Soll := #Standby.Warenbewegung_X; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatWarenbewegung_Y THEN #Bad_Konfig.Warenbewegung_Y_Soll := #Standby.Warenbewegung_Y; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatGleichrichter THEN
+	            #Bad_Konfig.GR_Aktiv := #Standby.GR_Aktiv;
+	            #Bad_Konfig.GR_Strom_Soll := #Standby.GR_Strom_Soll;
+	            #Bad_Konfig.GR_Spannung_Soll := #Standby.GR_Spannung_Soll;
+	        END_IF;
+	        #heiz_soll_max := #Standby.Heizung_Soll;
+	        #Bad_Konfig.WB1_Reset := FALSE; #Bad_Konfig.WB2_Reset := FALSE;
+	        #Bad_Konfig.IO_Aus.Pumpe_FU_Reset := FALSE;
+	    ELSE
+	        // Zustand 0 oder undefiniert: alles aus
+	        #Timer_FU_Pause(IN := FALSE, PT := T#10s);
+	        #Bad_Konfig.Heizung_1_Soll := 0.0;
+	        #Bad_Konfig.Heizung_2_Soll := 0.0;
+	        #Bad_Konfig.Pumpe_Ein := FALSE;
+	        #Bad_Konfig.Pumpe_FU_Soll := 0.0;
+	        #Bad_Konfig.Ultraschall_Ein := FALSE;
+	        #Bad_Konfig.Warenbewegung_X_Soll := 0.0;
+	        #Bad_Konfig.Warenbewegung_Y_Soll := 0.0;
+	        #Bad_Konfig.GR_Aktiv := FALSE;
+	        #Bad_Konfig.GR_Strom_Soll := 0.0; #Bad_Konfig.GR_Spannung_Soll := 0.0;
+	        #Bad_Konfig.GR_Pulsfrequenz := 0.0; #Bad_Konfig.GR_DutyCycle := 0.0;
+	        #Bad_Konfig.WB1_Reset := FALSE; #Bad_Konfig.WB2_Reset := FALSE;
+	        #Bad_Konfig.IO_Aus.Pumpe_FU_Reset := FALSE;
+	    END_IF;
+	
+	    //== 6) temp_ok ==
+	    #heiz1_ok := TRUE; #heiz2_ok := TRUE;
+	    IF #heiz_soll_max > 0.0 AND #irgend_aktiv THEN
+	        IF #heiz_tol <= 0.0 THEN #heiz_tol := 5.0; END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_1 THEN
+	            #heiz1_ok := ABS(#Bad_Konfig.IO_Ein.Ist_Temperatur_1 - #heiz_soll_max) <= #heiz_tol;
+	        END_IF;
+	        IF #Bad_Konfig.Ausstattung.HatHeizung_2 THEN
+	            #heiz2_ok := ABS(#Bad_Konfig.IO_Ein.Ist_Temperatur_2 - #heiz_soll_max) <= #heiz_tol;
+	        END_IF;
+	    END_IF;
+	    #temp_ok := #heiz1_ok AND #heiz2_ok;
+	    #Bad_Konfig.Betriebsbereit := #hw_ok AND #temp_ok;
+	
+	    //== 7) Flanke ==
+	    #any_ein := #Bad_Konfig.IO_Ein.WT_Einsetzen[1] OR #Bad_Konfig.IO_Ein.WT_Einsetzen[2] OR #Bad_Konfig.IO_Ein.WT_Einsetzen[3];
+	    #any_ent := #Bad_Konfig.IO_Ein.WT_Entnehmen[1] OR #Bad_Konfig.IO_Ein.WT_Entnehmen[2] OR #Bad_Konfig.IO_Ein.WT_Entnehmen[3];
+	    #flanke_Ein := #any_ein AND NOT #M_Ein_Any_Alt;
+	    #flanke_Ent := #any_ent AND NOT #M_Ent_Any_Alt;
+	    #M_Ein_Any_Alt := #any_ein;
+	    #M_Ent_Any_Alt := #any_ent;
+	
+	    //== 8) Pro-WT Ablauf ==
+	    FOR #w := 1 TO 3 DO
+	        #hat_Schritt := #Bad_Konfig.WT[#w].Belegt
+	            AND (#Bad_Konfig.WT[#w].Auftragsindex >= 0) AND (#Bad_Konfig.WT[#w].Auftragsindex <= 9)
+	            AND (#Bad_Konfig.WT[#w].SchrittIndex >= 0) AND (#Bad_Konfig.WT[#w].SchrittIndex <= 50);
+	        IF #hat_Schritt THEN
+	            #aktSchritt := #Auftraege[#Bad_Konfig.WT[#w].Auftragsindex].Schritte[#Bad_Konfig.WT[#w].SchrittIndex];
+	            IF NOT #Bad_Konfig.WT[#w].WT_Eingesetzt THEN
+	                IF #flanke_Ein AND #Bad_Konfig.IO_Ein.WT_Einsetzen[#w] AND #hw_ok AND #temp_ok THEN
+	                    #Bad_Konfig.WT[#w].WT_Eingesetzt := TRUE;
+	                    #Bad_Konfig.WT[#w].WT_Entnommen := FALSE;
+	                    #Bad_Konfig.WT[#w].Istzeit := T#0s;
+	                    #Bad_Konfig.WT[#w].Zeit_Abgelaufen := FALSE;
+	                    #Bad_Konfig.WT[#w].Krit_Zeit_Abgelaufen := FALSE;
+	                    #Bad_Konfig.WT[#w].Vorwarn_Erreicht := FALSE;
+	                    #Bad_Konfig.WT[#w].Stoerung_Aufgetreten := FALSE;
+	                    #Bad_Konfig.WT[#w].Temp_Abweichung_Max := 0.0;
+	                    #Bad_Konfig.WT[#w].Temp_Toleranz_Eingehalten := TRUE;
+	                    #Bad_Konfig.WT[#w].Zeitueberschreitung := T#0s;
+	                    #Bad_Konfig.WT[#w].Protokoll_Neu := FALSE;
+	                    #retval := RD_LOC_T(OUT => #aktZeit);
+	                    #Bad_Konfig.WT[#w].Zeitstempel_Eingesetzt := #aktZeit;
+	                END_IF;
+	            ELSE
+	                #Timer_WT[#w](IN := TRUE, PT := T#24h);
+	                #Bad_Konfig.WT[#w].Istzeit := #Timer_WT[#w].ET;
+	                IF #Timer_WT[#w].ET < #aktSchritt.Verweilzeit THEN
+	                    #Bad_Konfig.WT[#w].Restzeit := #aktSchritt.Verweilzeit - #Timer_WT[#w].ET;
+	                ELSE #Bad_Konfig.WT[#w].Restzeit := T#0s; END_IF;
+	                IF #Timer_WT[#w].ET >= (#aktSchritt.Verweilzeit - #aktSchritt.Vorwarnzeit) THEN #Bad_Konfig.WT[#w].Vorwarn_Erreicht := TRUE; END_IF;
+	                IF #Timer_WT[#w].ET >= #aktSchritt.Verweilzeit THEN #Bad_Konfig.WT[#w].Zeit_Abgelaufen := TRUE; END_IF;
+	                IF #Timer_WT[#w].ET >= #aktSchritt.Kritische_Zeit THEN #Bad_Konfig.WT[#w].Krit_Zeit_Abgelaufen := TRUE; END_IF;
+	                IF NOT #hw_ok THEN #Bad_Konfig.WT[#w].Stoerung_Aufgetreten := TRUE; END_IF;
+	                IF #Bad_Konfig.Ausstattung.HatHeizung_1 AND (#aktSchritt.Heizung > 0.0) THEN
+	                    #temp_abw := ABS(#Bad_Konfig.IO_Ein.Ist_Temperatur_1 - #aktSchritt.Heizung);
+	                    IF #temp_abw > #Bad_Konfig.WT[#w].Temp_Abweichung_Max THEN #Bad_Konfig.WT[#w].Temp_Abweichung_Max := #temp_abw; END_IF;
+	                    IF #temp_abw > #aktSchritt.Heizung_Toleranz THEN #Bad_Konfig.WT[#w].Temp_Toleranz_Eingehalten := FALSE; END_IF;
+	                END_IF;
+	                IF #flanke_Ent AND #Bad_Konfig.IO_Ein.WT_Entnehmen[#w] THEN
+	                    #Bad_Konfig.WT[#w].WT_Entnommen := TRUE;
+	                    #Timer_WT[#w](IN := FALSE, PT := T#0s);
+	                    IF #Bad_Konfig.WT[#w].Istzeit > #aktSchritt.Verweilzeit THEN
+	                        #Bad_Konfig.WT[#w].Zeitueberschreitung := #Bad_Konfig.WT[#w].Istzeit - #aktSchritt.Verweilzeit;
+	                    ELSE #Bad_Konfig.WT[#w].Zeitueberschreitung := T#0s; END_IF;
+	                    #retval := RD_LOC_T(OUT => #aktZeit);
+	                    #Bad_Konfig.WT[#w].Zeitstempel_Entnommen := #aktZeit;
+	                    #Bad_Konfig.WT[#w].Protokoll_Neu := TRUE;
+	                END_IF;
+	            END_IF;
+	        ELSE
+	            #Timer_WT[#w](IN := FALSE, PT := T#0s);
+	            #Bad_Konfig.WT[#w].Istzeit := T#0s; #Bad_Konfig.WT[#w].Restzeit := T#0s;
+	            #Bad_Konfig.WT[#w].Zeit_Abgelaufen := FALSE;
+	            #Bad_Konfig.WT[#w].Krit_Zeit_Abgelaufen := FALSE;
+	            #Bad_Konfig.WT[#w].Vorwarn_Erreicht := FALSE;
+	        END_IF;
+	    END_FOR;
+	
+	    //== 9) Ampel ==
+	    #worst_ampel := 0; #any_hupe := FALSE;
+	    IF #Not_Halt_Aktiv THEN
+	        // Not-Halt: ALLE Ampeln rot blinken, unabhaengig von Belegung
+	        #worst_ampel := 4;  // rot blink (nicht konstant, damit man sieht: Not-Halt, nicht HW-Stoerung)
+	    ELSIF NOT #hw_ok AND #irgend_aktiv THEN
+	        #worst_ampel := 6;  // rot konstant = HW-Stoerung
+	    ELSIF #hand_aktiv AND NOT #irgend_belegt THEN
+	        #worst_ampel := 2;
+	    ELSE
+	        FOR #w := 1 TO 3 DO
+	            #hat_Schritt := #Bad_Konfig.WT[#w].Belegt
+	                AND (#Bad_Konfig.WT[#w].Auftragsindex >= 0) AND (#Bad_Konfig.WT[#w].Auftragsindex <= 9)
+	                AND (#Bad_Konfig.WT[#w].SchrittIndex >= 0) AND (#Bad_Konfig.WT[#w].SchrittIndex <= 50);
+	            IF #hat_Schritt THEN
+	                IF #Bad_Konfig.WT[#w].WT_Eingesetzt THEN
+	                    #aktSchritt := #Auftraege[#Bad_Konfig.WT[#w].Auftragsindex].Schritte[#Bad_Konfig.WT[#w].SchrittIndex];
+	                    IF #Bad_Konfig.WT[#w].Krit_Zeit_Abgelaufen AND #aktSchritt.Alarm_Aktiv THEN
+	                        IF 5 > #worst_ampel THEN #worst_ampel := 5; END_IF; #any_hupe := TRUE;
+	                    ELSIF #Bad_Konfig.WT[#w].Zeit_Abgelaufen THEN
+	                        IF 4 > #worst_ampel THEN #worst_ampel := 4; END_IF;
+	                    ELSIF #Bad_Konfig.WT[#w].Vorwarn_Erreicht THEN
+	                        IF 3 > #worst_ampel THEN #worst_ampel := 3; END_IF;
+	                    ELSE IF 2 > #worst_ampel THEN #worst_ampel := 2; END_IF;
+	                    END_IF;
+	                ELSE IF 1 > #worst_ampel THEN #worst_ampel := 1; END_IF;
+	                END_IF;
+	            END_IF;
+	        END_FOR;
+	    END_IF;
+	    #Bad_Konfig.Ampel_Status := #worst_ampel;
+	
+	    //== 10) Ampel-Ausgaenge ==
+	    #Bad_Konfig.IO_Aus.Ampel_Gruen := FALSE; #Bad_Konfig.IO_Aus.Ampel_Orange := FALSE; #Bad_Konfig.IO_Aus.Ampel_Rot := FALSE;
+	    CASE #Bad_Konfig.Ampel_Status OF
+	        0: ; 1: #Bad_Konfig.IO_Aus.Ampel_Gruen := #Blink_Takt;
+	        2: #Bad_Konfig.IO_Aus.Ampel_Gruen := TRUE;
+	        3: #Bad_Konfig.IO_Aus.Ampel_Orange := #Blink_Takt;
+	        4: #Bad_Konfig.IO_Aus.Ampel_Rot := #Blink_Takt;
+	        5: #Bad_Konfig.IO_Aus.Ampel_Rot := #Blink_Takt;
+	        6: #Bad_Konfig.IO_Aus.Ampel_Rot := TRUE;
+	    END_CASE;
+	    IF #Lampentest THEN
+	        #Bad_Konfig.IO_Aus.Ampel_Gruen := #Blink_Takt;
+	        #Bad_Konfig.IO_Aus.Ampel_Orange := #Blink_Takt;
+	        #Bad_Konfig.IO_Aus.Ampel_Rot := #Blink_Takt;
+	        #any_hupe := TRUE;
+	    END_IF;
+	    #Bad_Konfig.Hupe := #any_hupe;
+	
+	    //== 11) Peripherie ==
+	    #Bad_Konfig.IO_Aus.Pumpe := #Bad_Konfig.Ausstattung.HatPumpe AND #Bad_Konfig.Pumpe_Ein AND #hw_ok_ohne_niveau;
+	    #Bad_Konfig.IO_Aus.Ultraschall_Freigabe := #Bad_Konfig.Ausstattung.HatUltraschall AND #Bad_Konfig.Ultraschall_Ein AND #hw_ok;
+	    // Pumpe FU: Netzschuetz + Freigabe wenn Sollwert > 0 (ohne Niveau-Pruefung)
+	    #Bad_Konfig.IO_Aus.Pumpe_FU_Netzschuetz := #Bad_Konfig.Ausstattung.HatPumpe_FU AND (#Bad_Konfig.Pumpe_FU_Soll > 0.0) AND #hw_ok_ohne_niveau;
+	    #Bad_Konfig.IO_Aus.Pumpe_FU_Freigabe := #Bad_Konfig.IO_Aus.Pumpe_FU_Netzschuetz;
+	
+	    //== FU-Stoerungen: Fehler nur wenn angesteuert aber nicht bereit (3s Verzoegerung) ==
+	    #Timer_FU_Pumpe_Stoerung(IN := #Bad_Konfig.IO_Aus.Pumpe_FU_Netzschuetz AND NOT #Bad_Konfig.IO_Ein.FU_Pumpe_Bereit, PT := T#3s);
+	    #Bad_Konfig.FU_Pumpe_Stoerung := #Timer_FU_Pumpe_Stoerung.Q;
+	
+	    #Timer_FU_WB1_Stoerung(IN := (#Bad_Konfig.Warenbewegung_Y_Soll > 0.0) AND NOT #Bad_Konfig.IO_Ein.FU_WB1_Bereit, PT := T#3s);
+	    #Bad_Konfig.FU_WB1_Stoerung := #Timer_FU_WB1_Stoerung.Q;
+	
+	    #Timer_FU_WB2_Stoerung(IN := (#Bad_Konfig.Warenbewegung_X_Soll > 0.0) AND NOT #Bad_Konfig.IO_Ein.FU_WB2_Bereit, PT := T#3s);
+	    #Bad_Konfig.FU_WB2_Stoerung := #Timer_FU_WB2_Stoerung.Q;
+	
+	    //== 12) LEDs ==
+	    #Bad_Konfig.IO_Aus.LED_Heizung_Aktiv := #irgend_aktiv AND #hw_ok AND NOT #temp_ok;
+	    #Bad_Konfig.IO_Aus.LED_Stoerung := #irgend_aktiv AND NOT #hw_ok;
+	    #Bad_Konfig.IO_Aus.LED_Handbetrieb := #hand_aktiv;
+	
+	    FOR #w := 1 TO 3 DO
+	        #Bad_Konfig.IO_Aus.LED_Einsetzen[#w] := FALSE;
+	        IF #Bad_Konfig.WT[#w].Belegt AND NOT #Bad_Konfig.WT[#w].WT_Eingesetzt AND #hw_ok AND #temp_ok THEN
+	            #Bad_Konfig.IO_Aus.LED_Einsetzen[#w] := #blink[#w];
+	        END_IF;
+	    END_FOR;
+	    FOR #w := 1 TO 3 DO
+	        #Bad_Konfig.IO_Aus.LED_Entnehmen[#w] := FALSE;
+	        #Bad_Konfig.IO_Aus.LED_Vorwarn[#w] := FALSE;
+	        IF #Bad_Konfig.WT[#w].Belegt AND #Bad_Konfig.WT[#w].WT_Eingesetzt THEN
+	            IF #Bad_Konfig.WT[#w].Zeit_Abgelaufen THEN #Bad_Konfig.IO_Aus.LED_Entnehmen[#w] := #blink[#w];
+	            ELSIF #Bad_Konfig.WT[#w].Vorwarn_Erreicht THEN
+	                #Bad_Konfig.IO_Aus.LED_Entnehmen[#w] := #blink[#w]; #Bad_Konfig.IO_Aus.LED_Vorwarn[#w] := TRUE;
+	            END_IF;
+	        END_IF;
+	    END_FOR;
+	
+	    //== 13) Prioritaet ==
+	    #Bad_Konfig.IO_Aus.Prio_Einsetzen_WT := 0;
+	    FOR #w := 1 TO 3 DO
+	        IF #Bad_Konfig.WT[#w].Belegt AND NOT #Bad_Konfig.WT[#w].WT_Eingesetzt
+	           AND #hw_ok AND #temp_ok AND (#Bad_Konfig.IO_Aus.Prio_Einsetzen_WT = 0) THEN
+	            #Bad_Konfig.IO_Aus.Prio_Einsetzen_WT := #w;
+	        END_IF;
+	    END_FOR;
+	    #Bad_Konfig.IO_Aus.Prio_Entnehmen_WT := 0;
+	    #ent_prio_rest := T#24h;
+	    FOR #w := 1 TO 3 DO
+	        IF #Bad_Konfig.WT[#w].Belegt AND #Bad_Konfig.WT[#w].WT_Eingesetzt AND #Bad_Konfig.WT[#w].Zeit_Abgelaufen THEN
+	            IF #Bad_Konfig.IO_Aus.Prio_Entnehmen_WT = 0 THEN #Bad_Konfig.IO_Aus.Prio_Entnehmen_WT := #w; END_IF;
+	        END_IF;
+	    END_FOR;
+	    IF #Bad_Konfig.IO_Aus.Prio_Entnehmen_WT = 0 THEN
+	        FOR #w := 1 TO 3 DO
+	            IF #Bad_Konfig.WT[#w].Belegt AND #Bad_Konfig.WT[#w].WT_Eingesetzt
+	               AND #Bad_Konfig.WT[#w].Vorwarn_Erreicht AND NOT #Bad_Konfig.WT[#w].Zeit_Abgelaufen THEN
+	                IF #Bad_Konfig.WT[#w].Restzeit < #ent_prio_rest THEN
+	                    #ent_prio_rest := #Bad_Konfig.WT[#w].Restzeit;
+	                    #Bad_Konfig.IO_Aus.Prio_Entnehmen_WT := #w;
+	                END_IF;
+	            END_IF;
+	        END_FOR;
+	    END_IF;
+	
+END_FUNCTION_BLOCK
+

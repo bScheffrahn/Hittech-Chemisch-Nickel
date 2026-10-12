@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="PageNo" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Byte 0-1: imer 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Control" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Byte 2-3: 0=Aus, 3=Ein+Start</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SetVoltage" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Byte 4-5: x0.01V</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="setCurrent" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Byte 6-7: x1A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Reserved" Datatype="Array[0..7] of Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Byte 8-23: ungenutzt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Padding" Datatype="Array[0..3] of Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Byte 24-31: ungenutzt</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_FK_OUT</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

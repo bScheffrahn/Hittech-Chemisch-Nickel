@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Belegt" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bad ist belegt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Auftragsindex" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Welcher Auftrag belegt dieses Bad</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SchrittIndex" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Welcher Schritt im Auftrag</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Istzeit" Datatype="Time">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bereits verstrichene Zeit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Restzeit" Datatype="Time">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Verbleibende Verweilzeit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Zeit_Abgelaufen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Verweilzeit erreicht</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Krit_Zeit_Abgelaufen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Kritische Zeit überschritten</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Ampel_Status" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE"> 0=Aus, 1=GrünBlink(warte auf WT-Einsetzen), 2=Grün(belegt,OK), 3=GelbBlink(Vorwarnung), 4=RotBlink(Zeit über), 5=RotBlink+Akustik(krit.Zeit), 6=Rot(nicht betriebsbereit)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Hupe" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Akustischer Alarm aktiv</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="WT_Eingesetzt" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bediener hat WT eingesetzt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="WT_Entnommen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bediener hat WT entnommen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Betriebsbereit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bad ist betriebsbereit (Temp, Pumpe, Niveau OK)</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_BadStatus</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>
