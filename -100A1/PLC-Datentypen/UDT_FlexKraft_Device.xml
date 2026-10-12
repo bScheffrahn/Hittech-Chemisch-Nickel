@@ -1,28 +1,114 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document>
   <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T16:46:22.7550069Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
   <SW.Types.PlcStruct ID="0">
     <AttributeList>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="None">
     <Member Name="Out" Datatype="&quot;UDT_FlexKraft_Out&quot;">
       <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
       <Comment>
         <MultiLanguageText Lang="de-DE">32 Byte SPS -&gt; FK</MultiLanguageText>
       </Comment>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PageNo" Datatype="Word" />
+          <Member Name="ControlRegister" Datatype="Word" />
+          <Member Name="SetVoltage" Datatype="Int" />
+          <Member Name="SetCurrent" Datatype="Int" />
+          <Member Name="ProcessTimerLimit_HW" Datatype="Word" />
+          <Member Name="ProcessTimerLimit_LW" Datatype="Word" />
+          <Member Name="AhLimit_HW" Datatype="Word" />
+          <Member Name="AhLimit_LW" Datatype="Word" />
+          <Member Name="Startramp" Datatype="Word" />
+          <Member Name="Reserved" Datatype="Array[9..15] of Word" />
+        </Section>
+      </Sections>
     </Member>
     <Member Name="In" Datatype="&quot;UDT_FlexKraft_In&quot;">
       <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
       <Comment>
         <MultiLanguageText Lang="de-DE">32 Byte FK  -&gt; SPS</MultiLanguageText>
       </Comment>
+      <Sections>
+        <Section Name="None">
+          <Member Name="Reserved0" Datatype="Word" />
+          <Member Name="StatusRegister" Datatype="Word" />
+          <Member Name="WarningsRegister" Datatype="Word" />
+          <Member Name="AlarmsRegister" Datatype="Word" />
+          <Member Name="OutputVoltage" Datatype="Int" />
+          <Member Name="OutputCurrent" Datatype="Int" />
+          <Member Name="ProcessTime_HW" Datatype="Word" />
+          <Member Name="ProcessTime_LW" Datatype="Word" />
+          <Member Name="Ah_HW" Datatype="Word" />
+          <Member Name="Ah_LW" Datatype="Word" />
+          <Member Name="Reserved" Datatype="Array[10..15] of Word" />
+        </Section>
+      </Sections>
     </Member>
   </Section>
 </Sections></Interface>
+      <IsFailsafeCompliant>false</IsFailsafeCompliant>
       <Name>UDT_FlexKraft_Device</Name>
       <Namespace />
     </AttributeList>

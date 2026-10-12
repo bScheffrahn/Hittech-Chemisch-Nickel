@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T16:46:21.0482317Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.2</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Not_Halt" Datatype="Bool" Accessibility="Public" />
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC_Not_Halt</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <NewLine Num="1" UId="21" />
+  <Blank Num="4" UId="22" />
+  <Token Text="IF" UId="23" />
+  <Blank Num="1" UId="24" />
+  <Token Text="NOT" UId="25" />
+  <Blank Num="1" UId="26" />
+  <Access Scope="LocalVariable" UId="27">
+    <Symbol UId="28">
+      <Component Name="Not_Halt" UId="29" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="30" />
+  <Token Text="THEN" UId="31" />
+  <Blank Num="1" UId="32" />
+  <Token Text="RETURN" UId="33" />
+  <Token Text=";" UId="34" />
+  <Blank Num="1" UId="35" />
+  <Token Text="END_IF" UId="36" />
+  <Token Text=";" UId="37" />
+  <NewLine Num="1" UId="38" />
+  <Blank Num="4" UId="39" />
+  <Access Scope="GlobalVariable" UId="40">
+    <Symbol UId="41">
+      <Component Name="Pumpe Bad 8" UId="42" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="43" />
+  <Access Scope="LiteralConstant" UId="44">
+    <Constant UId="45">
+      <ConstantValue UId="47">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="48" />
+  <Blank Num="1" UId="49" />
+  <Access Scope="GlobalVariable" UId="50">
+    <Symbol UId="51">
+      <Component Name="Pumpe Bad 12" UId="52" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="53" />
+  <Access Scope="LiteralConstant" UId="54">
+    <Constant UId="55">
+      <ConstantValue UId="57">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="58" />
+  <Blank Num="1" UId="59" />
+  <Access Scope="GlobalVariable" UId="60">
+    <Symbol UId="61">
+      <Component Name="Pumpe Bad 14" UId="62" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="63" />
+  <Access Scope="LiteralConstant" UId="64">
+    <Constant UId="65">
+      <ConstantValue UId="67">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="68" />
+  <NewLine Num="1" UId="69" />
+  <Blank Num="4" UId="70" />
+  <Access Scope="GlobalVariable" UId="71">
+    <Symbol UId="72">
+      <Component Name="Pumpe Bad 18" UId="73" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="74" />
+  <Access Scope="LiteralConstant" UId="75">
+    <Constant UId="76">
+      <ConstantValue UId="78">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="79" />
+  <Blank Num="1" UId="80" />
+  <Access Scope="GlobalVariable" UId="81">
+    <Symbol UId="82">
+      <Component Name="Pumpe Bad 19" UId="83" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="84" />
+  <Access Scope="LiteralConstant" UId="85">
+    <Constant UId="86">
+      <ConstantValue UId="88">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="89" />
+  <Blank Num="1" UId="90" />
+  <Access Scope="GlobalVariable" UId="91">
+    <Symbol UId="92">
+      <Component Name="Pumpe Bad 21" UId="93" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="94" />
+  <Access Scope="LiteralConstant" UId="95">
+    <Constant UId="96">
+      <ConstantValue UId="98">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="99" />
+  <NewLine Num="1" UId="100" />
+  <Blank Num="4" UId="101" />
+  <Access Scope="GlobalVariable" UId="102">
+    <Symbol UId="103">
+      <Component Name="Netzschuetz Pumpe Bad 25" UId="104" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="105" />
+  <Access Scope="LiteralConstant" UId="106">
+    <Constant UId="107">
+      <ConstantValue UId="109">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="110" />
+  <NewLine Num="1" UId="111" />
+  <Blank Num="4" UId="112" />
+  <Access Scope="GlobalVariable" UId="113">
+    <Symbol UId="114">
+      <Component Name="FU Pumpe Freigabe" UId="115" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="116" />
+  <Access Scope="LiteralConstant" UId="117">
+    <Constant UId="118">
+      <ConstantValue UId="120">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="121" />
+  <Blank Num="1" UId="122" />
+  <Access Scope="GlobalVariable" UId="123">
+    <Symbol UId="124">
+      <Component Name="Reset FU Pumpe" UId="125" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="126" />
+  <Access Scope="LiteralConstant" UId="127">
+    <Constant UId="128">
+      <ConstantValue UId="130">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="131" />
+  <NewLine Num="1" UId="132" />
+  <Blank Num="4" UId="133" />
+  <Access Scope="GlobalVariable" UId="134">
+    <Symbol UId="135">
+      <Component Name="Pumpen_FU_Steuerwert" UId="136">
+        <BooleanAttribute Name="HasQuotes" UId="137">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="138" />
+  <Access Scope="TypedConstant" UId="139">
+    <Constant UId="140">
+      <ConstantValue UId="141">W#16#0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="142" />
+  <NewLine Num="1" UId="143" />
+  <Blank Num="4" UId="144" />
+  <Access Scope="GlobalVariable" UId="145">
+    <Symbol UId="146">
+      <Component Name="Pumpe Bad 26" UId="147" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="148" />
+  <Access Scope="LiteralConstant" UId="149">
+    <Constant UId="150">
+      <ConstantValue UId="152">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="153" />
+  <Blank Num="1" UId="154" />
+  <Access Scope="GlobalVariable" UId="155">
+    <Symbol UId="156">
+      <Component Name="Pumpe Bad 31" UId="157" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="158" />
+  <Access Scope="LiteralConstant" UId="159">
+    <Constant UId="160">
+      <ConstantValue UId="162">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="163" />
+  <Blank Num="1" UId="164" />
+  <Access Scope="GlobalVariable" UId="165">
+    <Symbol UId="166">
+      <Component Name="Pumpe Bad 41" UId="167" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="168" />
+  <Access Scope="LiteralConstant" UId="169">
+    <Constant UId="170">
+      <ConstantValue UId="172">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="173" />
+  <Blank Num="1" UId="174" />
+  <Access Scope="GlobalVariable" UId="175">
+    <Symbol UId="176">
+      <Component Name="Pumpe Bad 45" UId="177" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="178" />
+  <Access Scope="LiteralConstant" UId="179">
+    <Constant UId="180">
+      <ConstantValue UId="182">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="183" />
+  <NewLine Num="1" UId="184" />
+  <Blank Num="4" UId="185" />
+  <Access Scope="GlobalVariable" UId="186">
+    <Symbol UId="187">
+      <Component Name="Regelung Heizung Bad 7" UId="188" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="189" />
+  <Access Scope="LiteralConstant" UId="190">
+    <Constant UId="191">
+      <ConstantValue UId="193">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="194" />
+  <Blank Num="1" UId="195" />
+  <Access Scope="GlobalVariable" UId="196">
+    <Symbol UId="197">
+      <Component Name="Sicherheitsschuetz Heizung Bad 7" UId="198" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="199" />
+  <Access Scope="LiteralConstant" UId="200">
+    <Constant UId="201">
+      <ConstantValue UId="203">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="204" />
+  <NewLine Num="1" UId="205" />
+  <Blank Num="4" UId="206" />
+  <Access Scope="GlobalVariable" UId="207">
+    <Symbol UId="208">
+      <Component Name="Regelung Heizung Bad 8" UId="209" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="210" />
+  <Access Scope="LiteralConstant" UId="211">
+    <Constant UId="212">
+      <ConstantValue UId="214">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="215" />
+  <Blank Num="1" UId="216" />
+  <Access Scope="GlobalVariable" UId="217">
+    <Symbol UId="218">
+      <Component Name="Sicherheitsschuetz Heizung Bad 8" UId="219" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="220" />
+  <Access Scope="LiteralConstant" UId="221">
+    <Constant UId="222">
+      <ConstantValue UId="224">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="225" />
+  <NewLine Num="1" UId="226" />
+  <Blank Num="4" UId="227" />
+  <Access Scope="GlobalVariable" UId="228">
+    <Symbol UId="229">
+      <Component Name="Regelung Heizung Bad 12" UId="230" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="231" />
+  <Access Scope="LiteralConstant" UId="232">
+    <Constant UId="233">
+      <ConstantValue UId="235">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="236" />
+  <Blank Num="1" UId="237" />
+  <Access Scope="GlobalVariable" UId="238">
+    <Symbol UId="239">
+      <Component Name="Sicherheitsschuetz Heizung Bad 12" UId="240" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="241" />
+  <Access Scope="LiteralConstant" UId="242">
+    <Constant UId="243">
+      <ConstantValue UId="245">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="246" />
+  <NewLine Num="1" UId="247" />
+  <Blank Num="4" UId="248" />
+  <Access Scope="GlobalVariable" UId="249">
+    <Symbol UId="250">
+      <Component Name="Regelung Heizung 1 Bad 25" UId="251" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="252" />
+  <Access Scope="LiteralConstant" UId="253">
+    <Constant UId="254">
+      <ConstantValue UId="256">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="257" />
+  <Blank Num="1" UId="258" />
+  <Access Scope="GlobalVariable" UId="259">
+    <Symbol UId="260">
+      <Component Name="Regelung Heizung 2 Bad 25" UId="261" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="262" />
+  <Access Scope="LiteralConstant" UId="263">
+    <Constant UId="264">
+      <ConstantValue UId="266">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="267" />
+  <NewLine Num="1" UId="268" />
+  <Blank Num="4" UId="269" />
+  <Access Scope="GlobalVariable" UId="270">
+    <Symbol UId="271">
+      <Component Name="Sicherheitsschuetze Heizung 1 + 2 Bad 25" UId="272" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="273" />
+  <Access Scope="LiteralConstant" UId="274">
+    <Constant UId="275">
+      <ConstantValue UId="277">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="278" />
+  <NewLine Num="1" UId="279" />
+  <Blank Num="4" UId="280" />
+  <Access Scope="GlobalVariable" UId="281">
+    <Symbol UId="282">
+      <Component Name="Regelung Heizung Bad 36" UId="283" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="284" />
+  <Access Scope="LiteralConstant" UId="285">
+    <Constant UId="286">
+      <ConstantValue UId="288">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="289" />
+  <Blank Num="1" UId="290" />
+  <Access Scope="GlobalVariable" UId="291">
+    <Symbol UId="292">
+      <Component Name="Sicherheitsschuetz Heizung Bad 36" UId="293" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="294" />
+  <Access Scope="LiteralConstant" UId="295">
+    <Constant UId="296">
+      <ConstantValue UId="298">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="299" />
+  <NewLine Num="1" UId="300" />
+  <Blank Num="4" UId="301" />
+  <Access Scope="GlobalVariable" UId="302">
+    <Symbol UId="303">
+      <Component Name="Regelung Heizung Bad 40" UId="304" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="305" />
+  <Access Scope="LiteralConstant" UId="306">
+    <Constant UId="307">
+      <ConstantValue UId="309">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="310" />
+  <Blank Num="1" UId="311" />
+  <Access Scope="GlobalVariable" UId="312">
+    <Symbol UId="313">
+      <Component Name="Sicherheitsschuetz Heizung Bad 40" UId="314" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="315" />
+  <Access Scope="LiteralConstant" UId="316">
+    <Constant UId="317">
+      <ConstantValue UId="319">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="320" />
+  <NewLine Num="1" UId="321" />
+  <Blank Num="4" UId="322" />
+  <Access Scope="GlobalVariable" UId="323">
+    <Symbol UId="324">
+      <Component Name="Regelung Heizung Bad 46" UId="325" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="326" />
+  <Access Scope="LiteralConstant" UId="327">
+    <Constant UId="328">
+      <ConstantValue UId="330">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="331" />
+  <Blank Num="1" UId="332" />
+  <Access Scope="GlobalVariable" UId="333">
+    <Symbol UId="334">
+      <Component Name="Sicherheitsschuetz Heizung Bad 46" UId="335" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="336" />
+  <Access Scope="LiteralConstant" UId="337">
+    <Constant UId="338">
+      <ConstantValue UId="340">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="341" />
+  <NewLine Num="1" UId="342" />
+  <Blank Num="4" UId="343" />
+  <Access Scope="GlobalVariable" UId="344">
+    <Symbol UId="345">
+      <Component Name="Freigabe Ultraschall Pos. 8" UId="346" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="347" />
+  <Access Scope="LiteralConstant" UId="348">
+    <Constant UId="349">
+      <ConstantValue UId="351">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="352" />
+  <Blank Num="1" UId="353" />
+  <Access Scope="GlobalVariable" UId="354">
+    <Symbol UId="355">
+      <Component Name="Freigabe Ultraschall Pos. 12" UId="356" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="357" />
+  <Access Scope="LiteralConstant" UId="358">
+    <Constant UId="359">
+      <ConstantValue UId="361">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="362" />
+  <NewLine Num="1" UId="363" />
+  <Blank Num="4" UId="364" />
+  <Access Scope="GlobalVariable" UId="365">
+    <Symbol UId="366">
+      <Component Name="Warenbewegung 1 Bad 25 Freigabe FU" UId="367" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="368" />
+  <Access Scope="LiteralConstant" UId="369">
+    <Constant UId="370">
+      <ConstantValue UId="372">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="373" />
+  <Blank Num="1" UId="374" />
+  <Access Scope="GlobalVariable" UId="375">
+    <Symbol UId="376">
+      <Component Name="Warenbewegung 1 Bad 25 Netzschuetz" UId="377" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="378" />
+  <Access Scope="LiteralConstant" UId="379">
+    <Constant UId="380">
+      <ConstantValue UId="382">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="383" />
+  <NewLine Num="1" UId="384" />
+  <Blank Num="4" UId="385" />
+  <Access Scope="GlobalVariable" UId="386">
+    <Symbol UId="387">
+      <Component Name="Warenbewegung 2 Bad 25 Freigabe FU" UId="388" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="389" />
+  <Access Scope="LiteralConstant" UId="390">
+    <Constant UId="391">
+      <ConstantValue UId="393">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="394" />
+  <Blank Num="1" UId="395" />
+  <Access Scope="GlobalVariable" UId="396">
+    <Symbol UId="397">
+      <Component Name="Warenbewegung 2 Bad 25 Netzschuetz" UId="398" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="399" />
+  <Access Scope="LiteralConstant" UId="400">
+    <Constant UId="401">
+      <ConstantValue UId="403">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="404" />
+  <NewLine Num="1" UId="405" />
+  <Blank Num="4" UId="406" />
+  <Access Scope="GlobalVariable" UId="407">
+    <Symbol UId="408">
+      <Component Name="Warenbewegung 1 Bad 25 Sollwert FU" UId="409" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="410" />
+  <Access Scope="TypedConstant" UId="411">
+    <Constant UId="412">
+      <ConstantValue UId="413">W#16#0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="414" />
+  <Blank Num="1" UId="415" />
+  <Access Scope="GlobalVariable" UId="416">
+    <Symbol UId="417">
+      <Component Name="Warenbewegung 2 Bad 25 Sollwert FU" UId="418" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="419" />
+  <Access Scope="TypedConstant" UId="420">
+    <Constant UId="421">
+      <ConstantValue UId="422">W#16#0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="423" />
+  <NewLine Num="1" UId="424" />
+  <Blank Num="4" UId="425" />
+  <Access Scope="GlobalVariable" UId="426">
+    <Symbol UId="427">
+      <Component Name="Masch.Leuchte 1 Anlage Hupe" UId="428" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="429" />
+  <Access Scope="LiteralConstant" UId="430">
+    <Constant UId="431">
+      <ConstantValue UId="433">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="434" />
+  <NewLine Num="1" UId="435" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="9" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

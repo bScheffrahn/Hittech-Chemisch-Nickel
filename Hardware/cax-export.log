@@ -1,0 +1,414 @@
+﻿12.10.2026 06:46:24 PM: INFO : Der Export ist in Bearbeitung
+12.10.2026 06:46:24 PM: INFO : Subnet: PN/IE_1 wird exportiert.
+12.10.2026 06:46:25 PM: INFO : S7-1500/ET200MP-Station_1 wird exportiert.
+12.10.2026 06:46:25 PM: INFO : Profilschiene_0 wird exportiert.
+12.10.2026 06:46:25 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Profilschiene_0' nicht aufgerufen werden.
+12.10.2026 06:46:25 PM: INFO : -100A1 wird exportiert.
+12.10.2026 06:46:25 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_CentralFSourceAddress, Failsafe_LowerBoundForFDestinationAddresses, Failsafe_UpperBoundForFDestinationAddresses' Attribute konnten für das Gerät '-100A1' nicht aufgerufen werden.
+12.10.2026 06:46:25 PM: INFO : Standard-Variablentabelle wird exportiert.
+12.10.2026 06:46:25 PM: INFO : KP8 wird exportiert.
+12.10.2026 06:46:26 PM: INFO : KP8_Neu wird exportiert.
+12.10.2026 06:46:26 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'CPU-Display_1' nicht aufgerufen werden.
+12.10.2026 06:46:26 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'Kartenleser/-schreiber_1' nicht aufgerufen werden.
+12.10.2026 06:46:26 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'OPC UA_1' nicht aufgerufen werden.
+12.10.2026 06:46:26 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'PROFINET-Schnittstelle_1' nicht aufgerufen werden.
+12.10.2026 06:46:26 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:26 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:26 PM: INFO : Nicht gruppierte Geräte wird exportiert.
+12.10.2026 06:46:26 PM: INFO : ET 200SP-Station_1 wird exportiert.
+12.10.2026 06:46:26 PM: INFO : Baugruppenträger_0 wird exportiert.
+12.10.2026 06:46:26 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger_0' nicht aufgerufen werden.
+12.10.2026 06:46:26 PM: INFO : et200_schrank wird exportiert.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'et200_schrank' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'et200_schrank' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'PROFINET-Schnittstelle' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: INFO : BA 2xRJ45 wird exportiert.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'BA 2xRJ45' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: INFO : -110A1 wird exportiert.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-110A1' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-110A1' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: INFO : -110A2 wird exportiert.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-110A2' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-110A2' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: INFO : -110A3 wird exportiert.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-110A3' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-110A3' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: INFO : -110A4 wird exportiert.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-110A4' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-110A4' nicht aufgerufen werden.
+12.10.2026 06:46:27 PM: INFO : -110A5 wird exportiert.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-110A5' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-110A5' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: INFO : -110A6 wird exportiert.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-110A6' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-110A6' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: INFO : -110A7 wird exportiert.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-110A7' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-110A7' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: INFO : -110A8 wird exportiert.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-110A8' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-110A8' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: INFO : -111A1 wird exportiert.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-111A1' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-111A1' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: INFO : -111A2 wird exportiert.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-111A2' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-111A2' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: INFO : -111A3 wird exportiert.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-111A3' nicht aufgerufen werden.
+12.10.2026 06:46:28 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-111A3' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: INFO : -120A1 wird exportiert.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-120A1' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-120A1' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: INFO : -120A2 wird exportiert.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-120A2' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-120A2' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: INFO : -120A3 wird exportiert.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-120A3' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-120A3' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: INFO : -120A4 wird exportiert.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-120A4' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-120A4' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: INFO : -120A5 wird exportiert.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-120A5' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-120A5' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: INFO : -130A1 wird exportiert.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-130A1' nicht aufgerufen werden.
+12.10.2026 06:46:29 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-130A1' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: INFO : -130A2 wird exportiert.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-130A2' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-130A2' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: INFO : -140A1 wird exportiert.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-140A1' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-140A1' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: INFO : -140A2 wird exportiert.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '-140A2' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät '-140A2' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: INFO : Servermodul_1 wird exportiert.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Servermodul_1' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'Servermodul_1' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: INFO : KP8_1 wird exportiert.
+12.10.2026 06:46:30 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: INFO : p27_kp8 wird exportiert.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p27_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:30 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:31 PM: INFO : KP8_2 wird exportiert.
+12.10.2026 06:46:31 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:31 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:31 PM: INFO : p26_kp8 wird exportiert.
+12.10.2026 06:46:31 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p26_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:31 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:31 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:31 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:31 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:31 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:31 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:32 PM: INFO : KP8_3 wird exportiert.
+12.10.2026 06:46:32 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:32 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:32 PM: INFO : p25_kp8 wird exportiert.
+12.10.2026 06:46:32 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p25_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:32 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:32 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:32 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:32 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:32 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:32 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:33 PM: INFO : KP8_4 wird exportiert.
+12.10.2026 06:46:33 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:33 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:33 PM: INFO : p24_kp8 wird exportiert.
+12.10.2026 06:46:33 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p24_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:33 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:33 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: INFO : KP8_5 wird exportiert.
+12.10.2026 06:46:34 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: INFO : p23_kp8 wird exportiert.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p23_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:34 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: INFO : KP8_6 wird exportiert.
+12.10.2026 06:46:35 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: INFO : p22_kp8 wird exportiert.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p22_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:35 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: INFO : KP8_7 wird exportiert.
+12.10.2026 06:46:36 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: INFO : p21_kp8 wird exportiert.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p21_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:36 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:37 PM: INFO : KP8_8 wird exportiert.
+12.10.2026 06:46:37 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:37 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:37 PM: INFO : p20_kp8 wird exportiert.
+12.10.2026 06:46:37 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p20_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:37 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:37 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:37 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:37 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:37 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:37 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:38 PM: INFO : KP8_9 wird exportiert.
+12.10.2026 06:46:38 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:38 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:38 PM: INFO : p19_kp8 wird exportiert.
+12.10.2026 06:46:38 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p19_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:38 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:38 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:38 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:38 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:38 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:38 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:39 PM: INFO : KP8_10 wird exportiert.
+12.10.2026 06:46:39 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:39 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:39 PM: INFO : p18_kp8 wird exportiert.
+12.10.2026 06:46:39 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p18_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:39 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:39 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:39 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:39 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:39 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:39 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:40 PM: INFO : KP8_11 wird exportiert.
+12.10.2026 06:46:40 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:40 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:40 PM: INFO : p17_kp8 wird exportiert.
+12.10.2026 06:46:40 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p17_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:40 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:40 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: INFO : KP8_12 wird exportiert.
+12.10.2026 06:46:41 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: INFO : p16_kp8 wird exportiert.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p16_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:41 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:42 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:42 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:42 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:42 PM: INFO : KP8_13 wird exportiert.
+12.10.2026 06:46:42 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:42 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:42 PM: INFO : p15_kp8 wird exportiert.
+12.10.2026 06:46:42 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p15_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:42 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:42 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:42 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:43 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:43 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:43 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:43 PM: INFO : KP8_14 wird exportiert.
+12.10.2026 06:46:43 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:43 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:43 PM: INFO : p28_kp8 wird exportiert.
+12.10.2026 06:46:43 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p28_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:43 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:43 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:43 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: INFO : KP8_15 wird exportiert.
+12.10.2026 06:46:44 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: INFO : p09_kp8 wird exportiert.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p09_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:44 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:45 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:45 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:45 PM: INFO : KP8_16 wird exportiert.
+12.10.2026 06:46:45 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:45 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:45 PM: INFO : p10_kp8 wird exportiert.
+12.10.2026 06:46:45 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p10_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:45 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:46 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:46 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:46 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:46 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:46 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:46 PM: INFO : KP8_17 wird exportiert.
+12.10.2026 06:46:46 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:46 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:46 PM: INFO : p11_kp8 wird exportiert.
+12.10.2026 06:46:46 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p11_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:46 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:47 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:47 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:47 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:47 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:47 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:47 PM: INFO : KP8_18 wird exportiert.
+12.10.2026 06:46:47 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:47 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:47 PM: INFO : p12_kp8 wird exportiert.
+12.10.2026 06:46:47 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p12_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:48 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:48 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:48 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:48 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:48 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:48 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:49 PM: INFO : KP8_19 wird exportiert.
+12.10.2026 06:46:49 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:49 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:49 PM: INFO : p13_kp8 wird exportiert.
+12.10.2026 06:46:49 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p13_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:49 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:49 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:49 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:49 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:49 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:49 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:50 PM: INFO : KP8_20 wird exportiert.
+12.10.2026 06:46:50 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:50 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:50 PM: INFO : p14_kp8 wird exportiert.
+12.10.2026 06:46:50 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p14_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:50 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:50 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:50 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:50 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:50 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:50 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:51 PM: INFO : KP8_21 wird exportiert.
+12.10.2026 06:46:51 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:51 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:51 PM: INFO : p01_kp8 wird exportiert.
+12.10.2026 06:46:51 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p01_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:51 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:51 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:51 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:51 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:51 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:51 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:52 PM: INFO : KP8_22 wird exportiert.
+12.10.2026 06:46:52 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:52 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:52 PM: INFO : p02_kp8 wird exportiert.
+12.10.2026 06:46:52 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p02_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:52 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:52 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:52 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:52 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:52 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:52 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:53 PM: INFO : KP8_23 wird exportiert.
+12.10.2026 06:46:53 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:53 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:53 PM: INFO : p03_kp8 wird exportiert.
+12.10.2026 06:46:53 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p03_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:53 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:53 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:53 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:53 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:53 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:53 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:54 PM: INFO : KP8_24 wird exportiert.
+12.10.2026 06:46:54 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:54 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:54 PM: INFO : p04_kp8 wird exportiert.
+12.10.2026 06:46:54 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p04_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:54 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:54 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:54 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:54 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:54 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:54 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:55 PM: INFO : KP8_25 wird exportiert.
+12.10.2026 06:46:55 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:55 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:55 PM: INFO : p05_kp8 wird exportiert.
+12.10.2026 06:46:55 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p05_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:55 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:55 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:55 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:55 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:55 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:55 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:56 PM: INFO : KP8_26 wird exportiert.
+12.10.2026 06:46:56 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:56 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:56 PM: INFO : p06_kp8 wird exportiert.
+12.10.2026 06:46:56 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p06_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:56 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:56 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:56 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:56 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:56 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:56 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:57 PM: INFO : KP8_27 wird exportiert.
+12.10.2026 06:46:57 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:57 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:57 PM: INFO : p07_kp8 wird exportiert.
+12.10.2026 06:46:57 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p07_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:57 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:57 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:57 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:57 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:57 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:57 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:58 PM: INFO : KP8_28 wird exportiert.
+12.10.2026 06:46:58 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:58 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:58 PM: INFO : p08_kp8 wird exportiert.
+12.10.2026 06:46:58 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'p08_kp8' nicht aufgerufen werden.
+12.10.2026 06:46:58 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8' nicht aufgerufen werden.
+12.10.2026 06:46:58 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:58 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_1' nicht aufgerufen werden.
+12.10.2026 06:46:58 PM: DEBUG: Nicht unterstützte Attribute. Die 'TypeName' Attribute konnten für das Gerät 'Port_2' nicht aufgerufen werden.
+12.10.2026 06:46:58 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge_1' nicht aufgerufen werden.
+12.10.2026 06:46:58 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'KP8 Ein-/Ausgänge' nicht aufgerufen werden.
+12.10.2026 06:46:59 PM: INFO : GSD-Geraet_1 wird exportiert.
+12.10.2026 06:46:59 PM: INFO : Baugruppenträger wird exportiert.
+12.10.2026 06:46:59 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Baugruppenträger' nicht aufgerufen werden.
+12.10.2026 06:46:59 PM: INFO : 3x-flexkraft wird exportiert.
+12.10.2026 06:46:59 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät '3x-flexkraft' nicht aufgerufen werden.
+12.10.2026 06:46:59 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'Anybus Communicator' nicht aufgerufen werden.
+12.10.2026 06:46:59 PM: DEBUG: Nicht unterstützte Attribute. Die 'InterfaceLabel, InterfaceAssignmentType' Attribute konnten für das Gerät 'Interface' nicht aufgerufen werden.
+12.10.2026 06:46:59 PM: INFO : IN 0096_1 wird exportiert.
+12.10.2026 06:46:59 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'IN 0096_1' nicht aufgerufen werden.
+12.10.2026 06:46:59 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'Submodule' nicht aufgerufen werden.
+12.10.2026 06:47:00 PM: INFO : OUT 0096_1 wird exportiert.
+12.10.2026 06:47:00 PM: DEBUG: Nicht unterstützte Attribute. Die 'PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation, Failsafe_FSourceAddress, Failsafe_FDestinationAddress' Attribute konnten für das Gerät 'OUT 0096_1' nicht aufgerufen werden.
+12.10.2026 06:47:00 PM: DEBUG: Nicht unterstützte Attribute. Die 'Failsafe_FSourceAddress, Failsafe_FDestinationAddress, PlantDesignation, LocationIdentifier, InstallationDate, AdditionalInformation' Attribute konnten für das Gerät 'Submodule' nicht aufgerufen werden.
+12.10.2026 06:47:00 PM: INFO : Die Export-Datei wird erstellt...
+12.10.2026 06:47:00 PM: INFO : Der Export der CAx-Daten ist abgeschlossen (Fehler: 0, Warnungen: 0)

@@ -1,6 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document>
   <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T16:46:22.2661913Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
   <SW.Tags.PlcTagTable ID="0">
     <AttributeList>
       <Name>KP8</Name>
@@ -9,6 +59,9 @@
       <SW.Tags.PlcTag ID="1" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q1001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P01</Name>
         </AttributeList>
@@ -28,6 +81,9 @@
       <SW.Tags.PlcTag ID="4" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q1001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P01</Name>
         </AttributeList>
@@ -47,6 +103,9 @@
       <SW.Tags.PlcTag ID="7" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q1001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P01</Name>
         </AttributeList>
@@ -66,6 +125,9 @@
       <SW.Tags.PlcTag ID="A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q2001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P02</Name>
         </AttributeList>
@@ -85,6 +147,9 @@
       <SW.Tags.PlcTag ID="D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q2001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P02</Name>
         </AttributeList>
@@ -104,6 +169,9 @@
       <SW.Tags.PlcTag ID="10" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q2001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P02</Name>
         </AttributeList>
@@ -123,6 +191,9 @@
       <SW.Tags.PlcTag ID="13" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q3001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P03</Name>
         </AttributeList>
@@ -142,6 +213,9 @@
       <SW.Tags.PlcTag ID="16" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q3001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P03</Name>
         </AttributeList>
@@ -161,6 +235,9 @@
       <SW.Tags.PlcTag ID="19" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q3001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P03</Name>
         </AttributeList>
@@ -180,6 +257,9 @@
       <SW.Tags.PlcTag ID="1C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q4001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P04</Name>
         </AttributeList>
@@ -199,6 +279,9 @@
       <SW.Tags.PlcTag ID="1F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q4001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P04</Name>
         </AttributeList>
@@ -218,6 +301,9 @@
       <SW.Tags.PlcTag ID="22" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q4001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P04</Name>
         </AttributeList>
@@ -237,6 +323,9 @@
       <SW.Tags.PlcTag ID="25" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q5001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P05</Name>
         </AttributeList>
@@ -256,6 +345,9 @@
       <SW.Tags.PlcTag ID="28" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q5001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P05</Name>
         </AttributeList>
@@ -275,6 +367,9 @@
       <SW.Tags.PlcTag ID="2B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q5001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P05</Name>
         </AttributeList>
@@ -294,6 +389,9 @@
       <SW.Tags.PlcTag ID="2E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q6001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P06</Name>
         </AttributeList>
@@ -313,6 +411,9 @@
       <SW.Tags.PlcTag ID="31" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q6001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P06</Name>
         </AttributeList>
@@ -332,6 +433,9 @@
       <SW.Tags.PlcTag ID="34" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q6001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P06</Name>
         </AttributeList>
@@ -351,6 +455,9 @@
       <SW.Tags.PlcTag ID="37" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q7001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P07</Name>
         </AttributeList>
@@ -370,6 +477,9 @@
       <SW.Tags.PlcTag ID="3A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q7001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P07</Name>
         </AttributeList>
@@ -389,6 +499,9 @@
       <SW.Tags.PlcTag ID="3D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q7001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P07</Name>
         </AttributeList>
@@ -408,6 +521,9 @@
       <SW.Tags.PlcTag ID="40" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q8001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P08</Name>
         </AttributeList>
@@ -427,6 +543,9 @@
       <SW.Tags.PlcTag ID="43" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q8001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P08</Name>
         </AttributeList>
@@ -446,6 +565,9 @@
       <SW.Tags.PlcTag ID="46" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q8001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P08</Name>
         </AttributeList>
@@ -465,6 +587,9 @@
       <SW.Tags.PlcTag ID="49" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q9001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P09</Name>
         </AttributeList>
@@ -484,6 +609,9 @@
       <SW.Tags.PlcTag ID="4C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q9001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P09</Name>
         </AttributeList>
@@ -503,6 +631,9 @@
       <SW.Tags.PlcTag ID="4F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q9001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P09</Name>
         </AttributeList>
@@ -522,6 +653,9 @@
       <SW.Tags.PlcTag ID="52" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q10001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P10</Name>
         </AttributeList>
@@ -541,6 +675,9 @@
       <SW.Tags.PlcTag ID="55" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q10001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P10</Name>
         </AttributeList>
@@ -560,6 +697,9 @@
       <SW.Tags.PlcTag ID="58" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q10001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P10</Name>
         </AttributeList>
@@ -579,6 +719,9 @@
       <SW.Tags.PlcTag ID="5B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q11001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P11</Name>
         </AttributeList>
@@ -598,6 +741,9 @@
       <SW.Tags.PlcTag ID="5E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q11001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P11</Name>
         </AttributeList>
@@ -617,6 +763,9 @@
       <SW.Tags.PlcTag ID="61" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q11001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P11</Name>
         </AttributeList>
@@ -636,6 +785,9 @@
       <SW.Tags.PlcTag ID="64" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q12001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P12</Name>
         </AttributeList>
@@ -655,6 +807,9 @@
       <SW.Tags.PlcTag ID="67" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q12001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P12</Name>
         </AttributeList>
@@ -674,6 +829,9 @@
       <SW.Tags.PlcTag ID="6A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q12001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P12</Name>
         </AttributeList>
@@ -693,6 +851,9 @@
       <SW.Tags.PlcTag ID="6D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q13001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P13</Name>
         </AttributeList>
@@ -712,6 +873,9 @@
       <SW.Tags.PlcTag ID="70" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q13001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P13</Name>
         </AttributeList>
@@ -731,6 +895,9 @@
       <SW.Tags.PlcTag ID="73" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q13001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P13</Name>
         </AttributeList>
@@ -750,6 +917,9 @@
       <SW.Tags.PlcTag ID="76" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q14001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P14</Name>
         </AttributeList>
@@ -769,6 +939,9 @@
       <SW.Tags.PlcTag ID="79" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q14001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P14</Name>
         </AttributeList>
@@ -788,6 +961,9 @@
       <SW.Tags.PlcTag ID="7C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q14001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P14</Name>
         </AttributeList>
@@ -807,6 +983,9 @@
       <SW.Tags.PlcTag ID="7F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q15001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P15</Name>
         </AttributeList>
@@ -826,6 +1005,9 @@
       <SW.Tags.PlcTag ID="82" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q15001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P15</Name>
         </AttributeList>
@@ -845,6 +1027,9 @@
       <SW.Tags.PlcTag ID="85" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q15001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P15</Name>
         </AttributeList>
@@ -864,6 +1049,9 @@
       <SW.Tags.PlcTag ID="88" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q16001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P16</Name>
         </AttributeList>
@@ -883,6 +1071,9 @@
       <SW.Tags.PlcTag ID="8B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q16001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P16</Name>
         </AttributeList>
@@ -902,6 +1093,9 @@
       <SW.Tags.PlcTag ID="8E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q16001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P16</Name>
         </AttributeList>
@@ -921,6 +1115,9 @@
       <SW.Tags.PlcTag ID="91" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q17001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P17</Name>
         </AttributeList>
@@ -940,6 +1137,9 @@
       <SW.Tags.PlcTag ID="94" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q17001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P17</Name>
         </AttributeList>
@@ -959,6 +1159,9 @@
       <SW.Tags.PlcTag ID="97" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q17001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P17</Name>
         </AttributeList>
@@ -978,6 +1181,9 @@
       <SW.Tags.PlcTag ID="9A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q18001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P18</Name>
         </AttributeList>
@@ -997,6 +1203,9 @@
       <SW.Tags.PlcTag ID="9D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q18001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P18</Name>
         </AttributeList>
@@ -1016,6 +1225,9 @@
       <SW.Tags.PlcTag ID="A0" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q18001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P18</Name>
         </AttributeList>
@@ -1035,6 +1247,9 @@
       <SW.Tags.PlcTag ID="A3" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q19001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P19</Name>
         </AttributeList>
@@ -1054,6 +1269,9 @@
       <SW.Tags.PlcTag ID="A6" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q19001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P19</Name>
         </AttributeList>
@@ -1073,6 +1291,9 @@
       <SW.Tags.PlcTag ID="A9" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q19001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P19</Name>
         </AttributeList>
@@ -1092,6 +1313,9 @@
       <SW.Tags.PlcTag ID="AC" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q20001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P20</Name>
         </AttributeList>
@@ -1111,6 +1335,9 @@
       <SW.Tags.PlcTag ID="AF" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q20001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P20</Name>
         </AttributeList>
@@ -1130,6 +1357,9 @@
       <SW.Tags.PlcTag ID="B2" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q20001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P20</Name>
         </AttributeList>
@@ -1149,6 +1379,9 @@
       <SW.Tags.PlcTag ID="B5" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q21001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P21</Name>
         </AttributeList>
@@ -1168,6 +1401,9 @@
       <SW.Tags.PlcTag ID="B8" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q21001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P21</Name>
         </AttributeList>
@@ -1187,6 +1423,9 @@
       <SW.Tags.PlcTag ID="BB" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q21001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P21</Name>
         </AttributeList>
@@ -1206,6 +1445,9 @@
       <SW.Tags.PlcTag ID="BE" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q22001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P22</Name>
         </AttributeList>
@@ -1225,6 +1467,9 @@
       <SW.Tags.PlcTag ID="C1" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q22001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P22</Name>
         </AttributeList>
@@ -1244,6 +1489,9 @@
       <SW.Tags.PlcTag ID="C4" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q22001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P22</Name>
         </AttributeList>
@@ -1263,6 +1511,9 @@
       <SW.Tags.PlcTag ID="C7" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q23001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P23</Name>
         </AttributeList>
@@ -1282,6 +1533,9 @@
       <SW.Tags.PlcTag ID="CA" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q23001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P23</Name>
         </AttributeList>
@@ -1301,6 +1555,9 @@
       <SW.Tags.PlcTag ID="CD" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q23001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P23</Name>
         </AttributeList>
@@ -1320,6 +1577,9 @@
       <SW.Tags.PlcTag ID="D0" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q24001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P24</Name>
         </AttributeList>
@@ -1339,6 +1599,9 @@
       <SW.Tags.PlcTag ID="D3" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q24001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P24</Name>
         </AttributeList>
@@ -1358,6 +1621,9 @@
       <SW.Tags.PlcTag ID="D6" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q24001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P24</Name>
         </AttributeList>
@@ -1377,6 +1643,9 @@
       <SW.Tags.PlcTag ID="D9" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q25001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P25</Name>
         </AttributeList>
@@ -1396,6 +1665,9 @@
       <SW.Tags.PlcTag ID="DC" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q25001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P25</Name>
         </AttributeList>
@@ -1415,6 +1687,9 @@
       <SW.Tags.PlcTag ID="DF" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q25001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P25</Name>
         </AttributeList>
@@ -1434,6 +1709,9 @@
       <SW.Tags.PlcTag ID="E2" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q26001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P26</Name>
         </AttributeList>
@@ -1453,6 +1731,9 @@
       <SW.Tags.PlcTag ID="E5" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q26001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P26</Name>
         </AttributeList>
@@ -1472,6 +1753,9 @@
       <SW.Tags.PlcTag ID="E8" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q26001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P26</Name>
         </AttributeList>
@@ -1491,6 +1775,9 @@
       <SW.Tags.PlcTag ID="EB" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q27001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P27</Name>
         </AttributeList>
@@ -1510,6 +1797,9 @@
       <SW.Tags.PlcTag ID="EE" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q27001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P27</Name>
         </AttributeList>
@@ -1529,6 +1819,9 @@
       <SW.Tags.PlcTag ID="F1" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q27001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P27</Name>
         </AttributeList>
@@ -1548,6 +1841,9 @@
       <SW.Tags.PlcTag ID="F4" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q28001.4</LogicalAddress>
           <Name>Maschinenleuchte orange ein P28</Name>
         </AttributeList>
@@ -1567,6 +1863,9 @@
       <SW.Tags.PlcTag ID="F7" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q28001.5</LogicalAddress>
           <Name>Maschinenleuchte gruen ein P28</Name>
         </AttributeList>
@@ -1586,6 +1885,9 @@
       <SW.Tags.PlcTag ID="FA" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%Q28001.6</LogicalAddress>
           <Name>Maschinenleuchte rot ein P28</Name>
         </AttributeList>

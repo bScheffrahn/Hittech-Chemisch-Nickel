@@ -1,0 +1,1288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T16:46:19.8326639Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="bOn" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 0   On/Off</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bStartA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 1   Start A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bBlockA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 2   Block A (Pause)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bRunProgA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 3   Programm A laufen lassen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bReverseA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 4   Polung A umkehren</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bReverseB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 5   Polung B umkehren</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bStartB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 7   Start B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bClrAhA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 8   AhCounter A lÃ¶schen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bClrAhB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 9   AhCounter B lÃ¶schen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bClrTimer" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 10  ProcessTimer lÃ¶schen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bBlockB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 12  Block B (Pause)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAuxOutA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 13  Auxiliary Out A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAuxOutB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 14  Auxiliary Out B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bRunProgB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 15  Programm B laufen lassen --- Sollwerte (roh, ohne Skalierung) ---</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iSetVoltage_cV" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Sollspannung 1/100 V (1500 = 15,00 V)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iSetCurrent_raw" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Sollstrom 1 A bzw. 0,1 A (siehe HiRes)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="wStartramp_dS" Datatype="Word" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Anlauframpe 1/10 s (50 = 5,0 s) --- Bits StatusRegister (Reg 1) ---</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="bAlarm" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bWarning" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bRemote" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 2  -&gt; nur wenn TRUE Ã¼bernimmt FK Sollwerte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bRunningA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAhLimitA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAhLimitB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bTimerLimitA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bVoltageModeA" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 7  TRUE = Last zu hochohmig (V-Begrenzung)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bVoltageModeB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bUnitOn" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 9  (entspricht der grÃ¼nen LED am GerÃ¤t)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bHiRes" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 10 TRUE = Strom in 0,1 A statt 1 A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bRunningB" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Bit 11 --- Istwerte (roh) ---</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iOutVoltage_cV" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="iOutCurrent_raw" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">--- Roh-Bitregister fÃ¼r Detailauswertung in der Applikation ---</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="wWarnings" Datatype="Word" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="wAlarms" Datatype="Word" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="stDev" Datatype="&quot;UDT_FlexKraft_Device&quot;" Accessibility="Public">
+      <Sections>
+        <Section Name="None">
+          <Member Name="Out" Datatype="&quot;UDT_FlexKraft_Out&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="PageNo" Datatype="Word" />
+                <Member Name="ControlRegister" Datatype="Word" />
+                <Member Name="SetVoltage" Datatype="Int" />
+                <Member Name="SetCurrent" Datatype="Int" />
+                <Member Name="ProcessTimerLimit_HW" Datatype="Word" />
+                <Member Name="ProcessTimerLimit_LW" Datatype="Word" />
+                <Member Name="AhLimit_HW" Datatype="Word" />
+                <Member Name="AhLimit_LW" Datatype="Word" />
+                <Member Name="Startramp" Datatype="Word" />
+                <Member Name="Reserved" Datatype="Array[9..15] of Word" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="In" Datatype="&quot;UDT_FlexKraft_In&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="Reserved0" Datatype="Word" />
+                <Member Name="StatusRegister" Datatype="Word" />
+                <Member Name="WarningsRegister" Datatype="Word" />
+                <Member Name="AlarmsRegister" Datatype="Word" />
+                <Member Name="OutputVoltage" Datatype="Int" />
+                <Member Name="OutputCurrent" Datatype="Int" />
+                <Member Name="ProcessTime_HW" Datatype="Word" />
+                <Member Name="ProcessTime_LW" Datatype="Word" />
+                <Member Name="Ah_HW" Datatype="Word" />
+                <Member Name="Ah_LW" Datatype="Word" />
+                <Member Name="Reserved" Datatype="Array[10..15] of Word" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Static" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_FlexKraft</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>==============================================================================
+ FB: Komfort-Wrapper fÃ¼r ein FlexKraft-GerÃ¤t
+------------------------------------------------------------------------------
+  PflÃ¼ckt das Status-Register in einzelne BOOLs auseinander, baut umgekehrt
+  aus einzelnen BOOLs das Control-Register zusammen und reicht die Sollwerte
+  durch. Es findet KEINE Skalierung statt - der Aufrufer Ã¼bergibt direkt die
+  Modbus-Rohwerte (Spannung in 1/100 V, Strom in 1 A bzw. 0,1 A je HiRes).
+==============================================================================</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <NewLine Num="1" UId="21" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="22">
+    <Text UId="23">--------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="24" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="25">
+    <Text UId="26"> 1) Output zusammenbauen</Text>
+  </LineComment>
+  <NewLine Num="1" UId="27" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="28">
+    <Text UId="29">--------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="30" />
+  <Access Scope="LocalVariable" UId="31">
+    <Symbol UId="32">
+      <Component Name="stDev" UId="33" />
+      <Token Text="." UId="34" />
+      <Component Name="Out" UId="35" />
+      <Token Text="." UId="36" />
+      <Component Name="PageNo" UId="37" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="38" />
+  <Token Text=":=" UId="39" />
+  <Blank Num="1" UId="40" />
+  <Access Scope="LiteralConstant" UId="41">
+    <Constant UId="42">
+      <ConstantValue UId="44">16#0000</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="45" />
+  <NewLine Num="2" UId="46" />
+  <Access Scope="LocalVariable" UId="47">
+    <Symbol UId="48">
+      <Component Name="stDev" UId="49" />
+      <Token Text="." UId="50" />
+      <Component Name="Out" UId="51" />
+      <Token Text="." UId="52" />
+      <Component Name="ControlRegister" UId="53" />
+      <Token Text="." UId="54" />
+      <Token Text="%X0" UId="55" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="56" />
+  <Token Text=":=" UId="57" />
+  <Blank Num="1" UId="58" />
+  <Access Scope="LocalVariable" UId="59">
+    <Symbol UId="60">
+      <Component Name="bOn" UId="61" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="62" />
+  <NewLine Num="1" UId="63" />
+  <Access Scope="LocalVariable" UId="64">
+    <Symbol UId="65">
+      <Component Name="stDev" UId="66" />
+      <Token Text="." UId="67" />
+      <Component Name="Out" UId="68" />
+      <Token Text="." UId="69" />
+      <Component Name="ControlRegister" UId="70" />
+      <Token Text="." UId="71" />
+      <Token Text="%X1" UId="72" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="73" />
+  <Token Text=":=" UId="74" />
+  <Blank Num="1" UId="75" />
+  <Access Scope="LocalVariable" UId="76">
+    <Symbol UId="77">
+      <Component Name="bStartA" UId="78" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="79" />
+  <NewLine Num="1" UId="80" />
+  <Access Scope="LocalVariable" UId="81">
+    <Symbol UId="82">
+      <Component Name="stDev" UId="83" />
+      <Token Text="." UId="84" />
+      <Component Name="Out" UId="85" />
+      <Token Text="." UId="86" />
+      <Component Name="ControlRegister" UId="87" />
+      <Token Text="." UId="88" />
+      <Token Text="%X2" UId="89" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="90" />
+  <Token Text=":=" UId="91" />
+  <Blank Num="1" UId="92" />
+  <Access Scope="LocalVariable" UId="93">
+    <Symbol UId="94">
+      <Component Name="bBlockA" UId="95" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="96" />
+  <NewLine Num="1" UId="97" />
+  <Access Scope="LocalVariable" UId="98">
+    <Symbol UId="99">
+      <Component Name="stDev" UId="100" />
+      <Token Text="." UId="101" />
+      <Component Name="Out" UId="102" />
+      <Token Text="." UId="103" />
+      <Component Name="ControlRegister" UId="104" />
+      <Token Text="." UId="105" />
+      <Token Text="%X3" UId="106" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="107" />
+  <Token Text=":=" UId="108" />
+  <Blank Num="1" UId="109" />
+  <Access Scope="LocalVariable" UId="110">
+    <Symbol UId="111">
+      <Component Name="bRunProgA" UId="112" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="113" />
+  <NewLine Num="1" UId="114" />
+  <Access Scope="LocalVariable" UId="115">
+    <Symbol UId="116">
+      <Component Name="stDev" UId="117" />
+      <Token Text="." UId="118" />
+      <Component Name="Out" UId="119" />
+      <Token Text="." UId="120" />
+      <Component Name="ControlRegister" UId="121" />
+      <Token Text="." UId="122" />
+      <Token Text="%X4" UId="123" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="124" />
+  <Token Text=":=" UId="125" />
+  <Blank Num="1" UId="126" />
+  <Access Scope="LocalVariable" UId="127">
+    <Symbol UId="128">
+      <Component Name="bReverseA" UId="129" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="130" />
+  <NewLine Num="1" UId="131" />
+  <Access Scope="LocalVariable" UId="132">
+    <Symbol UId="133">
+      <Component Name="stDev" UId="134" />
+      <Token Text="." UId="135" />
+      <Component Name="Out" UId="136" />
+      <Token Text="." UId="137" />
+      <Component Name="ControlRegister" UId="138" />
+      <Token Text="." UId="139" />
+      <Token Text="%X5" UId="140" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="141" />
+  <Token Text=":=" UId="142" />
+  <Blank Num="1" UId="143" />
+  <Access Scope="LocalVariable" UId="144">
+    <Symbol UId="145">
+      <Component Name="bReverseB" UId="146" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="147" />
+  <NewLine Num="1" UId="148" />
+  <Access Scope="LocalVariable" UId="149">
+    <Symbol UId="150">
+      <Component Name="stDev" UId="151" />
+      <Token Text="." UId="152" />
+      <Component Name="Out" UId="153" />
+      <Token Text="." UId="154" />
+      <Component Name="ControlRegister" UId="155" />
+      <Token Text="." UId="156" />
+      <Token Text="%X6" UId="157" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="158" />
+  <Token Text=":=" UId="159" />
+  <Blank Num="1" UId="160" />
+  <Access Scope="LiteralConstant" UId="161">
+    <Constant UId="162">
+      <ConstantValue UId="164">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="165" />
+  <Blank Num="7" UId="166" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="167">
+    <Text UId="168"> reserviert</Text>
+  </LineComment>
+  <NewLine Num="1" UId="169" />
+  <Access Scope="LocalVariable" UId="170">
+    <Symbol UId="171">
+      <Component Name="stDev" UId="172" />
+      <Token Text="." UId="173" />
+      <Component Name="Out" UId="174" />
+      <Token Text="." UId="175" />
+      <Component Name="ControlRegister" UId="176" />
+      <Token Text="." UId="177" />
+      <Token Text="%X7" UId="178" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="179" />
+  <Token Text=":=" UId="180" />
+  <Blank Num="1" UId="181" />
+  <Access Scope="LocalVariable" UId="182">
+    <Symbol UId="183">
+      <Component Name="bStartB" UId="184" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="185" />
+  <NewLine Num="1" UId="186" />
+  <Access Scope="LocalVariable" UId="187">
+    <Symbol UId="188">
+      <Component Name="stDev" UId="189" />
+      <Token Text="." UId="190" />
+      <Component Name="Out" UId="191" />
+      <Token Text="." UId="192" />
+      <Component Name="ControlRegister" UId="193" />
+      <Token Text="." UId="194" />
+      <Token Text="%X8" UId="195" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="196" />
+  <Token Text=":=" UId="197" />
+  <Blank Num="1" UId="198" />
+  <Access Scope="LocalVariable" UId="199">
+    <Symbol UId="200">
+      <Component Name="bClrAhA" UId="201" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="202" />
+  <NewLine Num="1" UId="203" />
+  <Access Scope="LocalVariable" UId="204">
+    <Symbol UId="205">
+      <Component Name="stDev" UId="206" />
+      <Token Text="." UId="207" />
+      <Component Name="Out" UId="208" />
+      <Token Text="." UId="209" />
+      <Component Name="ControlRegister" UId="210" />
+      <Token Text="." UId="211" />
+      <Token Text="%X9" UId="212" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="213" />
+  <Token Text=":=" UId="214" />
+  <Blank Num="1" UId="215" />
+  <Access Scope="LocalVariable" UId="216">
+    <Symbol UId="217">
+      <Component Name="bClrAhB" UId="218" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="219" />
+  <NewLine Num="1" UId="220" />
+  <Access Scope="LocalVariable" UId="221">
+    <Symbol UId="222">
+      <Component Name="stDev" UId="223" />
+      <Token Text="." UId="224" />
+      <Component Name="Out" UId="225" />
+      <Token Text="." UId="226" />
+      <Component Name="ControlRegister" UId="227" />
+      <Token Text="." UId="228" />
+      <Token Text="%X10" UId="229" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="230" />
+  <Token Text=":=" UId="231" />
+  <Blank Num="1" UId="232" />
+  <Access Scope="LocalVariable" UId="233">
+    <Symbol UId="234">
+      <Component Name="bClrTimer" UId="235" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="236" />
+  <NewLine Num="1" UId="237" />
+  <Access Scope="LocalVariable" UId="238">
+    <Symbol UId="239">
+      <Component Name="stDev" UId="240" />
+      <Token Text="." UId="241" />
+      <Component Name="Out" UId="242" />
+      <Token Text="." UId="243" />
+      <Component Name="ControlRegister" UId="244" />
+      <Token Text="." UId="245" />
+      <Token Text="%X11" UId="246" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="247" />
+  <Token Text=":=" UId="248" />
+  <Blank Num="1" UId="249" />
+  <Access Scope="LiteralConstant" UId="250">
+    <Constant UId="251">
+      <ConstantValue UId="253">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="254" />
+  <Blank Num="7" UId="255" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="256">
+    <Text UId="257"> reserviert</Text>
+  </LineComment>
+  <NewLine Num="1" UId="258" />
+  <Access Scope="LocalVariable" UId="259">
+    <Symbol UId="260">
+      <Component Name="stDev" UId="261" />
+      <Token Text="." UId="262" />
+      <Component Name="Out" UId="263" />
+      <Token Text="." UId="264" />
+      <Component Name="ControlRegister" UId="265" />
+      <Token Text="." UId="266" />
+      <Token Text="%X12" UId="267" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="268" />
+  <Token Text=":=" UId="269" />
+  <Blank Num="1" UId="270" />
+  <Access Scope="LocalVariable" UId="271">
+    <Symbol UId="272">
+      <Component Name="bBlockB" UId="273" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="274" />
+  <NewLine Num="1" UId="275" />
+  <Access Scope="LocalVariable" UId="276">
+    <Symbol UId="277">
+      <Component Name="stDev" UId="278" />
+      <Token Text="." UId="279" />
+      <Component Name="Out" UId="280" />
+      <Token Text="." UId="281" />
+      <Component Name="ControlRegister" UId="282" />
+      <Token Text="." UId="283" />
+      <Token Text="%X13" UId="284" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="285" />
+  <Token Text=":=" UId="286" />
+  <Blank Num="1" UId="287" />
+  <Access Scope="LocalVariable" UId="288">
+    <Symbol UId="289">
+      <Component Name="bAuxOutA" UId="290" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="291" />
+  <NewLine Num="1" UId="292" />
+  <Access Scope="LocalVariable" UId="293">
+    <Symbol UId="294">
+      <Component Name="stDev" UId="295" />
+      <Token Text="." UId="296" />
+      <Component Name="Out" UId="297" />
+      <Token Text="." UId="298" />
+      <Component Name="ControlRegister" UId="299" />
+      <Token Text="." UId="300" />
+      <Token Text="%X14" UId="301" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="302" />
+  <Token Text=":=" UId="303" />
+  <Blank Num="1" UId="304" />
+  <Access Scope="LocalVariable" UId="305">
+    <Symbol UId="306">
+      <Component Name="bAuxOutB" UId="307" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="308" />
+  <NewLine Num="1" UId="309" />
+  <Access Scope="LocalVariable" UId="310">
+    <Symbol UId="311">
+      <Component Name="stDev" UId="312" />
+      <Token Text="." UId="313" />
+      <Component Name="Out" UId="314" />
+      <Token Text="." UId="315" />
+      <Component Name="ControlRegister" UId="316" />
+      <Token Text="." UId="317" />
+      <Token Text="%X15" UId="318" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="319" />
+  <Token Text=":=" UId="320" />
+  <Blank Num="1" UId="321" />
+  <Access Scope="LocalVariable" UId="322">
+    <Symbol UId="323">
+      <Component Name="bRunProgB" UId="324" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="325" />
+  <NewLine Num="2" UId="326" />
+  <Access Scope="LocalVariable" UId="327">
+    <Symbol UId="328">
+      <Component Name="stDev" UId="329" />
+      <Token Text="." UId="330" />
+      <Component Name="Out" UId="331" />
+      <Token Text="." UId="332" />
+      <Component Name="SetVoltage" UId="333" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="334" />
+  <Token Text=":=" UId="335" />
+  <Blank Num="1" UId="336" />
+  <Access Scope="LocalVariable" UId="337">
+    <Symbol UId="338">
+      <Component Name="iSetVoltage_cV" UId="339" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="340" />
+  <NewLine Num="1" UId="341" />
+  <Access Scope="LocalVariable" UId="342">
+    <Symbol UId="343">
+      <Component Name="stDev" UId="344" />
+      <Token Text="." UId="345" />
+      <Component Name="Out" UId="346" />
+      <Token Text="." UId="347" />
+      <Component Name="SetCurrent" UId="348" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="349" />
+  <Token Text=":=" UId="350" />
+  <Blank Num="1" UId="351" />
+  <Access Scope="LocalVariable" UId="352">
+    <Symbol UId="353">
+      <Component Name="iSetCurrent_raw" UId="354" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="355" />
+  <NewLine Num="1" UId="356" />
+  <Access Scope="LocalVariable" UId="357">
+    <Symbol UId="358">
+      <Component Name="stDev" UId="359" />
+      <Token Text="." UId="360" />
+      <Component Name="Out" UId="361" />
+      <Token Text="." UId="362" />
+      <Component Name="Startramp" UId="363" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="364" />
+  <Token Text=":=" UId="365" />
+  <Blank Num="1" UId="366" />
+  <Access Scope="LocalVariable" UId="367">
+    <Symbol UId="368">
+      <Component Name="wStartramp_dS" UId="369" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="370" />
+  <NewLine Num="2" UId="371" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="372">
+    <Text UId="373">--------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="374" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="375">
+    <Text UId="376"> 2) StatusRegister auseinanderpflÃ¼cken</Text>
+  </LineComment>
+  <NewLine Num="1" UId="377" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="378">
+    <Text UId="379">--------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="380" />
+  <Access Scope="LocalVariable" UId="381">
+    <Symbol UId="382">
+      <Component Name="bAlarm" UId="383" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="384" />
+  <Token Text=":=" UId="385" />
+  <Blank Num="1" UId="386" />
+  <Access Scope="LocalVariable" UId="387">
+    <Symbol UId="388">
+      <Component Name="stDev" UId="389" />
+      <Token Text="." UId="390" />
+      <Component Name="In" UId="391" />
+      <Token Text="." UId="392" />
+      <Component Name="StatusRegister" UId="393" />
+      <Token Text="." UId="394" />
+      <Token Text="%X0" UId="395" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="396" />
+  <NewLine Num="1" UId="397" />
+  <Access Scope="LocalVariable" UId="398">
+    <Symbol UId="399">
+      <Component Name="bWarning" UId="400" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="401" />
+  <Token Text=":=" UId="402" />
+  <Blank Num="1" UId="403" />
+  <Access Scope="LocalVariable" UId="404">
+    <Symbol UId="405">
+      <Component Name="stDev" UId="406" />
+      <Token Text="." UId="407" />
+      <Component Name="In" UId="408" />
+      <Token Text="." UId="409" />
+      <Component Name="StatusRegister" UId="410" />
+      <Token Text="." UId="411" />
+      <Token Text="%X1" UId="412" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="413" />
+  <NewLine Num="1" UId="414" />
+  <Access Scope="LocalVariable" UId="415">
+    <Symbol UId="416">
+      <Component Name="bRemote" UId="417" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="418" />
+  <Token Text=":=" UId="419" />
+  <Blank Num="1" UId="420" />
+  <Access Scope="LocalVariable" UId="421">
+    <Symbol UId="422">
+      <Component Name="stDev" UId="423" />
+      <Token Text="." UId="424" />
+      <Component Name="In" UId="425" />
+      <Token Text="." UId="426" />
+      <Component Name="StatusRegister" UId="427" />
+      <Token Text="." UId="428" />
+      <Token Text="%X2" UId="429" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="430" />
+  <NewLine Num="1" UId="431" />
+  <Access Scope="LocalVariable" UId="432">
+    <Symbol UId="433">
+      <Component Name="bRunningA" UId="434" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="435" />
+  <Token Text=":=" UId="436" />
+  <Blank Num="1" UId="437" />
+  <Access Scope="LocalVariable" UId="438">
+    <Symbol UId="439">
+      <Component Name="stDev" UId="440" />
+      <Token Text="." UId="441" />
+      <Component Name="In" UId="442" />
+      <Token Text="." UId="443" />
+      <Component Name="StatusRegister" UId="444" />
+      <Token Text="." UId="445" />
+      <Token Text="%X3" UId="446" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="447" />
+  <NewLine Num="1" UId="448" />
+  <Access Scope="LocalVariable" UId="449">
+    <Symbol UId="450">
+      <Component Name="bAhLimitA" UId="451" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="452" />
+  <Token Text=":=" UId="453" />
+  <Blank Num="1" UId="454" />
+  <Access Scope="LocalVariable" UId="455">
+    <Symbol UId="456">
+      <Component Name="stDev" UId="457" />
+      <Token Text="." UId="458" />
+      <Component Name="In" UId="459" />
+      <Token Text="." UId="460" />
+      <Component Name="StatusRegister" UId="461" />
+      <Token Text="." UId="462" />
+      <Token Text="%X4" UId="463" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="464" />
+  <NewLine Num="1" UId="465" />
+  <Access Scope="LocalVariable" UId="466">
+    <Symbol UId="467">
+      <Component Name="bAhLimitB" UId="468" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="469" />
+  <Token Text=":=" UId="470" />
+  <Blank Num="1" UId="471" />
+  <Access Scope="LocalVariable" UId="472">
+    <Symbol UId="473">
+      <Component Name="stDev" UId="474" />
+      <Token Text="." UId="475" />
+      <Component Name="In" UId="476" />
+      <Token Text="." UId="477" />
+      <Component Name="StatusRegister" UId="478" />
+      <Token Text="." UId="479" />
+      <Token Text="%X5" UId="480" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="481" />
+  <NewLine Num="1" UId="482" />
+  <Access Scope="LocalVariable" UId="483">
+    <Symbol UId="484">
+      <Component Name="bTimerLimitA" UId="485" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="486" />
+  <Token Text=":=" UId="487" />
+  <Blank Num="1" UId="488" />
+  <Access Scope="LocalVariable" UId="489">
+    <Symbol UId="490">
+      <Component Name="stDev" UId="491" />
+      <Token Text="." UId="492" />
+      <Component Name="In" UId="493" />
+      <Token Text="." UId="494" />
+      <Component Name="StatusRegister" UId="495" />
+      <Token Text="." UId="496" />
+      <Token Text="%X6" UId="497" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="498" />
+  <NewLine Num="1" UId="499" />
+  <Access Scope="LocalVariable" UId="500">
+    <Symbol UId="501">
+      <Component Name="bVoltageModeA" UId="502" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="503" />
+  <Token Text=":=" UId="504" />
+  <Blank Num="1" UId="505" />
+  <Access Scope="LocalVariable" UId="506">
+    <Symbol UId="507">
+      <Component Name="stDev" UId="508" />
+      <Token Text="." UId="509" />
+      <Component Name="In" UId="510" />
+      <Token Text="." UId="511" />
+      <Component Name="StatusRegister" UId="512" />
+      <Token Text="." UId="513" />
+      <Token Text="%X7" UId="514" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="515" />
+  <NewLine Num="1" UId="516" />
+  <Access Scope="LocalVariable" UId="517">
+    <Symbol UId="518">
+      <Component Name="bVoltageModeB" UId="519" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="520" />
+  <Token Text=":=" UId="521" />
+  <Blank Num="1" UId="522" />
+  <Access Scope="LocalVariable" UId="523">
+    <Symbol UId="524">
+      <Component Name="stDev" UId="525" />
+      <Token Text="." UId="526" />
+      <Component Name="In" UId="527" />
+      <Token Text="." UId="528" />
+      <Component Name="StatusRegister" UId="529" />
+      <Token Text="." UId="530" />
+      <Token Text="%X8" UId="531" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="532" />
+  <NewLine Num="1" UId="533" />
+  <Access Scope="LocalVariable" UId="534">
+    <Symbol UId="535">
+      <Component Name="bUnitOn" UId="536" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="537" />
+  <Token Text=":=" UId="538" />
+  <Blank Num="1" UId="539" />
+  <Access Scope="LocalVariable" UId="540">
+    <Symbol UId="541">
+      <Component Name="stDev" UId="542" />
+      <Token Text="." UId="543" />
+      <Component Name="In" UId="544" />
+      <Token Text="." UId="545" />
+      <Component Name="StatusRegister" UId="546" />
+      <Token Text="." UId="547" />
+      <Token Text="%X9" UId="548" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="549" />
+  <NewLine Num="1" UId="550" />
+  <Access Scope="LocalVariable" UId="551">
+    <Symbol UId="552">
+      <Component Name="bHiRes" UId="553" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="554" />
+  <Token Text=":=" UId="555" />
+  <Blank Num="1" UId="556" />
+  <Access Scope="LocalVariable" UId="557">
+    <Symbol UId="558">
+      <Component Name="stDev" UId="559" />
+      <Token Text="." UId="560" />
+      <Component Name="In" UId="561" />
+      <Token Text="." UId="562" />
+      <Component Name="StatusRegister" UId="563" />
+      <Token Text="." UId="564" />
+      <Token Text="%X10" UId="565" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="566" />
+  <NewLine Num="1" UId="567" />
+  <Access Scope="LocalVariable" UId="568">
+    <Symbol UId="569">
+      <Component Name="bRunningB" UId="570" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="571" />
+  <Token Text=":=" UId="572" />
+  <Blank Num="1" UId="573" />
+  <Access Scope="LocalVariable" UId="574">
+    <Symbol UId="575">
+      <Component Name="stDev" UId="576" />
+      <Token Text="." UId="577" />
+      <Component Name="In" UId="578" />
+      <Token Text="." UId="579" />
+      <Component Name="StatusRegister" UId="580" />
+      <Token Text="." UId="581" />
+      <Token Text="%X11" UId="582" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="583" />
+  <NewLine Num="2" UId="584" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="585">
+    <Text UId="586">--------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="587" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="588">
+    <Text UId="589"> 3) Istwerte und Roh-Bitregister durchreichen</Text>
+  </LineComment>
+  <NewLine Num="1" UId="590" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="591">
+    <Text UId="592">--------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="593" />
+  <Access Scope="LocalVariable" UId="594">
+    <Symbol UId="595">
+      <Component Name="iOutVoltage_cV" UId="596" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="597" />
+  <Token Text=":=" UId="598" />
+  <Blank Num="1" UId="599" />
+  <Access Scope="LocalVariable" UId="600">
+    <Symbol UId="601">
+      <Component Name="stDev" UId="602" />
+      <Token Text="." UId="603" />
+      <Component Name="In" UId="604" />
+      <Token Text="." UId="605" />
+      <Component Name="OutputVoltage" UId="606" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="607" />
+  <NewLine Num="1" UId="608" />
+  <Access Scope="LocalVariable" UId="609">
+    <Symbol UId="610">
+      <Component Name="iOutCurrent_raw" UId="611" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="612" />
+  <Token Text=":=" UId="613" />
+  <Blank Num="1" UId="614" />
+  <Access Scope="LocalVariable" UId="615">
+    <Symbol UId="616">
+      <Component Name="stDev" UId="617" />
+      <Token Text="." UId="618" />
+      <Component Name="In" UId="619" />
+      <Token Text="." UId="620" />
+      <Component Name="OutputCurrent" UId="621" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="622" />
+  <NewLine Num="1" UId="623" />
+  <Access Scope="LocalVariable" UId="624">
+    <Symbol UId="625">
+      <Component Name="wWarnings" UId="626" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="627" />
+  <Token Text=":=" UId="628" />
+  <Blank Num="1" UId="629" />
+  <Access Scope="LocalVariable" UId="630">
+    <Symbol UId="631">
+      <Component Name="stDev" UId="632" />
+      <Token Text="." UId="633" />
+      <Component Name="In" UId="634" />
+      <Token Text="." UId="635" />
+      <Component Name="WarningsRegister" UId="636" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="637" />
+  <NewLine Num="1" UId="638" />
+  <Access Scope="LocalVariable" UId="639">
+    <Symbol UId="640">
+      <Component Name="wAlarms" UId="641" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="642" />
+  <Token Text=":=" UId="643" />
+  <Blank Num="1" UId="644" />
+  <Access Scope="LocalVariable" UId="645">
+    <Symbol UId="646">
+      <Component Name="stDev" UId="647" />
+      <Token Text="." UId="648" />
+      <Component Name="In" UId="649" />
+      <Token Text="." UId="650" />
+      <Component Name="AlarmsRegister" UId="651" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="652" />
+  <NewLine Num="2" UId="653" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="9" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

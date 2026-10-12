@@ -1,0 +1,2399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T16:46:20.8402245Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.2</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Not_Halt_Aktiv" Datatype="Bool" Accessibility="Public" />
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp">
+    <Member Name="b" Datatype="Int" />
+    <Member Name="w" Datatype="Int" />
+    <Member Name="ai" Datatype="Int" />
+    <Member Name="si" Datatype="Int" />
+  </Section>
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC_Rueckmeldung</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <NewLine Num="1" UId="21" />
+  <Blank Num="4" UId="22" />
+  <Access Scope="GlobalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="DB_CPU_to_IPC" UId="25">
+        <BooleanAttribute Name="HasQuotes" UId="26">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="27" />
+      <Component Name="Not_Halt_Aktiv" UId="28" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="29" />
+  <Token Text=":=" UId="30" />
+  <Blank Num="1" UId="31" />
+  <Access Scope="LocalVariable" UId="32">
+    <Symbol UId="33">
+      <Component Name="Not_Halt_Aktiv" UId="34" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="35" />
+  <NewLine Num="1" UId="36" />
+  <Blank Num="4" UId="37" />
+  <Access Scope="GlobalVariable" UId="38">
+    <Symbol UId="39">
+      <Component Name="DB_CPU_to_IPC" UId="40">
+        <BooleanAttribute Name="HasQuotes" UId="41">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="42" />
+      <Component Name="Not_Aus_OK" UId="43" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="44" />
+  <Token Text=":=" UId="45" />
+  <Blank Num="1" UId="46" />
+  <Access Scope="GlobalVariable" UId="47">
+    <Symbol UId="48">
+      <Component Name="Not-Aus ist OK" UId="49" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="50" />
+  <NewLine Num="1" UId="51" />
+  <Blank Num="4" UId="52" />
+  <Token Text="FOR" UId="53" />
+  <Blank Num="1" UId="54" />
+  <Access Scope="LocalVariable" UId="55">
+    <Symbol UId="56">
+      <Component Name="b" UId="57" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="58" />
+  <Access Scope="LiteralConstant" UId="59">
+    <Constant UId="60">
+      <ConstantValue UId="62">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="63" />
+  <Token Text="TO" UId="64" />
+  <Blank Num="1" UId="65" />
+  <Access Scope="GlobalConstant" UId="66">
+    <Constant Name="c_Anzahl_Bad" UId="67" />
+  </Access>
+  <Blank Num="1" UId="70" />
+  <Token Text="DO" UId="71" />
+  <NewLine Num="1" UId="72" />
+  <Blank Num="8" UId="73" />
+  <Access Scope="GlobalVariable" UId="74">
+    <Symbol UId="75">
+      <Component Name="DB_CPU_to_IPC" UId="76">
+        <BooleanAttribute Name="HasQuotes" UId="77">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="78" />
+      <Component Name="Bad" UId="79">
+        <Token Text="[" UId="80" />
+        <Access Scope="LocalVariable" UId="81">
+          <Symbol UId="82">
+            <Component Name="b" UId="83" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="84" />
+      </Component>
+      <Token Text="." UId="85" />
+      <Component Name="Ampel_Status" UId="86" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="87" />
+  <Token Text=":=" UId="88" />
+  <Blank Num="1" UId="89" />
+  <Access Scope="GlobalVariable" UId="90">
+    <Symbol UId="91">
+      <Component Name="DB_Bad_Konfig" UId="92">
+        <BooleanAttribute Name="HasQuotes" UId="93">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="94" />
+      <Component Name="Bad_Konfig" UId="95">
+        <Token Text="[" UId="96" />
+        <Access Scope="LocalVariable" UId="97">
+          <Symbol UId="98">
+            <Component Name="b" UId="99" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="100" />
+      </Component>
+      <Token Text="." UId="101" />
+      <Component Name="Ampel_Status" UId="102" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="103" />
+  <NewLine Num="1" UId="104" />
+  <Blank Num="8" UId="105" />
+  <Access Scope="GlobalVariable" UId="106">
+    <Symbol UId="107">
+      <Component Name="DB_CPU_to_IPC" UId="108">
+        <BooleanAttribute Name="HasQuotes" UId="109">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="110" />
+      <Component Name="Bad" UId="111">
+        <Token Text="[" UId="112" />
+        <Access Scope="LocalVariable" UId="113">
+          <Symbol UId="114">
+            <Component Name="b" UId="115" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="116" />
+      </Component>
+      <Token Text="." UId="117" />
+      <Component Name="Betriebsbereit" UId="118" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="119" />
+  <Token Text=":=" UId="120" />
+  <Blank Num="1" UId="121" />
+  <Access Scope="GlobalVariable" UId="122">
+    <Symbol UId="123">
+      <Component Name="DB_Bad_Konfig" UId="124">
+        <BooleanAttribute Name="HasQuotes" UId="125">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="126" />
+      <Component Name="Bad_Konfig" UId="127">
+        <Token Text="[" UId="128" />
+        <Access Scope="LocalVariable" UId="129">
+          <Symbol UId="130">
+            <Component Name="b" UId="131" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="132" />
+      </Component>
+      <Token Text="." UId="133" />
+      <Component Name="Betriebsbereit" UId="134" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="135" />
+  <NewLine Num="1" UId="136" />
+  <Blank Num="8" UId="137" />
+  <Access Scope="GlobalVariable" UId="138">
+    <Symbol UId="139">
+      <Component Name="DB_CPU_to_IPC" UId="140">
+        <BooleanAttribute Name="HasQuotes" UId="141">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="142" />
+      <Component Name="Bad" UId="143">
+        <Token Text="[" UId="144" />
+        <Access Scope="LocalVariable" UId="145">
+          <Symbol UId="146">
+            <Component Name="b" UId="147" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="148" />
+      </Component>
+      <Token Text="." UId="149" />
+      <Component Name="Heizung_1_Ist" UId="150" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="151" />
+  <Token Text=":=" UId="152" />
+  <Blank Num="1" UId="153" />
+  <Access Scope="GlobalVariable" UId="154">
+    <Symbol UId="155">
+      <Component Name="DB_Bad_Konfig" UId="156">
+        <BooleanAttribute Name="HasQuotes" UId="157">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="158" />
+      <Component Name="Bad_Konfig" UId="159">
+        <Token Text="[" UId="160" />
+        <Access Scope="LocalVariable" UId="161">
+          <Symbol UId="162">
+            <Component Name="b" UId="163" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="164" />
+      </Component>
+      <Token Text="." UId="165" />
+      <Component Name="Heizung_1_Ist" UId="166" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="167" />
+  <NewLine Num="1" UId="168" />
+  <Blank Num="8" UId="169" />
+  <Access Scope="GlobalVariable" UId="170">
+    <Symbol UId="171">
+      <Component Name="DB_CPU_to_IPC" UId="172">
+        <BooleanAttribute Name="HasQuotes" UId="173">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="174" />
+      <Component Name="Bad" UId="175">
+        <Token Text="[" UId="176" />
+        <Access Scope="LocalVariable" UId="177">
+          <Symbol UId="178">
+            <Component Name="b" UId="179" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="180" />
+      </Component>
+      <Token Text="." UId="181" />
+      <Component Name="Heizung_1_Soll" UId="182" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="183" />
+  <Token Text=":=" UId="184" />
+  <Blank Num="1" UId="185" />
+  <Access Scope="GlobalVariable" UId="186">
+    <Symbol UId="187">
+      <Component Name="DB_Bad_Konfig" UId="188">
+        <BooleanAttribute Name="HasQuotes" UId="189">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="190" />
+      <Component Name="Bad_Konfig" UId="191">
+        <Token Text="[" UId="192" />
+        <Access Scope="LocalVariable" UId="193">
+          <Symbol UId="194">
+            <Component Name="b" UId="195" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="196" />
+      </Component>
+      <Token Text="." UId="197" />
+      <Component Name="Heizung_1_Soll" UId="198" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="199" />
+  <NewLine Num="1" UId="200" />
+  <Blank Num="8" UId="201" />
+  <Access Scope="GlobalVariable" UId="202">
+    <Symbol UId="203">
+      <Component Name="DB_CPU_to_IPC" UId="204">
+        <BooleanAttribute Name="HasQuotes" UId="205">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="206" />
+      <Component Name="Bad" UId="207">
+        <Token Text="[" UId="208" />
+        <Access Scope="LocalVariable" UId="209">
+          <Symbol UId="210">
+            <Component Name="b" UId="211" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="212" />
+      </Component>
+      <Token Text="." UId="213" />
+      <Component Name="Heizung_2_Ist" UId="214" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="215" />
+  <Token Text=":=" UId="216" />
+  <Blank Num="1" UId="217" />
+  <Access Scope="GlobalVariable" UId="218">
+    <Symbol UId="219">
+      <Component Name="DB_Bad_Konfig" UId="220">
+        <BooleanAttribute Name="HasQuotes" UId="221">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="222" />
+      <Component Name="Bad_Konfig" UId="223">
+        <Token Text="[" UId="224" />
+        <Access Scope="LocalVariable" UId="225">
+          <Symbol UId="226">
+            <Component Name="b" UId="227" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="228" />
+      </Component>
+      <Token Text="." UId="229" />
+      <Component Name="Heizung_2_Ist" UId="230" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="231" />
+  <NewLine Num="1" UId="232" />
+  <Blank Num="8" UId="233" />
+  <Access Scope="GlobalVariable" UId="234">
+    <Symbol UId="235">
+      <Component Name="DB_CPU_to_IPC" UId="236">
+        <BooleanAttribute Name="HasQuotes" UId="237">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="238" />
+      <Component Name="Bad" UId="239">
+        <Token Text="[" UId="240" />
+        <Access Scope="LocalVariable" UId="241">
+          <Symbol UId="242">
+            <Component Name="b" UId="243" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="244" />
+      </Component>
+      <Token Text="." UId="245" />
+      <Component Name="Heizung_2_Soll" UId="246" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="247" />
+  <Token Text=":=" UId="248" />
+  <Blank Num="1" UId="249" />
+  <Access Scope="GlobalVariable" UId="250">
+    <Symbol UId="251">
+      <Component Name="DB_Bad_Konfig" UId="252">
+        <BooleanAttribute Name="HasQuotes" UId="253">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="254" />
+      <Component Name="Bad_Konfig" UId="255">
+        <Token Text="[" UId="256" />
+        <Access Scope="LocalVariable" UId="257">
+          <Symbol UId="258">
+            <Component Name="b" UId="259" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="260" />
+      </Component>
+      <Token Text="." UId="261" />
+      <Component Name="Heizung_2_Soll" UId="262" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="263" />
+  <NewLine Num="1" UId="264" />
+  <Blank Num="8" UId="265" />
+  <Access Scope="GlobalVariable" UId="266">
+    <Symbol UId="267">
+      <Component Name="DB_CPU_to_IPC" UId="268">
+        <BooleanAttribute Name="HasQuotes" UId="269">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="270" />
+      <Component Name="Bad" UId="271">
+        <Token Text="[" UId="272" />
+        <Access Scope="LocalVariable" UId="273">
+          <Symbol UId="274">
+            <Component Name="b" UId="275" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="276" />
+      </Component>
+      <Token Text="." UId="277" />
+      <Component Name="Pumpe_Laeuft" UId="278" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="279" />
+  <Token Text=":=" UId="280" />
+  <Blank Num="1" UId="281" />
+  <Access Scope="GlobalVariable" UId="282">
+    <Symbol UId="283">
+      <Component Name="DB_Bad_Konfig" UId="284">
+        <BooleanAttribute Name="HasQuotes" UId="285">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="286" />
+      <Component Name="Bad_Konfig" UId="287">
+        <Token Text="[" UId="288" />
+        <Access Scope="LocalVariable" UId="289">
+          <Symbol UId="290">
+            <Component Name="b" UId="291" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="292" />
+      </Component>
+      <Token Text="." UId="293" />
+      <Component Name="IO_Aus" UId="294" />
+      <Token Text="." UId="295" />
+      <Component Name="Pumpe" UId="296" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="297" />
+  <NewLine Num="1" UId="298" />
+  <Blank Num="8" UId="299" />
+  <Access Scope="GlobalVariable" UId="300">
+    <Symbol UId="301">
+      <Component Name="DB_CPU_to_IPC" UId="302">
+        <BooleanAttribute Name="HasQuotes" UId="303">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="304" />
+      <Component Name="Bad" UId="305">
+        <Token Text="[" UId="306" />
+        <Access Scope="LocalVariable" UId="307">
+          <Symbol UId="308">
+            <Component Name="b" UId="309" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="310" />
+      </Component>
+      <Token Text="." UId="311" />
+      <Component Name="Pumpe_FU_Soll" UId="312" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="313" />
+  <Token Text=":=" UId="314" />
+  <Blank Num="1" UId="315" />
+  <Access Scope="GlobalVariable" UId="316">
+    <Symbol UId="317">
+      <Component Name="DB_Bad_Konfig" UId="318">
+        <BooleanAttribute Name="HasQuotes" UId="319">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="320" />
+      <Component Name="Bad_Konfig" UId="321">
+        <Token Text="[" UId="322" />
+        <Access Scope="LocalVariable" UId="323">
+          <Symbol UId="324">
+            <Component Name="b" UId="325" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="326" />
+      </Component>
+      <Token Text="." UId="327" />
+      <Component Name="Pumpe_FU_Soll" UId="328" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="329" />
+  <NewLine Num="1" UId="330" />
+  <Blank Num="8" UId="331" />
+  <Access Scope="GlobalVariable" UId="332">
+    <Symbol UId="333">
+      <Component Name="DB_CPU_to_IPC" UId="334">
+        <BooleanAttribute Name="HasQuotes" UId="335">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="336" />
+      <Component Name="Bad" UId="337">
+        <Token Text="[" UId="338" />
+        <Access Scope="LocalVariable" UId="339">
+          <Symbol UId="340">
+            <Component Name="b" UId="341" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="342" />
+      </Component>
+      <Token Text="." UId="343" />
+      <Component Name="US_Laeuft" UId="344" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="345" />
+  <Token Text=":=" UId="346" />
+  <Blank Num="1" UId="347" />
+  <Access Scope="GlobalVariable" UId="348">
+    <Symbol UId="349">
+      <Component Name="DB_Bad_Konfig" UId="350">
+        <BooleanAttribute Name="HasQuotes" UId="351">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="352" />
+      <Component Name="Bad_Konfig" UId="353">
+        <Token Text="[" UId="354" />
+        <Access Scope="LocalVariable" UId="355">
+          <Symbol UId="356">
+            <Component Name="b" UId="357" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="358" />
+      </Component>
+      <Token Text="." UId="359" />
+      <Component Name="IO_Aus" UId="360" />
+      <Token Text="." UId="361" />
+      <Component Name="Ultraschall_Freigabe" UId="362" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="363" />
+  <NewLine Num="1" UId="364" />
+  <Blank Num="8" UId="365" />
+  <Access Scope="GlobalVariable" UId="366">
+    <Symbol UId="367">
+      <Component Name="DB_CPU_to_IPC" UId="368">
+        <BooleanAttribute Name="HasQuotes" UId="369">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="370" />
+      <Component Name="Bad" UId="371">
+        <Token Text="[" UId="372" />
+        <Access Scope="LocalVariable" UId="373">
+          <Symbol UId="374">
+            <Component Name="b" UId="375" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="376" />
+      </Component>
+      <Token Text="." UId="377" />
+      <Component Name="GR_Aktiv" UId="378" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="379" />
+  <Token Text=":=" UId="380" />
+  <Blank Num="1" UId="381" />
+  <Access Scope="GlobalVariable" UId="382">
+    <Symbol UId="383">
+      <Component Name="DB_Bad_Konfig" UId="384">
+        <BooleanAttribute Name="HasQuotes" UId="385">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="386" />
+      <Component Name="Bad_Konfig" UId="387">
+        <Token Text="[" UId="388" />
+        <Access Scope="LocalVariable" UId="389">
+          <Symbol UId="390">
+            <Component Name="b" UId="391" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="392" />
+      </Component>
+      <Token Text="." UId="393" />
+      <Component Name="GR_Aktiv" UId="394" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="395" />
+  <NewLine Num="1" UId="396" />
+  <Blank Num="8" UId="397" />
+  <Access Scope="GlobalVariable" UId="398">
+    <Symbol UId="399">
+      <Component Name="DB_CPU_to_IPC" UId="400">
+        <BooleanAttribute Name="HasQuotes" UId="401">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="402" />
+      <Component Name="Bad" UId="403">
+        <Token Text="[" UId="404" />
+        <Access Scope="LocalVariable" UId="405">
+          <Symbol UId="406">
+            <Component Name="b" UId="407" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="408" />
+      </Component>
+      <Token Text="." UId="409" />
+      <Component Name="GR_Strom_Ist" UId="410" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="411" />
+  <Token Text=":=" UId="412" />
+  <Blank Num="1" UId="413" />
+  <Access Scope="GlobalVariable" UId="414">
+    <Symbol UId="415">
+      <Component Name="DB_Bad_Konfig" UId="416">
+        <BooleanAttribute Name="HasQuotes" UId="417">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="418" />
+      <Component Name="Bad_Konfig" UId="419">
+        <Token Text="[" UId="420" />
+        <Access Scope="LocalVariable" UId="421">
+          <Symbol UId="422">
+            <Component Name="b" UId="423" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="424" />
+      </Component>
+      <Token Text="." UId="425" />
+      <Component Name="GR_Strom_Ist" UId="426" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="427" />
+  <NewLine Num="1" UId="428" />
+  <Blank Num="8" UId="429" />
+  <Access Scope="GlobalVariable" UId="430">
+    <Symbol UId="431">
+      <Component Name="DB_CPU_to_IPC" UId="432">
+        <BooleanAttribute Name="HasQuotes" UId="433">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="434" />
+      <Component Name="Bad" UId="435">
+        <Token Text="[" UId="436" />
+        <Access Scope="LocalVariable" UId="437">
+          <Symbol UId="438">
+            <Component Name="b" UId="439" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="440" />
+      </Component>
+      <Token Text="." UId="441" />
+      <Component Name="GR_Spannung_Ist" UId="442" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="443" />
+  <Token Text=":=" UId="444" />
+  <Blank Num="1" UId="445" />
+  <Access Scope="GlobalVariable" UId="446">
+    <Symbol UId="447">
+      <Component Name="DB_Bad_Konfig" UId="448">
+        <BooleanAttribute Name="HasQuotes" UId="449">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="450" />
+      <Component Name="Bad_Konfig" UId="451">
+        <Token Text="[" UId="452" />
+        <Access Scope="LocalVariable" UId="453">
+          <Symbol UId="454">
+            <Component Name="b" UId="455" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="456" />
+      </Component>
+      <Token Text="." UId="457" />
+      <Component Name="GR_Spannung_Ist" UId="458" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="459" />
+  <NewLine Num="1" UId="460" />
+  <Blank Num="8" UId="461" />
+  <Access Scope="GlobalVariable" UId="462">
+    <Symbol UId="463">
+      <Component Name="DB_CPU_to_IPC" UId="464">
+        <BooleanAttribute Name="HasQuotes" UId="465">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="466" />
+      <Component Name="Bad" UId="467">
+        <Token Text="[" UId="468" />
+        <Access Scope="LocalVariable" UId="469">
+          <Symbol UId="470">
+            <Component Name="b" UId="471" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="472" />
+      </Component>
+      <Token Text="." UId="473" />
+      <Component Name="WB_X_Soll" UId="474" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="475" />
+  <Token Text=":=" UId="476" />
+  <Blank Num="1" UId="477" />
+  <Access Scope="GlobalVariable" UId="478">
+    <Symbol UId="479">
+      <Component Name="DB_Bad_Konfig" UId="480">
+        <BooleanAttribute Name="HasQuotes" UId="481">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="482" />
+      <Component Name="Bad_Konfig" UId="483">
+        <Token Text="[" UId="484" />
+        <Access Scope="LocalVariable" UId="485">
+          <Symbol UId="486">
+            <Component Name="b" UId="487" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="488" />
+      </Component>
+      <Token Text="." UId="489" />
+      <Component Name="Warenbewegung_X_Soll" UId="490" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="491" />
+  <NewLine Num="1" UId="492" />
+  <Blank Num="8" UId="493" />
+  <Access Scope="GlobalVariable" UId="494">
+    <Symbol UId="495">
+      <Component Name="DB_CPU_to_IPC" UId="496">
+        <BooleanAttribute Name="HasQuotes" UId="497">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="498" />
+      <Component Name="Bad" UId="499">
+        <Token Text="[" UId="500" />
+        <Access Scope="LocalVariable" UId="501">
+          <Symbol UId="502">
+            <Component Name="b" UId="503" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="504" />
+      </Component>
+      <Token Text="." UId="505" />
+      <Component Name="WB_Y_Soll" UId="506" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="507" />
+  <Token Text=":=" UId="508" />
+  <Blank Num="1" UId="509" />
+  <Access Scope="GlobalVariable" UId="510">
+    <Symbol UId="511">
+      <Component Name="DB_Bad_Konfig" UId="512">
+        <BooleanAttribute Name="HasQuotes" UId="513">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="514" />
+      <Component Name="Bad_Konfig" UId="515">
+        <Token Text="[" UId="516" />
+        <Access Scope="LocalVariable" UId="517">
+          <Symbol UId="518">
+            <Component Name="b" UId="519" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="520" />
+      </Component>
+      <Token Text="." UId="521" />
+      <Component Name="Warenbewegung_Y_Soll" UId="522" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="523" />
+  <NewLine Num="1" UId="524" />
+  <Blank Num="8" UId="525" />
+  <Access Scope="GlobalVariable" UId="526">
+    <Symbol UId="527">
+      <Component Name="DB_CPU_to_IPC" UId="528">
+        <BooleanAttribute Name="HasQuotes" UId="529">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="530" />
+      <Component Name="Bad" UId="531">
+        <Token Text="[" UId="532" />
+        <Access Scope="LocalVariable" UId="533">
+          <Symbol UId="534">
+            <Component Name="b" UId="535" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="536" />
+      </Component>
+      <Token Text="." UId="537" />
+      <Component Name="Hand_Aktiv" UId="538" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="539" />
+  <Token Text=":=" UId="540" />
+  <Blank Num="1" UId="541" />
+  <Access Scope="GlobalVariable" UId="542">
+    <Symbol UId="543">
+      <Component Name="DB_Bad_Konfig" UId="544">
+        <BooleanAttribute Name="HasQuotes" UId="545">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="546" />
+      <Component Name="Bad_Konfig" UId="547">
+        <Token Text="[" UId="548" />
+        <Access Scope="LocalVariable" UId="549">
+          <Symbol UId="550">
+            <Component Name="b" UId="551" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="552" />
+      </Component>
+      <Token Text="." UId="553" />
+      <Component Name="Hand_Aktiv_Intern" UId="554" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="555" />
+  <NewLine Num="1" UId="556" />
+  <Blank Num="8" UId="557" />
+  <Access Scope="GlobalVariable" UId="558">
+    <Symbol UId="559">
+      <Component Name="DB_CPU_to_IPC" UId="560">
+        <BooleanAttribute Name="HasQuotes" UId="561">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="562" />
+      <Component Name="Bad" UId="563">
+        <Token Text="[" UId="564" />
+        <Access Scope="LocalVariable" UId="565">
+          <Symbol UId="566">
+            <Component Name="b" UId="567" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="568" />
+      </Component>
+      <Token Text="." UId="569" />
+      <Component Name="Hand_Abgelehnt" UId="570" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="571" />
+  <Token Text=":=" UId="572" />
+  <Blank Num="1" UId="573" />
+  <Access Scope="GlobalVariable" UId="574">
+    <Symbol UId="575">
+      <Component Name="DB_IPC_to_CPU" UId="576">
+        <BooleanAttribute Name="HasQuotes" UId="577">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="578" />
+      <Component Name="Handbetrieb" UId="579">
+        <Token Text="[" UId="580" />
+        <Access Scope="LocalVariable" UId="581">
+          <Symbol UId="582">
+            <Component Name="b" UId="583" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="584" />
+      </Component>
+      <Token Text="." UId="585" />
+      <Component Name="Hand_Aktiv" UId="586" />
+    </Symbol>
+  </Access>
+  <NewLine Num="1" UId="587" />
+  <Blank Num="12" UId="588" />
+  <Token Text="AND" UId="589" />
+  <Blank Num="1" UId="590" />
+  <Token Text="(" UId="591" />
+  <Access Scope="GlobalVariable" UId="592">
+    <Symbol UId="593">
+      <Component Name="DB_Bad_Konfig" UId="594">
+        <BooleanAttribute Name="HasQuotes" UId="595">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="596" />
+      <Component Name="Bad_Konfig" UId="597">
+        <Token Text="[" UId="598" />
+        <Access Scope="LocalVariable" UId="599">
+          <Symbol UId="600">
+            <Component Name="b" UId="601" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="602" />
+      </Component>
+      <Token Text="." UId="603" />
+      <Component Name="WT" UId="604">
+        <Token Text="[" UId="605" />
+        <Access Scope="LiteralConstant" UId="606">
+          <Constant UId="607">
+            <ConstantValue UId="609">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="610" />
+      </Component>
+      <Token Text="." UId="611" />
+      <Component Name="Belegt" UId="612" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="613" />
+  <Token Text="OR" UId="614" />
+  <Blank Num="1" UId="615" />
+  <Access Scope="GlobalVariable" UId="616">
+    <Symbol UId="617">
+      <Component Name="DB_Bad_Konfig" UId="618">
+        <BooleanAttribute Name="HasQuotes" UId="619">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="620" />
+      <Component Name="Bad_Konfig" UId="621">
+        <Token Text="[" UId="622" />
+        <Access Scope="LocalVariable" UId="623">
+          <Symbol UId="624">
+            <Component Name="b" UId="625" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="626" />
+      </Component>
+      <Token Text="." UId="627" />
+      <Component Name="WT" UId="628">
+        <Token Text="[" UId="629" />
+        <Access Scope="LiteralConstant" UId="630">
+          <Constant UId="631">
+            <ConstantValue UId="633">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="634" />
+      </Component>
+      <Token Text="." UId="635" />
+      <Component Name="Belegt" UId="636" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="637" />
+  <Token Text="OR" UId="638" />
+  <Blank Num="1" UId="639" />
+  <Access Scope="GlobalVariable" UId="640">
+    <Symbol UId="641">
+      <Component Name="DB_Bad_Konfig" UId="642">
+        <BooleanAttribute Name="HasQuotes" UId="643">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="644" />
+      <Component Name="Bad_Konfig" UId="645">
+        <Token Text="[" UId="646" />
+        <Access Scope="LocalVariable" UId="647">
+          <Symbol UId="648">
+            <Component Name="b" UId="649" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="650" />
+      </Component>
+      <Token Text="." UId="651" />
+      <Component Name="WT" UId="652">
+        <Token Text="[" UId="653" />
+        <Access Scope="LiteralConstant" UId="654">
+          <Constant UId="655">
+            <ConstantValue UId="657">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="658" />
+      </Component>
+      <Token Text="." UId="659" />
+      <Component Name="Belegt" UId="660" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="661" />
+  <Token Text=";" UId="662" />
+  <NewLine Num="1" UId="663" />
+  <Blank Num="8" UId="664" />
+  <Token Text="FOR" UId="665" />
+  <Blank Num="1" UId="666" />
+  <Access Scope="LocalVariable" UId="667">
+    <Symbol UId="668">
+      <Component Name="w" UId="669" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="670" />
+  <Access Scope="LiteralConstant" UId="671">
+    <Constant UId="672">
+      <ConstantValue UId="674">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="675" />
+  <Token Text="TO" UId="676" />
+  <Blank Num="1" UId="677" />
+  <Access Scope="LiteralConstant" UId="678">
+    <Constant UId="679">
+      <ConstantValue UId="681">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="682" />
+  <Token Text="DO" UId="683" />
+  <NewLine Num="1" UId="684" />
+  <Blank Num="12" UId="685" />
+  <Access Scope="GlobalVariable" UId="686">
+    <Symbol UId="687">
+      <Component Name="DB_CPU_to_IPC" UId="688">
+        <BooleanAttribute Name="HasQuotes" UId="689">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="690" />
+      <Component Name="Bad" UId="691">
+        <Token Text="[" UId="692" />
+        <Access Scope="LocalVariable" UId="693">
+          <Symbol UId="694">
+            <Component Name="b" UId="695" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="696" />
+      </Component>
+      <Token Text="." UId="697" />
+      <Component Name="WT" UId="698">
+        <Token Text="[" UId="699" />
+        <Access Scope="LocalVariable" UId="700">
+          <Symbol UId="701">
+            <Component Name="w" UId="702" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="703" />
+      </Component>
+      <Token Text="." UId="704" />
+      <Component Name="Belegt" UId="705" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="706" />
+  <Token Text=":=" UId="707" />
+  <Blank Num="1" UId="708" />
+  <Access Scope="GlobalVariable" UId="709">
+    <Symbol UId="710">
+      <Component Name="DB_Bad_Konfig" UId="711">
+        <BooleanAttribute Name="HasQuotes" UId="712">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="713" />
+      <Component Name="Bad_Konfig" UId="714">
+        <Token Text="[" UId="715" />
+        <Access Scope="LocalVariable" UId="716">
+          <Symbol UId="717">
+            <Component Name="b" UId="718" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="719" />
+      </Component>
+      <Token Text="." UId="720" />
+      <Component Name="WT" UId="721">
+        <Token Text="[" UId="722" />
+        <Access Scope="LocalVariable" UId="723">
+          <Symbol UId="724">
+            <Component Name="w" UId="725" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="726" />
+      </Component>
+      <Token Text="." UId="727" />
+      <Component Name="Belegt" UId="728" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="729" />
+  <NewLine Num="1" UId="730" />
+  <Blank Num="12" UId="731" />
+  <Access Scope="LocalVariable" UId="732">
+    <Symbol UId="733">
+      <Component Name="ai" UId="734" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="735" />
+  <Token Text=":=" UId="736" />
+  <Blank Num="1" UId="737" />
+  <Access Scope="GlobalVariable" UId="738">
+    <Symbol UId="739">
+      <Component Name="DB_Bad_Konfig" UId="740">
+        <BooleanAttribute Name="HasQuotes" UId="741">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="742" />
+      <Component Name="Bad_Konfig" UId="743">
+        <Token Text="[" UId="744" />
+        <Access Scope="LocalVariable" UId="745">
+          <Symbol UId="746">
+            <Component Name="b" UId="747" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="748" />
+      </Component>
+      <Token Text="." UId="749" />
+      <Component Name="WT" UId="750">
+        <Token Text="[" UId="751" />
+        <Access Scope="LocalVariable" UId="752">
+          <Symbol UId="753">
+            <Component Name="w" UId="754" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="755" />
+      </Component>
+      <Token Text="." UId="756" />
+      <Component Name="Auftragsindex" UId="757" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="758" />
+  <Blank Num="1" UId="759" />
+  <Access Scope="LocalVariable" UId="760">
+    <Symbol UId="761">
+      <Component Name="si" UId="762" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="763" />
+  <Token Text=":=" UId="764" />
+  <Blank Num="1" UId="765" />
+  <Access Scope="GlobalVariable" UId="766">
+    <Symbol UId="767">
+      <Component Name="DB_Bad_Konfig" UId="768">
+        <BooleanAttribute Name="HasQuotes" UId="769">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="770" />
+      <Component Name="Bad_Konfig" UId="771">
+        <Token Text="[" UId="772" />
+        <Access Scope="LocalVariable" UId="773">
+          <Symbol UId="774">
+            <Component Name="b" UId="775" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="776" />
+      </Component>
+      <Token Text="." UId="777" />
+      <Component Name="WT" UId="778">
+        <Token Text="[" UId="779" />
+        <Access Scope="LocalVariable" UId="780">
+          <Symbol UId="781">
+            <Component Name="w" UId="782" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="783" />
+      </Component>
+      <Token Text="." UId="784" />
+      <Component Name="SchrittIndex" UId="785" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="786" />
+  <NewLine Num="1" UId="787" />
+  <Blank Num="12" UId="788" />
+  <Access Scope="GlobalVariable" UId="789">
+    <Symbol UId="790">
+      <Component Name="DB_CPU_to_IPC" UId="791">
+        <BooleanAttribute Name="HasQuotes" UId="792">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="793" />
+      <Component Name="Bad" UId="794">
+        <Token Text="[" UId="795" />
+        <Access Scope="LocalVariable" UId="796">
+          <Symbol UId="797">
+            <Component Name="b" UId="798" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="799" />
+      </Component>
+      <Token Text="." UId="800" />
+      <Component Name="WT" UId="801">
+        <Token Text="[" UId="802" />
+        <Access Scope="LocalVariable" UId="803">
+          <Symbol UId="804">
+            <Component Name="w" UId="805" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="806" />
+      </Component>
+      <Token Text="." UId="807" />
+      <Component Name="Auftragsindex" UId="808" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="809" />
+  <Token Text=":=" UId="810" />
+  <Blank Num="1" UId="811" />
+  <Access Scope="LocalVariable" UId="812">
+    <Symbol UId="813">
+      <Component Name="ai" UId="814" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="815" />
+  <Blank Num="1" UId="816" />
+  <Access Scope="GlobalVariable" UId="817">
+    <Symbol UId="818">
+      <Component Name="DB_CPU_to_IPC" UId="819">
+        <BooleanAttribute Name="HasQuotes" UId="820">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="821" />
+      <Component Name="Bad" UId="822">
+        <Token Text="[" UId="823" />
+        <Access Scope="LocalVariable" UId="824">
+          <Symbol UId="825">
+            <Component Name="b" UId="826" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="827" />
+      </Component>
+      <Token Text="." UId="828" />
+      <Component Name="WT" UId="829">
+        <Token Text="[" UId="830" />
+        <Access Scope="LocalVariable" UId="831">
+          <Symbol UId="832">
+            <Component Name="w" UId="833" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="834" />
+      </Component>
+      <Token Text="." UId="835" />
+      <Component Name="SchrittIndex" UId="836" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="837" />
+  <Token Text=":=" UId="838" />
+  <Blank Num="1" UId="839" />
+  <Access Scope="LocalVariable" UId="840">
+    <Symbol UId="841">
+      <Component Name="si" UId="842" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="843" />
+  <NewLine Num="1" UId="844" />
+  <Blank Num="12" UId="845" />
+  <Token Text="IF" UId="846" />
+  <Blank Num="1" UId="847" />
+  <Token Text="(" UId="848" />
+  <Access Scope="LocalVariable" UId="849">
+    <Symbol UId="850">
+      <Component Name="ai" UId="851" />
+    </Symbol>
+  </Access>
+  <Token Text="&gt;=" UId="852" />
+  <Access Scope="LiteralConstant" UId="853">
+    <Constant UId="854">
+      <ConstantValue UId="856">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="857" />
+  <Token Text="AND" UId="858" />
+  <Token Text="(" UId="859" />
+  <Access Scope="LocalVariable" UId="860">
+    <Symbol UId="861">
+      <Component Name="ai" UId="862" />
+    </Symbol>
+  </Access>
+  <Token Text="&lt;=" UId="863" />
+  <Access Scope="LiteralConstant" UId="864">
+    <Constant UId="865">
+      <ConstantValue UId="867">9</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="868" />
+  <Token Text="AND" UId="869" />
+  <Token Text="(" UId="870" />
+  <Access Scope="LocalVariable" UId="871">
+    <Symbol UId="872">
+      <Component Name="si" UId="873" />
+    </Symbol>
+  </Access>
+  <Token Text="&gt;=" UId="874" />
+  <Access Scope="LiteralConstant" UId="875">
+    <Constant UId="876">
+      <ConstantValue UId="878">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="879" />
+  <Token Text="AND" UId="880" />
+  <Token Text="(" UId="881" />
+  <Access Scope="LocalVariable" UId="882">
+    <Symbol UId="883">
+      <Component Name="si" UId="884" />
+    </Symbol>
+  </Access>
+  <Token Text="&lt;=" UId="885" />
+  <Access Scope="LiteralConstant" UId="886">
+    <Constant UId="887">
+      <ConstantValue UId="889">50</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="890" />
+  <Blank Num="1" UId="891" />
+  <Token Text="THEN" UId="892" />
+  <NewLine Num="1" UId="893" />
+  <Blank Num="16" UId="894" />
+  <Access Scope="GlobalVariable" UId="895">
+    <Symbol UId="896">
+      <Component Name="DB_CPU_to_IPC" UId="897">
+        <BooleanAttribute Name="HasQuotes" UId="898">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="899" />
+      <Component Name="Bad" UId="900">
+        <Token Text="[" UId="901" />
+        <Access Scope="LocalVariable" UId="902">
+          <Symbol UId="903">
+            <Component Name="b" UId="904" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="905" />
+      </Component>
+      <Token Text="." UId="906" />
+      <Component Name="WT" UId="907">
+        <Token Text="[" UId="908" />
+        <Access Scope="LocalVariable" UId="909">
+          <Symbol UId="910">
+            <Component Name="w" UId="911" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="912" />
+      </Component>
+      <Token Text="." UId="913" />
+      <Component Name="Artikel_ID" UId="914" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="915" />
+  <Token Text=":=" UId="916" />
+  <Blank Num="1" UId="917" />
+  <Access Scope="GlobalVariable" UId="918">
+    <Symbol UId="919">
+      <Component Name="DB_IPC_to_CPU" UId="920">
+        <BooleanAttribute Name="HasQuotes" UId="921">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="922" />
+      <Component Name="Auftrag" UId="923">
+        <Token Text="[" UId="924" />
+        <Access Scope="LocalVariable" UId="925">
+          <Symbol UId="926">
+            <Component Name="ai" UId="927" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="928" />
+      </Component>
+      <Token Text="." UId="929" />
+      <Component Name="ID_Artikel" UId="930" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="931" />
+  <NewLine Num="1" UId="932" />
+  <Blank Num="16" UId="933" />
+  <Access Scope="GlobalVariable" UId="934">
+    <Symbol UId="935">
+      <Component Name="DB_CPU_to_IPC" UId="936">
+        <BooleanAttribute Name="HasQuotes" UId="937">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="938" />
+      <Component Name="Bad" UId="939">
+        <Token Text="[" UId="940" />
+        <Access Scope="LocalVariable" UId="941">
+          <Symbol UId="942">
+            <Component Name="b" UId="943" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="944" />
+      </Component>
+      <Token Text="." UId="945" />
+      <Component Name="WT" UId="946">
+        <Token Text="[" UId="947" />
+        <Access Scope="LocalVariable" UId="948">
+          <Symbol UId="949">
+            <Component Name="w" UId="950" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="951" />
+      </Component>
+      <Token Text="." UId="952" />
+      <Component Name="Personal_ID" UId="953" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="954" />
+  <Token Text=":=" UId="955" />
+  <Blank Num="1" UId="956" />
+  <Access Scope="GlobalVariable" UId="957">
+    <Symbol UId="958">
+      <Component Name="DB_IPC_to_CPU" UId="959">
+        <BooleanAttribute Name="HasQuotes" UId="960">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="961" />
+      <Component Name="Auftrag" UId="962">
+        <Token Text="[" UId="963" />
+        <Access Scope="LocalVariable" UId="964">
+          <Symbol UId="965">
+            <Component Name="ai" UId="966" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="967" />
+      </Component>
+      <Token Text="." UId="968" />
+      <Component Name="Personal_ID" UId="969" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="970" />
+  <NewLine Num="1" UId="971" />
+  <Blank Num="16" UId="972" />
+  <Access Scope="GlobalVariable" UId="973">
+    <Symbol UId="974">
+      <Component Name="DB_CPU_to_IPC" UId="975">
+        <BooleanAttribute Name="HasQuotes" UId="976">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="977" />
+      <Component Name="Bad" UId="978">
+        <Token Text="[" UId="979" />
+        <Access Scope="LocalVariable" UId="980">
+          <Symbol UId="981">
+            <Component Name="b" UId="982" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="983" />
+      </Component>
+      <Token Text="." UId="984" />
+      <Component Name="WT" UId="985">
+        <Token Text="[" UId="986" />
+        <Access Scope="LocalVariable" UId="987">
+          <Symbol UId="988">
+            <Component Name="w" UId="989" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="990" />
+      </Component>
+      <Token Text="." UId="991" />
+      <Component Name="BadNr" UId="992" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="993" />
+  <Token Text=":=" UId="994" />
+  <Blank Num="1" UId="995" />
+  <Access Scope="GlobalVariable" UId="996">
+    <Symbol UId="997">
+      <Component Name="DB_IPC_to_CPU" UId="998">
+        <BooleanAttribute Name="HasQuotes" UId="999">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1000" />
+      <Component Name="Auftrag" UId="1001">
+        <Token Text="[" UId="1002" />
+        <Access Scope="LocalVariable" UId="1003">
+          <Symbol UId="1004">
+            <Component Name="ai" UId="1005" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1006" />
+      </Component>
+      <Token Text="." UId="1007" />
+      <Component Name="Schritte" UId="1008">
+        <Token Text="[" UId="1009" />
+        <Access Scope="LocalVariable" UId="1010">
+          <Symbol UId="1011">
+            <Component Name="si" UId="1012" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1013" />
+      </Component>
+      <Token Text="." UId="1014" />
+      <Component Name="BadNr" UId="1015" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1016" />
+  <NewLine Num="1" UId="1017" />
+  <Blank Num="16" UId="1018" />
+  <Access Scope="GlobalVariable" UId="1019">
+    <Symbol UId="1020">
+      <Component Name="DB_CPU_to_IPC" UId="1021">
+        <BooleanAttribute Name="HasQuotes" UId="1022">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1023" />
+      <Component Name="Bad" UId="1024">
+        <Token Text="[" UId="1025" />
+        <Access Scope="LocalVariable" UId="1026">
+          <Symbol UId="1027">
+            <Component Name="b" UId="1028" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1029" />
+      </Component>
+      <Token Text="." UId="1030" />
+      <Component Name="WT" UId="1031">
+        <Token Text="[" UId="1032" />
+        <Access Scope="LocalVariable" UId="1033">
+          <Symbol UId="1034">
+            <Component Name="w" UId="1035" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1036" />
+      </Component>
+      <Token Text="." UId="1037" />
+      <Component Name="Verweilzeit_Soll" UId="1038" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1039" />
+  <Token Text=":=" UId="1040" />
+  <Blank Num="1" UId="1041" />
+  <Access Scope="GlobalVariable" UId="1042">
+    <Symbol UId="1043">
+      <Component Name="DB_IPC_to_CPU" UId="1044">
+        <BooleanAttribute Name="HasQuotes" UId="1045">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1046" />
+      <Component Name="Auftrag" UId="1047">
+        <Token Text="[" UId="1048" />
+        <Access Scope="LocalVariable" UId="1049">
+          <Symbol UId="1050">
+            <Component Name="ai" UId="1051" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1052" />
+      </Component>
+      <Token Text="." UId="1053" />
+      <Component Name="Schritte" UId="1054">
+        <Token Text="[" UId="1055" />
+        <Access Scope="LocalVariable" UId="1056">
+          <Symbol UId="1057">
+            <Component Name="si" UId="1058" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1059" />
+      </Component>
+      <Token Text="." UId="1060" />
+      <Component Name="Verweilzeit" UId="1061" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1062" />
+  <NewLine Num="1" UId="1063" />
+  <Blank Num="12" UId="1064" />
+  <Token Text="END_IF" UId="1065" />
+  <Token Text=";" UId="1066" />
+  <NewLine Num="1" UId="1067" />
+  <Blank Num="12" UId="1068" />
+  <Access Scope="GlobalVariable" UId="1069">
+    <Symbol UId="1070">
+      <Component Name="DB_CPU_to_IPC" UId="1071">
+        <BooleanAttribute Name="HasQuotes" UId="1072">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1073" />
+      <Component Name="Bad" UId="1074">
+        <Token Text="[" UId="1075" />
+        <Access Scope="LocalVariable" UId="1076">
+          <Symbol UId="1077">
+            <Component Name="b" UId="1078" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1079" />
+      </Component>
+      <Token Text="." UId="1080" />
+      <Component Name="WT" UId="1081">
+        <Token Text="[" UId="1082" />
+        <Access Scope="LocalVariable" UId="1083">
+          <Symbol UId="1084">
+            <Component Name="w" UId="1085" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1086" />
+      </Component>
+      <Token Text="." UId="1087" />
+      <Component Name="WT_Eingesetzt" UId="1088" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1089" />
+  <Token Text=":=" UId="1090" />
+  <Blank Num="1" UId="1091" />
+  <Access Scope="GlobalVariable" UId="1092">
+    <Symbol UId="1093">
+      <Component Name="DB_Bad_Konfig" UId="1094">
+        <BooleanAttribute Name="HasQuotes" UId="1095">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1096" />
+      <Component Name="Bad_Konfig" UId="1097">
+        <Token Text="[" UId="1098" />
+        <Access Scope="LocalVariable" UId="1099">
+          <Symbol UId="1100">
+            <Component Name="b" UId="1101" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1102" />
+      </Component>
+      <Token Text="." UId="1103" />
+      <Component Name="WT" UId="1104">
+        <Token Text="[" UId="1105" />
+        <Access Scope="LocalVariable" UId="1106">
+          <Symbol UId="1107">
+            <Component Name="w" UId="1108" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1109" />
+      </Component>
+      <Token Text="." UId="1110" />
+      <Component Name="WT_Eingesetzt" UId="1111" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1112" />
+  <NewLine Num="1" UId="1113" />
+  <Blank Num="12" UId="1114" />
+  <Access Scope="GlobalVariable" UId="1115">
+    <Symbol UId="1116">
+      <Component Name="DB_CPU_to_IPC" UId="1117">
+        <BooleanAttribute Name="HasQuotes" UId="1118">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1119" />
+      <Component Name="Bad" UId="1120">
+        <Token Text="[" UId="1121" />
+        <Access Scope="LocalVariable" UId="1122">
+          <Symbol UId="1123">
+            <Component Name="b" UId="1124" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1125" />
+      </Component>
+      <Token Text="." UId="1126" />
+      <Component Name="WT" UId="1127">
+        <Token Text="[" UId="1128" />
+        <Access Scope="LocalVariable" UId="1129">
+          <Symbol UId="1130">
+            <Component Name="w" UId="1131" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1132" />
+      </Component>
+      <Token Text="." UId="1133" />
+      <Component Name="Istzeit" UId="1134" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1135" />
+  <Token Text=":=" UId="1136" />
+  <Blank Num="1" UId="1137" />
+  <Access Scope="GlobalVariable" UId="1138">
+    <Symbol UId="1139">
+      <Component Name="DB_Bad_Konfig" UId="1140">
+        <BooleanAttribute Name="HasQuotes" UId="1141">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1142" />
+      <Component Name="Bad_Konfig" UId="1143">
+        <Token Text="[" UId="1144" />
+        <Access Scope="LocalVariable" UId="1145">
+          <Symbol UId="1146">
+            <Component Name="b" UId="1147" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1148" />
+      </Component>
+      <Token Text="." UId="1149" />
+      <Component Name="WT" UId="1150">
+        <Token Text="[" UId="1151" />
+        <Access Scope="LocalVariable" UId="1152">
+          <Symbol UId="1153">
+            <Component Name="w" UId="1154" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1155" />
+      </Component>
+      <Token Text="." UId="1156" />
+      <Component Name="Istzeit" UId="1157" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1158" />
+  <NewLine Num="1" UId="1159" />
+  <Blank Num="12" UId="1160" />
+  <Access Scope="GlobalVariable" UId="1161">
+    <Symbol UId="1162">
+      <Component Name="DB_CPU_to_IPC" UId="1163">
+        <BooleanAttribute Name="HasQuotes" UId="1164">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1165" />
+      <Component Name="Bad" UId="1166">
+        <Token Text="[" UId="1167" />
+        <Access Scope="LocalVariable" UId="1168">
+          <Symbol UId="1169">
+            <Component Name="b" UId="1170" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1171" />
+      </Component>
+      <Token Text="." UId="1172" />
+      <Component Name="WT" UId="1173">
+        <Token Text="[" UId="1174" />
+        <Access Scope="LocalVariable" UId="1175">
+          <Symbol UId="1176">
+            <Component Name="w" UId="1177" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1178" />
+      </Component>
+      <Token Text="." UId="1179" />
+      <Component Name="Restzeit" UId="1180" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1181" />
+  <Token Text=":=" UId="1182" />
+  <Blank Num="1" UId="1183" />
+  <Access Scope="GlobalVariable" UId="1184">
+    <Symbol UId="1185">
+      <Component Name="DB_Bad_Konfig" UId="1186">
+        <BooleanAttribute Name="HasQuotes" UId="1187">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1188" />
+      <Component Name="Bad_Konfig" UId="1189">
+        <Token Text="[" UId="1190" />
+        <Access Scope="LocalVariable" UId="1191">
+          <Symbol UId="1192">
+            <Component Name="b" UId="1193" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1194" />
+      </Component>
+      <Token Text="." UId="1195" />
+      <Component Name="WT" UId="1196">
+        <Token Text="[" UId="1197" />
+        <Access Scope="LocalVariable" UId="1198">
+          <Symbol UId="1199">
+            <Component Name="w" UId="1200" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1201" />
+      </Component>
+      <Token Text="." UId="1202" />
+      <Component Name="Restzeit" UId="1203" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1204" />
+  <NewLine Num="1" UId="1205" />
+  <Blank Num="12" UId="1206" />
+  <Access Scope="GlobalVariable" UId="1207">
+    <Symbol UId="1208">
+      <Component Name="DB_CPU_to_IPC" UId="1209">
+        <BooleanAttribute Name="HasQuotes" UId="1210">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1211" />
+      <Component Name="Bad" UId="1212">
+        <Token Text="[" UId="1213" />
+        <Access Scope="LocalVariable" UId="1214">
+          <Symbol UId="1215">
+            <Component Name="b" UId="1216" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1217" />
+      </Component>
+      <Token Text="." UId="1218" />
+      <Component Name="WT" UId="1219">
+        <Token Text="[" UId="1220" />
+        <Access Scope="LocalVariable" UId="1221">
+          <Symbol UId="1222">
+            <Component Name="w" UId="1223" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1224" />
+      </Component>
+      <Token Text="." UId="1225" />
+      <Component Name="Vorwarn_Erreicht" UId="1226" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1227" />
+  <Token Text=":=" UId="1228" />
+  <Blank Num="1" UId="1229" />
+  <Access Scope="GlobalVariable" UId="1230">
+    <Symbol UId="1231">
+      <Component Name="DB_Bad_Konfig" UId="1232">
+        <BooleanAttribute Name="HasQuotes" UId="1233">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1234" />
+      <Component Name="Bad_Konfig" UId="1235">
+        <Token Text="[" UId="1236" />
+        <Access Scope="LocalVariable" UId="1237">
+          <Symbol UId="1238">
+            <Component Name="b" UId="1239" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1240" />
+      </Component>
+      <Token Text="." UId="1241" />
+      <Component Name="WT" UId="1242">
+        <Token Text="[" UId="1243" />
+        <Access Scope="LocalVariable" UId="1244">
+          <Symbol UId="1245">
+            <Component Name="w" UId="1246" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1247" />
+      </Component>
+      <Token Text="." UId="1248" />
+      <Component Name="Vorwarn_Erreicht" UId="1249" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1250" />
+  <NewLine Num="1" UId="1251" />
+  <Blank Num="12" UId="1252" />
+  <Access Scope="GlobalVariable" UId="1253">
+    <Symbol UId="1254">
+      <Component Name="DB_CPU_to_IPC" UId="1255">
+        <BooleanAttribute Name="HasQuotes" UId="1256">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1257" />
+      <Component Name="Bad" UId="1258">
+        <Token Text="[" UId="1259" />
+        <Access Scope="LocalVariable" UId="1260">
+          <Symbol UId="1261">
+            <Component Name="b" UId="1262" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1263" />
+      </Component>
+      <Token Text="." UId="1264" />
+      <Component Name="WT" UId="1265">
+        <Token Text="[" UId="1266" />
+        <Access Scope="LocalVariable" UId="1267">
+          <Symbol UId="1268">
+            <Component Name="w" UId="1269" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1270" />
+      </Component>
+      <Token Text="." UId="1271" />
+      <Component Name="Zeit_Abgelaufen" UId="1272" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1273" />
+  <Token Text=":=" UId="1274" />
+  <Blank Num="1" UId="1275" />
+  <Access Scope="GlobalVariable" UId="1276">
+    <Symbol UId="1277">
+      <Component Name="DB_Bad_Konfig" UId="1278">
+        <BooleanAttribute Name="HasQuotes" UId="1279">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1280" />
+      <Component Name="Bad_Konfig" UId="1281">
+        <Token Text="[" UId="1282" />
+        <Access Scope="LocalVariable" UId="1283">
+          <Symbol UId="1284">
+            <Component Name="b" UId="1285" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1286" />
+      </Component>
+      <Token Text="." UId="1287" />
+      <Component Name="WT" UId="1288">
+        <Token Text="[" UId="1289" />
+        <Access Scope="LocalVariable" UId="1290">
+          <Symbol UId="1291">
+            <Component Name="w" UId="1292" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1293" />
+      </Component>
+      <Token Text="." UId="1294" />
+      <Component Name="Zeit_Abgelaufen" UId="1295" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1296" />
+  <NewLine Num="1" UId="1297" />
+  <Blank Num="12" UId="1298" />
+  <Access Scope="GlobalVariable" UId="1299">
+    <Symbol UId="1300">
+      <Component Name="DB_CPU_to_IPC" UId="1301">
+        <BooleanAttribute Name="HasQuotes" UId="1302">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1303" />
+      <Component Name="Bad" UId="1304">
+        <Token Text="[" UId="1305" />
+        <Access Scope="LocalVariable" UId="1306">
+          <Symbol UId="1307">
+            <Component Name="b" UId="1308" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1309" />
+      </Component>
+      <Token Text="." UId="1310" />
+      <Component Name="WT" UId="1311">
+        <Token Text="[" UId="1312" />
+        <Access Scope="LocalVariable" UId="1313">
+          <Symbol UId="1314">
+            <Component Name="w" UId="1315" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1316" />
+      </Component>
+      <Token Text="." UId="1317" />
+      <Component Name="Krit_Zeit_Abgelaufen" UId="1318" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1319" />
+  <Token Text=":=" UId="1320" />
+  <Blank Num="1" UId="1321" />
+  <Access Scope="GlobalVariable" UId="1322">
+    <Symbol UId="1323">
+      <Component Name="DB_Bad_Konfig" UId="1324">
+        <BooleanAttribute Name="HasQuotes" UId="1325">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1326" />
+      <Component Name="Bad_Konfig" UId="1327">
+        <Token Text="[" UId="1328" />
+        <Access Scope="LocalVariable" UId="1329">
+          <Symbol UId="1330">
+            <Component Name="b" UId="1331" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1332" />
+      </Component>
+      <Token Text="." UId="1333" />
+      <Component Name="WT" UId="1334">
+        <Token Text="[" UId="1335" />
+        <Access Scope="LocalVariable" UId="1336">
+          <Symbol UId="1337">
+            <Component Name="w" UId="1338" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1339" />
+      </Component>
+      <Token Text="." UId="1340" />
+      <Component Name="Krit_Zeit_Abgelaufen" UId="1341" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1342" />
+  <NewLine Num="1" UId="1343" />
+  <Blank Num="12" UId="1344" />
+  <Access Scope="GlobalVariable" UId="1345">
+    <Symbol UId="1346">
+      <Component Name="DB_CPU_to_IPC" UId="1347">
+        <BooleanAttribute Name="HasQuotes" UId="1348">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1349" />
+      <Component Name="Bad" UId="1350">
+        <Token Text="[" UId="1351" />
+        <Access Scope="LocalVariable" UId="1352">
+          <Symbol UId="1353">
+            <Component Name="b" UId="1354" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1355" />
+      </Component>
+      <Token Text="." UId="1356" />
+      <Component Name="WT" UId="1357">
+        <Token Text="[" UId="1358" />
+        <Access Scope="LocalVariable" UId="1359">
+          <Symbol UId="1360">
+            <Component Name="w" UId="1361" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1362" />
+      </Component>
+      <Token Text="." UId="1363" />
+      <Component Name="Stoerung_Aufgetreten" UId="1364" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1365" />
+  <Token Text=":=" UId="1366" />
+  <Blank Num="1" UId="1367" />
+  <Access Scope="GlobalVariable" UId="1368">
+    <Symbol UId="1369">
+      <Component Name="DB_Bad_Konfig" UId="1370">
+        <BooleanAttribute Name="HasQuotes" UId="1371">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1372" />
+      <Component Name="Bad_Konfig" UId="1373">
+        <Token Text="[" UId="1374" />
+        <Access Scope="LocalVariable" UId="1375">
+          <Symbol UId="1376">
+            <Component Name="b" UId="1377" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1378" />
+      </Component>
+      <Token Text="." UId="1379" />
+      <Component Name="WT" UId="1380">
+        <Token Text="[" UId="1381" />
+        <Access Scope="LocalVariable" UId="1382">
+          <Symbol UId="1383">
+            <Component Name="w" UId="1384" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1385" />
+      </Component>
+      <Token Text="." UId="1386" />
+      <Component Name="Stoerung_Aufgetreten" UId="1387" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1388" />
+  <NewLine Num="1" UId="1389" />
+  <Blank Num="12" UId="1390" />
+  <Access Scope="GlobalVariable" UId="1391">
+    <Symbol UId="1392">
+      <Component Name="DB_CPU_to_IPC" UId="1393">
+        <BooleanAttribute Name="HasQuotes" UId="1394">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1395" />
+      <Component Name="Bad" UId="1396">
+        <Token Text="[" UId="1397" />
+        <Access Scope="LocalVariable" UId="1398">
+          <Symbol UId="1399">
+            <Component Name="b" UId="1400" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1401" />
+      </Component>
+      <Token Text="." UId="1402" />
+      <Component Name="WT" UId="1403">
+        <Token Text="[" UId="1404" />
+        <Access Scope="LocalVariable" UId="1405">
+          <Symbol UId="1406">
+            <Component Name="w" UId="1407" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1408" />
+      </Component>
+      <Token Text="." UId="1409" />
+      <Component Name="Temp_Abweichung_Max" UId="1410" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1411" />
+  <Token Text=":=" UId="1412" />
+  <Blank Num="1" UId="1413" />
+  <Access Scope="GlobalVariable" UId="1414">
+    <Symbol UId="1415">
+      <Component Name="DB_Bad_Konfig" UId="1416">
+        <BooleanAttribute Name="HasQuotes" UId="1417">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1418" />
+      <Component Name="Bad_Konfig" UId="1419">
+        <Token Text="[" UId="1420" />
+        <Access Scope="LocalVariable" UId="1421">
+          <Symbol UId="1422">
+            <Component Name="b" UId="1423" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1424" />
+      </Component>
+      <Token Text="." UId="1425" />
+      <Component Name="WT" UId="1426">
+        <Token Text="[" UId="1427" />
+        <Access Scope="LocalVariable" UId="1428">
+          <Symbol UId="1429">
+            <Component Name="w" UId="1430" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1431" />
+      </Component>
+      <Token Text="." UId="1432" />
+      <Component Name="Temp_Abweichung_Max" UId="1433" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1434" />
+  <NewLine Num="1" UId="1435" />
+  <Blank Num="12" UId="1436" />
+  <Access Scope="GlobalVariable" UId="1437">
+    <Symbol UId="1438">
+      <Component Name="DB_CPU_to_IPC" UId="1439">
+        <BooleanAttribute Name="HasQuotes" UId="1440">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1441" />
+      <Component Name="Bad" UId="1442">
+        <Token Text="[" UId="1443" />
+        <Access Scope="LocalVariable" UId="1444">
+          <Symbol UId="1445">
+            <Component Name="b" UId="1446" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1447" />
+      </Component>
+      <Token Text="." UId="1448" />
+      <Component Name="WT" UId="1449">
+        <Token Text="[" UId="1450" />
+        <Access Scope="LocalVariable" UId="1451">
+          <Symbol UId="1452">
+            <Component Name="w" UId="1453" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1454" />
+      </Component>
+      <Token Text="." UId="1455" />
+      <Component Name="Temp_Toleranz_Eingehalten" UId="1456" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1457" />
+  <Token Text=":=" UId="1458" />
+  <Blank Num="1" UId="1459" />
+  <Access Scope="GlobalVariable" UId="1460">
+    <Symbol UId="1461">
+      <Component Name="DB_Bad_Konfig" UId="1462">
+        <BooleanAttribute Name="HasQuotes" UId="1463">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1464" />
+      <Component Name="Bad_Konfig" UId="1465">
+        <Token Text="[" UId="1466" />
+        <Access Scope="LocalVariable" UId="1467">
+          <Symbol UId="1468">
+            <Component Name="b" UId="1469" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1470" />
+      </Component>
+      <Token Text="." UId="1471" />
+      <Component Name="WT" UId="1472">
+        <Token Text="[" UId="1473" />
+        <Access Scope="LocalVariable" UId="1474">
+          <Symbol UId="1475">
+            <Component Name="w" UId="1476" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1477" />
+      </Component>
+      <Token Text="." UId="1478" />
+      <Component Name="Temp_Toleranz_Eingehalten" UId="1479" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1480" />
+  <NewLine Num="1" UId="1481" />
+  <Blank Num="12" UId="1482" />
+  <Access Scope="GlobalVariable" UId="1483">
+    <Symbol UId="1484">
+      <Component Name="DB_CPU_to_IPC" UId="1485">
+        <BooleanAttribute Name="HasQuotes" UId="1486">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1487" />
+      <Component Name="Bad" UId="1488">
+        <Token Text="[" UId="1489" />
+        <Access Scope="LocalVariable" UId="1490">
+          <Symbol UId="1491">
+            <Component Name="b" UId="1492" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1493" />
+      </Component>
+      <Token Text="." UId="1494" />
+      <Component Name="WT" UId="1495">
+        <Token Text="[" UId="1496" />
+        <Access Scope="LocalVariable" UId="1497">
+          <Symbol UId="1498">
+            <Component Name="w" UId="1499" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1500" />
+      </Component>
+      <Token Text="." UId="1501" />
+      <Component Name="Zeitueberschreitung" UId="1502" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1503" />
+  <Token Text=":=" UId="1504" />
+  <Blank Num="1" UId="1505" />
+  <Access Scope="GlobalVariable" UId="1506">
+    <Symbol UId="1507">
+      <Component Name="DB_Bad_Konfig" UId="1508">
+        <BooleanAttribute Name="HasQuotes" UId="1509">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1510" />
+      <Component Name="Bad_Konfig" UId="1511">
+        <Token Text="[" UId="1512" />
+        <Access Scope="LocalVariable" UId="1513">
+          <Symbol UId="1514">
+            <Component Name="b" UId="1515" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1516" />
+      </Component>
+      <Token Text="." UId="1517" />
+      <Component Name="WT" UId="1518">
+        <Token Text="[" UId="1519" />
+        <Access Scope="LocalVariable" UId="1520">
+          <Symbol UId="1521">
+            <Component Name="w" UId="1522" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1523" />
+      </Component>
+      <Token Text="." UId="1524" />
+      <Component Name="Zeitueberschreitung" UId="1525" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1526" />
+  <NewLine Num="1" UId="1527" />
+  <Blank Num="12" UId="1528" />
+  <Access Scope="GlobalVariable" UId="1529">
+    <Symbol UId="1530">
+      <Component Name="DB_CPU_to_IPC" UId="1531">
+        <BooleanAttribute Name="HasQuotes" UId="1532">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1533" />
+      <Component Name="Bad" UId="1534">
+        <Token Text="[" UId="1535" />
+        <Access Scope="LocalVariable" UId="1536">
+          <Symbol UId="1537">
+            <Component Name="b" UId="1538" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1539" />
+      </Component>
+      <Token Text="." UId="1540" />
+      <Component Name="WT" UId="1541">
+        <Token Text="[" UId="1542" />
+        <Access Scope="LocalVariable" UId="1543">
+          <Symbol UId="1544">
+            <Component Name="w" UId="1545" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1546" />
+      </Component>
+      <Token Text="." UId="1547" />
+      <Component Name="Zeitstempel_Eingesetzt" UId="1548" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1549" />
+  <Token Text=":=" UId="1550" />
+  <Blank Num="1" UId="1551" />
+  <Access Scope="GlobalVariable" UId="1552">
+    <Symbol UId="1553">
+      <Component Name="DB_Bad_Konfig" UId="1554">
+        <BooleanAttribute Name="HasQuotes" UId="1555">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1556" />
+      <Component Name="Bad_Konfig" UId="1557">
+        <Token Text="[" UId="1558" />
+        <Access Scope="LocalVariable" UId="1559">
+          <Symbol UId="1560">
+            <Component Name="b" UId="1561" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1562" />
+      </Component>
+      <Token Text="." UId="1563" />
+      <Component Name="WT" UId="1564">
+        <Token Text="[" UId="1565" />
+        <Access Scope="LocalVariable" UId="1566">
+          <Symbol UId="1567">
+            <Component Name="w" UId="1568" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1569" />
+      </Component>
+      <Token Text="." UId="1570" />
+      <Component Name="Zeitstempel_Eingesetzt" UId="1571" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1572" />
+  <NewLine Num="1" UId="1573" />
+  <Blank Num="12" UId="1574" />
+  <Access Scope="GlobalVariable" UId="1575">
+    <Symbol UId="1576">
+      <Component Name="DB_CPU_to_IPC" UId="1577">
+        <BooleanAttribute Name="HasQuotes" UId="1578">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1579" />
+      <Component Name="Bad" UId="1580">
+        <Token Text="[" UId="1581" />
+        <Access Scope="LocalVariable" UId="1582">
+          <Symbol UId="1583">
+            <Component Name="b" UId="1584" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1585" />
+      </Component>
+      <Token Text="." UId="1586" />
+      <Component Name="WT" UId="1587">
+        <Token Text="[" UId="1588" />
+        <Access Scope="LocalVariable" UId="1589">
+          <Symbol UId="1590">
+            <Component Name="w" UId="1591" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1592" />
+      </Component>
+      <Token Text="." UId="1593" />
+      <Component Name="Zeitstempel_Entnommen" UId="1594" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1595" />
+  <Token Text=":=" UId="1596" />
+  <Blank Num="1" UId="1597" />
+  <Access Scope="GlobalVariable" UId="1598">
+    <Symbol UId="1599">
+      <Component Name="DB_Bad_Konfig" UId="1600">
+        <BooleanAttribute Name="HasQuotes" UId="1601">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1602" />
+      <Component Name="Bad_Konfig" UId="1603">
+        <Token Text="[" UId="1604" />
+        <Access Scope="LocalVariable" UId="1605">
+          <Symbol UId="1606">
+            <Component Name="b" UId="1607" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1608" />
+      </Component>
+      <Token Text="." UId="1609" />
+      <Component Name="WT" UId="1610">
+        <Token Text="[" UId="1611" />
+        <Access Scope="LocalVariable" UId="1612">
+          <Symbol UId="1613">
+            <Component Name="w" UId="1614" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1615" />
+      </Component>
+      <Token Text="." UId="1616" />
+      <Component Name="Zeitstempel_Entnommen" UId="1617" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1618" />
+  <NewLine Num="1" UId="1619" />
+  <Blank Num="12" UId="1620" />
+  <Access Scope="GlobalVariable" UId="1621">
+    <Symbol UId="1622">
+      <Component Name="DB_CPU_to_IPC" UId="1623">
+        <BooleanAttribute Name="HasQuotes" UId="1624">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1625" />
+      <Component Name="Bad" UId="1626">
+        <Token Text="[" UId="1627" />
+        <Access Scope="LocalVariable" UId="1628">
+          <Symbol UId="1629">
+            <Component Name="b" UId="1630" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1631" />
+      </Component>
+      <Token Text="." UId="1632" />
+      <Component Name="WT" UId="1633">
+        <Token Text="[" UId="1634" />
+        <Access Scope="LocalVariable" UId="1635">
+          <Symbol UId="1636">
+            <Component Name="w" UId="1637" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1638" />
+      </Component>
+      <Token Text="." UId="1639" />
+      <Component Name="Protokoll_Neu" UId="1640" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1641" />
+  <Token Text=":=" UId="1642" />
+  <Blank Num="1" UId="1643" />
+  <Access Scope="GlobalVariable" UId="1644">
+    <Symbol UId="1645">
+      <Component Name="DB_Bad_Konfig" UId="1646">
+        <BooleanAttribute Name="HasQuotes" UId="1647">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1648" />
+      <Component Name="Bad_Konfig" UId="1649">
+        <Token Text="[" UId="1650" />
+        <Access Scope="LocalVariable" UId="1651">
+          <Symbol UId="1652">
+            <Component Name="b" UId="1653" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1654" />
+      </Component>
+      <Token Text="." UId="1655" />
+      <Component Name="WT" UId="1656">
+        <Token Text="[" UId="1657" />
+        <Access Scope="LocalVariable" UId="1658">
+          <Symbol UId="1659">
+            <Component Name="w" UId="1660" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1661" />
+      </Component>
+      <Token Text="." UId="1662" />
+      <Component Name="Protokoll_Neu" UId="1663" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1664" />
+  <NewLine Num="1" UId="1665" />
+  <Blank Num="8" UId="1666" />
+  <Token Text="END_FOR" UId="1667" />
+  <Token Text=";" UId="1668" />
+  <NewLine Num="1" UId="1669" />
+  <Blank Num="4" UId="1670" />
+  <Token Text="END_FOR" UId="1671" />
+  <Token Text=";" UId="1672" />
+  <NewLine Num="1" UId="1673" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="9" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

@@ -1,52 +1,305 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document>
   <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T16:46:20.0324597Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
   <SW.Blocks.GlobalDB ID="0">
     <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <DBAccessibleFromWebserver>true</DBAccessibleFromWebserver>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Static">
-    <Member Name="Auftrag" Datatype="Array[0..9] of &quot;UDT_Prozessroute&quot;" />
-    <Member Name="Handbetrieb" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Handbetrieb&quot;" />
-    <Member Name="Not_Halt_Reset" Datatype="Bool" />
-    <Member Name="Lampentest" Datatype="Bool">
+    <Member Name="Auftrag" Datatype="Array[0..9] of &quot;UDT_Prozessroute&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="AuftragsNr" Datatype="String" />
+          <Member Name="Kunden" Datatype="String" />
+          <Member Name="ID_Artikel" Datatype="Int" />
+          <Member Name="ID_Prozessgruppe" Datatype="Int" />
+          <Member Name="Personal_ID" Datatype="Int" />
+          <Member Name="Anzahl_Schritte" Datatype="Int" />
+          <Member Name="Schritte" Datatype="Array[0..50] of &quot;UDT_Badschritt&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="BadNr" Datatype="Int" />
+                <Member Name="Verweilzeit" Datatype="Time" />
+                <Member Name="Vorwarnzeit" Datatype="Time" />
+                <Member Name="Kritische_Zeit" Datatype="Time" />
+                <Member Name="Pumpe" Datatype="Bool" />
+                <Member Name="Pumpe_FU_Soll" Datatype="Real" />
+                <Member Name="Ultraschall" Datatype="Bool" />
+                <Member Name="Heizung" Datatype="Real" />
+                <Member Name="Heizung_Toleranz" Datatype="Real" />
+                <Member Name="Warenbewegung_X" Datatype="Real" />
+                <Member Name="Warenbewegung_Y" Datatype="Real" />
+                <Member Name="GR_Aktiv" Datatype="Bool" />
+                <Member Name="GR_Strom_Soll" Datatype="Real" />
+                <Member Name="GR_Spannung_Soll" Datatype="Real" />
+                <Member Name="GR_Pulsfrequenz" Datatype="Real" />
+                <Member Name="GR_DutyCycle" Datatype="Real" />
+                <Member Name="Alarm_Aktiv" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="Freigabe" Datatype="Bool" />
+          <Member Name="Abbruch" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Handbetrieb" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Handbetrieb&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="Hand_Aktiv" Datatype="Bool" />
+          <Member Name="Pumpe" Datatype="Bool" />
+          <Member Name="Pumpe_FU_Soll" Datatype="Real" />
+          <Member Name="Ultraschall" Datatype="Bool" />
+          <Member Name="Heizung_Soll" Datatype="Real" />
+          <Member Name="GR_Aktiv" Datatype="Bool" />
+          <Member Name="GR_Strom_Soll" Datatype="Real" />
+          <Member Name="GR_Spannung_Soll" Datatype="Real" />
+          <Member Name="GR_Pulsfrequenz" Datatype="Real" />
+          <Member Name="GR_DutyCycle" Datatype="Real" />
+          <Member Name="Warenbewegung_X" Datatype="Real" />
+          <Member Name="Warenbewegung_Y" Datatype="Real" />
+          <Member Name="WB1_Reset" Datatype="Bool" />
+          <Member Name="WB2_Reset" Datatype="Bool" />
+          <Member Name="Pumpe_FU_Reset" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Not_Halt_Reset" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Lampentest" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
       <Comment>
         <MultiLanguageText Lang="de-DE">Virtuelle Tasten fuer Baeder ohne KP8 (Bad 2, 20, 47)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="Virtuelle_Tasten" Datatype="Struct">
+    <Member Name="Virtuelle_Tasten" Datatype="Struct" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
       <Member Name="Bad_2" Datatype="Struct">
-        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool" />
-        <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool" />
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool">
+          <AttributeList>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+          </AttributeList>
+        </Member>
+        <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool">
+          <AttributeList>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+          </AttributeList>
+        </Member>
       </Member>
       <Member Name="Bad_20" Datatype="Struct">
-        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool" />
-        <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool" />
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool">
+          <AttributeList>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+          </AttributeList>
+        </Member>
+        <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool">
+          <AttributeList>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+          </AttributeList>
+        </Member>
       </Member>
       <Member Name="Bad_47" Datatype="Struct">
-        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool" />
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Member Name="WT_Einsetzen" Datatype="Array[1..3] of Bool">
+          <AttributeList>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+          </AttributeList>
+        </Member>
         <Member Name="WT_Entnehmen" Datatype="Array[1..3] of Bool">
+          <AttributeList>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+          </AttributeList>
           <Comment>
             <MultiLanguageText Lang="de-DE">Leerlauf-Parameter pro Bad (Zustand 1: betriebsbereit halten)</MultiLanguageText>
           </Comment>
         </Member>
       </Member>
     </Member>
-    <Member Name="Leerlauf" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Peripherie_Soll&quot;" Remanence="Retain">
+    <Member Name="Leerlauf" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Peripherie_Soll&quot;" Remanence="Retain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
       <Comment>
         <MultiLanguageText Lang="de-DE">Standby-Parameter pro Bad (Zustand 2: abgesenkt, Energie sparen)</MultiLanguageText>
       </Comment>
+      <Sections>
+        <Section Name="None">
+          <Member Name="Heizung_Soll" Datatype="Real" />
+          <Member Name="Pumpe" Datatype="Bool" />
+          <Member Name="Pumpe_FU_Soll" Datatype="Real" />
+          <Member Name="Ultraschall" Datatype="Bool" />
+          <Member Name="Warenbewegung_X" Datatype="Real" />
+          <Member Name="Warenbewegung_Y" Datatype="Real" />
+          <Member Name="GR_Aktiv" Datatype="Bool" />
+          <Member Name="GR_Strom_Soll" Datatype="Real" />
+          <Member Name="GR_Spannung_Soll" Datatype="Real" />
+        </Section>
+      </Sections>
     </Member>
-    <Member Name="Standby" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Peripherie_Soll&quot;" Remanence="Retain">
+    <Member Name="Standby" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Peripherie_Soll&quot;" Remanence="Retain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
       <Comment>
         <MultiLanguageText Lang="de-DE">Anlagenzustand: 0=undefiniert/alles aus, 1=Leerlauf, 2=Standby</MultiLanguageText>
       </Comment>
+      <Sections>
+        <Section Name="None">
+          <Member Name="Heizung_Soll" Datatype="Real" />
+          <Member Name="Pumpe" Datatype="Bool" />
+          <Member Name="Pumpe_FU_Soll" Datatype="Real" />
+          <Member Name="Ultraschall" Datatype="Bool" />
+          <Member Name="Warenbewegung_X" Datatype="Real" />
+          <Member Name="Warenbewegung_Y" Datatype="Real" />
+          <Member Name="GR_Aktiv" Datatype="Bool" />
+          <Member Name="GR_Strom_Soll" Datatype="Real" />
+          <Member Name="GR_Spannung_Soll" Datatype="Real" />
+        </Section>
+      </Sections>
     </Member>
-    <Member Name="Zustand" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of Int">
+    <Member Name="Zustand" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
       <Comment>
         <MultiLanguageText Lang="de-DE">PT100 Offset pro Bad (vom IPC einstellbar, in Grad Celsius)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="PT100_Offset" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of Real">
+    <Member Name="PT100_Offset" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
       <Subelement Path="7">
         <StartValue>-4.0</StartValue>
       </Subelement>
@@ -71,6 +324,9 @@
     </Member>
   </Section>
 </Sections></Interface>
+      <IsOnlyStoredInLoadMemory>false</IsOnlyStoredInLoadMemory>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <IsWriteProtectedInAS>false</IsWriteProtectedInAS>
       <MemoryLayout>Optimized</MemoryLayout>
       <MemoryReserve>100</MemoryReserve>
       <Name>DB_IPC_to_CPU</Name>

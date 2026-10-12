@@ -1,17 +1,150 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document>
   <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T16:46:20.0981386Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
   <SW.Blocks.GlobalDB ID="0">
     <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <DBAccessibleFromWebserver>true</DBAccessibleFromWebserver>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
       <HeaderVersion>0.2</HeaderVersion>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Static">
-    <Member Name="Bad" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Bad_Rueckmeldung&quot;" />
-    <Member Name="Not_Halt_Aktiv" Datatype="Bool" />
-    <Member Name="Not_Aus_OK" Datatype="Bool" />
-    <Member Name="Auftrag_Abgeschlossen" Datatype="Array[0..9] of Bool" />
+    <Member Name="Bad" Datatype="Array[1..&quot;c_Anzahl_Bad&quot;] of &quot;UDT_Bad_Rueckmeldung&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="WT" Datatype="Array[1..3] of &quot;UDT_WT_Rueckmeldung&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="Belegt" Datatype="Bool" />
+                <Member Name="Auftragsindex" Datatype="Int" />
+                <Member Name="SchrittIndex" Datatype="Int" />
+                <Member Name="Artikel_ID" Datatype="Int" />
+                <Member Name="BadNr" Datatype="Int" />
+                <Member Name="Personal_ID" Datatype="Int" />
+                <Member Name="WT_Eingesetzt" Datatype="Bool" />
+                <Member Name="Istzeit" Datatype="Time" />
+                <Member Name="Restzeit" Datatype="Time" />
+                <Member Name="Verweilzeit_Soll" Datatype="Time" />
+                <Member Name="Vorwarn_Erreicht" Datatype="Bool" />
+                <Member Name="Zeit_Abgelaufen" Datatype="Bool" />
+                <Member Name="Krit_Zeit_Abgelaufen" Datatype="Bool" />
+                <Member Name="Stoerung_Aufgetreten" Datatype="Bool" />
+                <Member Name="Temp_Abweichung_Max" Datatype="Real" />
+                <Member Name="Temp_Toleranz_Eingehalten" Datatype="Bool" />
+                <Member Name="Zeitueberschreitung" Datatype="Time" />
+                <Member Name="Zeitstempel_Eingesetzt" Datatype="DTL" Version="1.0" />
+                <Member Name="Zeitstempel_Entnommen" Datatype="DTL" Version="1.0" />
+                <Member Name="Protokoll_Neu" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="Ampel_Status" Datatype="Int" />
+          <Member Name="Betriebsbereit" Datatype="Bool" />
+          <Member Name="Heizung_1_Ist" Datatype="Real" />
+          <Member Name="Heizung_1_Soll" Datatype="Real" />
+          <Member Name="Heizung_2_Ist" Datatype="Real" />
+          <Member Name="Heizung_2_Soll" Datatype="Real" />
+          <Member Name="Pumpe_Laeuft" Datatype="Bool" />
+          <Member Name="Pumpe_FU_Soll" Datatype="Real" />
+          <Member Name="US_Laeuft" Datatype="Bool" />
+          <Member Name="GR_Aktiv" Datatype="Bool" />
+          <Member Name="GR_Strom_Ist" Datatype="Real" />
+          <Member Name="GR_Spannung_Ist" Datatype="Real" />
+          <Member Name="WB_X_Soll" Datatype="Real" />
+          <Member Name="WB_Y_Soll" Datatype="Real" />
+          <Member Name="Hand_Aktiv" Datatype="Bool" />
+          <Member Name="Hand_Abgelehnt" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Not_Halt_Aktiv" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Not_Aus_OK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Auftrag_Abgeschlossen" Datatype="Array[0..9] of Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
   </Section>
 </Sections></Interface>
+      <IsOnlyStoredInLoadMemory>false</IsOnlyStoredInLoadMemory>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <IsWriteProtectedInAS>false</IsWriteProtectedInAS>
       <MemoryLayout>Optimized</MemoryLayout>
       <MemoryReserve>100</MemoryReserve>
       <Name>DB_CPU_to_IPC</Name>

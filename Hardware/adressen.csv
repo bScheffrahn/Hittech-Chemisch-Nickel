@@ -1,0 +1,9 @@
+﻿"Geraet";"Position";"Name";"Bereich";"Start";"Ende"
+"S7-1500/ET200MP-Station_1";"0";"Profilschiene_0";"";;
+"S7-1500/ET200MP-Station_1";"1";"-100A1";"";;
+"S7-1500/ET200MP-Station_1";"4";"Kartenleser/-schreiber_1";"";;
+"S7-1500/ET200MP-Station_1";"3";"CPU-Display_1";"";;
+"S7-1500/ET200MP-Station_1";"254";"OPC UA_1";"";;
+"S7-1500/ET200MP-Station_1";"32768";"PROFINET-Schnittstelle_1";"";;
+"S7-1500/ET200MP-Station_1";"32769";"Port_1";"";;
+"S7-1500/ET200MP-Station_1";"32770";"Port_2";"";;

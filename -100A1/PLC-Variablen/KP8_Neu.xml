@@ -1,6 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document>
   <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-10-12T16:46:22.3324652Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210</DisplayName>
+        <DisplayVersion>V20 SP1 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V20 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Basic/Comfort/Advanced</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Unified</DisplayName>
+        <DisplayVersion>V20 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
   <SW.Tags.PlcTagTable ID="0">
     <AttributeList>
       <Name>KP8_Neu</Name>
@@ -9,6 +59,9 @@
       <SW.Tags.PlcTag ID="1" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB1000</LogicalAddress>
           <Name>KP8_1_IB_Tasten</Name>
         </AttributeList>
@@ -28,6 +81,9 @@
       <SW.Tags.PlcTag ID="4" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB1001</LogicalAddress>
           <Name>KP8_1_IB_DI</Name>
         </AttributeList>
@@ -47,6 +103,9 @@
       <SW.Tags.PlcTag ID="7" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB2000</LogicalAddress>
           <Name>KP8_2_IB_Tasten</Name>
         </AttributeList>
@@ -66,6 +125,9 @@
       <SW.Tags.PlcTag ID="A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB2001</LogicalAddress>
           <Name>KP8_2_IB_DI</Name>
         </AttributeList>
@@ -85,6 +147,9 @@
       <SW.Tags.PlcTag ID="D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB3000</LogicalAddress>
           <Name>KP8_3_IB_Tasten</Name>
         </AttributeList>
@@ -104,6 +169,9 @@
       <SW.Tags.PlcTag ID="10" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB3001</LogicalAddress>
           <Name>KP8_3_IB_DI</Name>
         </AttributeList>
@@ -123,6 +191,9 @@
       <SW.Tags.PlcTag ID="13" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB4000</LogicalAddress>
           <Name>KP8_4_IB_Tasten</Name>
         </AttributeList>
@@ -142,6 +213,9 @@
       <SW.Tags.PlcTag ID="16" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB4001</LogicalAddress>
           <Name>KP8_4_IB_DI</Name>
         </AttributeList>
@@ -161,6 +235,9 @@
       <SW.Tags.PlcTag ID="19" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB5000</LogicalAddress>
           <Name>KP8_5_IB_Tasten</Name>
         </AttributeList>
@@ -180,6 +257,9 @@
       <SW.Tags.PlcTag ID="1C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB5001</LogicalAddress>
           <Name>KP8_5_IB_DI</Name>
         </AttributeList>
@@ -199,6 +279,9 @@
       <SW.Tags.PlcTag ID="1F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB6000</LogicalAddress>
           <Name>KP8_6_IB_Tasten</Name>
         </AttributeList>
@@ -218,6 +301,9 @@
       <SW.Tags.PlcTag ID="22" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB6001</LogicalAddress>
           <Name>KP8_6_IB_DI</Name>
         </AttributeList>
@@ -237,6 +323,9 @@
       <SW.Tags.PlcTag ID="25" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB7000</LogicalAddress>
           <Name>KP8_7_IB_Tasten</Name>
         </AttributeList>
@@ -256,6 +345,9 @@
       <SW.Tags.PlcTag ID="28" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB7001</LogicalAddress>
           <Name>KP8_7_IB_DI</Name>
         </AttributeList>
@@ -275,6 +367,9 @@
       <SW.Tags.PlcTag ID="2B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB8000</LogicalAddress>
           <Name>KP8_8_IB_Tasten</Name>
         </AttributeList>
@@ -294,6 +389,9 @@
       <SW.Tags.PlcTag ID="2E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB8001</LogicalAddress>
           <Name>KP8_8_IB_DI</Name>
         </AttributeList>
@@ -313,6 +411,9 @@
       <SW.Tags.PlcTag ID="31" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB9000</LogicalAddress>
           <Name>KP8_9_IB_Tasten</Name>
         </AttributeList>
@@ -332,6 +433,9 @@
       <SW.Tags.PlcTag ID="34" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB9001</LogicalAddress>
           <Name>KP8_9_IB_DI</Name>
         </AttributeList>
@@ -351,6 +455,9 @@
       <SW.Tags.PlcTag ID="37" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB10000</LogicalAddress>
           <Name>KP8_10_IB_Tasten</Name>
         </AttributeList>
@@ -370,6 +477,9 @@
       <SW.Tags.PlcTag ID="3A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB10001</LogicalAddress>
           <Name>KP8_10_IB_DI</Name>
         </AttributeList>
@@ -389,6 +499,9 @@
       <SW.Tags.PlcTag ID="3D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB11000</LogicalAddress>
           <Name>KP8_11_IB_Tasten</Name>
         </AttributeList>
@@ -408,6 +521,9 @@
       <SW.Tags.PlcTag ID="40" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB11001</LogicalAddress>
           <Name>KP8_11_IB_DI</Name>
         </AttributeList>
@@ -427,6 +543,9 @@
       <SW.Tags.PlcTag ID="43" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB12000</LogicalAddress>
           <Name>KP8_12_IB_Tasten</Name>
         </AttributeList>
@@ -446,6 +565,9 @@
       <SW.Tags.PlcTag ID="46" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB12001</LogicalAddress>
           <Name>KP8_12_IB_DI</Name>
         </AttributeList>
@@ -465,6 +587,9 @@
       <SW.Tags.PlcTag ID="49" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB13000</LogicalAddress>
           <Name>KP8_13_IB_Tasten</Name>
         </AttributeList>
@@ -484,6 +609,9 @@
       <SW.Tags.PlcTag ID="4C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB13001</LogicalAddress>
           <Name>KP8_13_IB_DI</Name>
         </AttributeList>
@@ -503,6 +631,9 @@
       <SW.Tags.PlcTag ID="4F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB14000</LogicalAddress>
           <Name>KP8_14_IB_Tasten</Name>
         </AttributeList>
@@ -522,6 +653,9 @@
       <SW.Tags.PlcTag ID="52" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB14001</LogicalAddress>
           <Name>KP8_14_IB_DI</Name>
         </AttributeList>
@@ -541,6 +675,9 @@
       <SW.Tags.PlcTag ID="55" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB15000</LogicalAddress>
           <Name>KP8_15_IB_Tasten</Name>
         </AttributeList>
@@ -560,6 +697,9 @@
       <SW.Tags.PlcTag ID="58" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB15001</LogicalAddress>
           <Name>KP8_15_IB_DI</Name>
         </AttributeList>
@@ -579,6 +719,9 @@
       <SW.Tags.PlcTag ID="5B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB16000</LogicalAddress>
           <Name>KP8_16_IB_Tasten</Name>
         </AttributeList>
@@ -598,6 +741,9 @@
       <SW.Tags.PlcTag ID="5E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB16001</LogicalAddress>
           <Name>KP8_16_IB_DI</Name>
         </AttributeList>
@@ -617,6 +763,9 @@
       <SW.Tags.PlcTag ID="61" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB17000</LogicalAddress>
           <Name>KP8_17_IB_Tasten</Name>
         </AttributeList>
@@ -636,6 +785,9 @@
       <SW.Tags.PlcTag ID="64" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB17001</LogicalAddress>
           <Name>KP8_17_IB_DI</Name>
         </AttributeList>
@@ -655,6 +807,9 @@
       <SW.Tags.PlcTag ID="67" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB18000</LogicalAddress>
           <Name>KP8_18_IB_Tasten</Name>
         </AttributeList>
@@ -674,6 +829,9 @@
       <SW.Tags.PlcTag ID="6A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB18001</LogicalAddress>
           <Name>KP8_18_IB_DI</Name>
         </AttributeList>
@@ -693,6 +851,9 @@
       <SW.Tags.PlcTag ID="6D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB19000</LogicalAddress>
           <Name>KP8_19_IB_Tasten</Name>
         </AttributeList>
@@ -712,6 +873,9 @@
       <SW.Tags.PlcTag ID="70" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB19001</LogicalAddress>
           <Name>KP8_19_IB_DI</Name>
         </AttributeList>
@@ -731,6 +895,9 @@
       <SW.Tags.PlcTag ID="73" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB20000</LogicalAddress>
           <Name>KP8_20_IB_Tasten</Name>
         </AttributeList>
@@ -750,6 +917,9 @@
       <SW.Tags.PlcTag ID="76" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB20001</LogicalAddress>
           <Name>KP8_20_IB_DI</Name>
         </AttributeList>
@@ -769,6 +939,9 @@
       <SW.Tags.PlcTag ID="79" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB21000</LogicalAddress>
           <Name>KP8_21_IB_Tasten</Name>
         </AttributeList>
@@ -788,6 +961,9 @@
       <SW.Tags.PlcTag ID="7C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB21001</LogicalAddress>
           <Name>KP8_21_IB_DI</Name>
         </AttributeList>
@@ -807,6 +983,9 @@
       <SW.Tags.PlcTag ID="7F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB22000</LogicalAddress>
           <Name>KP8_22_IB_Tasten</Name>
         </AttributeList>
@@ -826,6 +1005,9 @@
       <SW.Tags.PlcTag ID="82" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB22001</LogicalAddress>
           <Name>KP8_22_IB_DI</Name>
         </AttributeList>
@@ -845,6 +1027,9 @@
       <SW.Tags.PlcTag ID="85" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB23000</LogicalAddress>
           <Name>KP8_23_IB_Tasten</Name>
         </AttributeList>
@@ -864,6 +1049,9 @@
       <SW.Tags.PlcTag ID="88" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB23001</LogicalAddress>
           <Name>KP8_23_IB_DI</Name>
         </AttributeList>
@@ -883,6 +1071,9 @@
       <SW.Tags.PlcTag ID="8B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB24000</LogicalAddress>
           <Name>KP8_24_IB_Tasten</Name>
         </AttributeList>
@@ -902,6 +1093,9 @@
       <SW.Tags.PlcTag ID="8E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB24001</LogicalAddress>
           <Name>KP8_24_IB_DI</Name>
         </AttributeList>
@@ -921,6 +1115,9 @@
       <SW.Tags.PlcTag ID="91" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB25000</LogicalAddress>
           <Name>KP8_25_IB_Tasten</Name>
         </AttributeList>
@@ -940,6 +1137,9 @@
       <SW.Tags.PlcTag ID="94" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB25001</LogicalAddress>
           <Name>KP8_25_IB_DI</Name>
         </AttributeList>
@@ -959,6 +1159,9 @@
       <SW.Tags.PlcTag ID="97" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB26000</LogicalAddress>
           <Name>KP8_26_IB_Tasten</Name>
         </AttributeList>
@@ -978,6 +1181,9 @@
       <SW.Tags.PlcTag ID="9A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB26001</LogicalAddress>
           <Name>KP8_26_IB_DI</Name>
         </AttributeList>
@@ -997,6 +1203,9 @@
       <SW.Tags.PlcTag ID="9D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB27000</LogicalAddress>
           <Name>KP8_27_IB_Tasten</Name>
         </AttributeList>
@@ -1016,6 +1225,9 @@
       <SW.Tags.PlcTag ID="A0" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB27001</LogicalAddress>
           <Name>KP8_27_IB_DI</Name>
         </AttributeList>
@@ -1035,6 +1247,9 @@
       <SW.Tags.PlcTag ID="A3" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB28000</LogicalAddress>
           <Name>KP8_28_IB_Tasten</Name>
         </AttributeList>
@@ -1054,6 +1269,9 @@
       <SW.Tags.PlcTag ID="A6" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%IB28001</LogicalAddress>
           <Name>KP8_28_IB_DI</Name>
         </AttributeList>
@@ -1073,6 +1291,9 @@
       <SW.Tags.PlcTag ID="A9" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB1000</LogicalAddress>
           <Name>KP8_1_QB_Rot</Name>
         </AttributeList>
@@ -1092,6 +1313,9 @@
       <SW.Tags.PlcTag ID="AC" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB1001</LogicalAddress>
           <Name>KP8_1_QB_Gruen</Name>
         </AttributeList>
@@ -1111,6 +1335,9 @@
       <SW.Tags.PlcTag ID="AF" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB1002</LogicalAddress>
           <Name>KP8_1_QB_Blau</Name>
         </AttributeList>
@@ -1130,6 +1357,9 @@
       <SW.Tags.PlcTag ID="B2" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB1003</LogicalAddress>
           <Name>KP8_1_QB_DO</Name>
         </AttributeList>
@@ -1149,6 +1379,9 @@
       <SW.Tags.PlcTag ID="B5" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB2000</LogicalAddress>
           <Name>KP8_2_QB_Rot</Name>
         </AttributeList>
@@ -1168,6 +1401,9 @@
       <SW.Tags.PlcTag ID="B8" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB2001</LogicalAddress>
           <Name>KP8_2_QB_Gruen</Name>
         </AttributeList>
@@ -1187,6 +1423,9 @@
       <SW.Tags.PlcTag ID="BB" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB2002</LogicalAddress>
           <Name>KP8_2_QB_Blau</Name>
         </AttributeList>
@@ -1206,6 +1445,9 @@
       <SW.Tags.PlcTag ID="BE" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB2003</LogicalAddress>
           <Name>KP8_2_QB_DO</Name>
         </AttributeList>
@@ -1225,6 +1467,9 @@
       <SW.Tags.PlcTag ID="C1" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB3000</LogicalAddress>
           <Name>KP8_3_QB_Rot</Name>
         </AttributeList>
@@ -1244,6 +1489,9 @@
       <SW.Tags.PlcTag ID="C4" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB3001</LogicalAddress>
           <Name>KP8_3_QB_Gruen</Name>
         </AttributeList>
@@ -1263,6 +1511,9 @@
       <SW.Tags.PlcTag ID="C7" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB3002</LogicalAddress>
           <Name>KP8_3_QB_Blau</Name>
         </AttributeList>
@@ -1282,6 +1533,9 @@
       <SW.Tags.PlcTag ID="CA" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB3003</LogicalAddress>
           <Name>KP8_3_QB_DO</Name>
         </AttributeList>
@@ -1301,6 +1555,9 @@
       <SW.Tags.PlcTag ID="CD" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB4000</LogicalAddress>
           <Name>KP8_4_QB_Rot</Name>
         </AttributeList>
@@ -1320,6 +1577,9 @@
       <SW.Tags.PlcTag ID="D0" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB4001</LogicalAddress>
           <Name>KP8_4_QB_Gruen</Name>
         </AttributeList>
@@ -1339,6 +1599,9 @@
       <SW.Tags.PlcTag ID="D3" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB4002</LogicalAddress>
           <Name>KP8_4_QB_Blau</Name>
         </AttributeList>
@@ -1358,6 +1621,9 @@
       <SW.Tags.PlcTag ID="D6" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB4003</LogicalAddress>
           <Name>KP8_4_QB_DO</Name>
         </AttributeList>
@@ -1377,6 +1643,9 @@
       <SW.Tags.PlcTag ID="D9" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB5000</LogicalAddress>
           <Name>KP8_5_QB_Rot</Name>
         </AttributeList>
@@ -1396,6 +1665,9 @@
       <SW.Tags.PlcTag ID="DC" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB5001</LogicalAddress>
           <Name>KP8_5_QB_Gruen</Name>
         </AttributeList>
@@ -1415,6 +1687,9 @@
       <SW.Tags.PlcTag ID="DF" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB5002</LogicalAddress>
           <Name>KP8_5_QB_Blau</Name>
         </AttributeList>
@@ -1434,6 +1709,9 @@
       <SW.Tags.PlcTag ID="E2" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB5003</LogicalAddress>
           <Name>KP8_5_QB_DO</Name>
         </AttributeList>
@@ -1453,6 +1731,9 @@
       <SW.Tags.PlcTag ID="E5" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB6000</LogicalAddress>
           <Name>KP8_6_QB_Rot</Name>
         </AttributeList>
@@ -1472,6 +1753,9 @@
       <SW.Tags.PlcTag ID="E8" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB6001</LogicalAddress>
           <Name>KP8_6_QB_Gruen</Name>
         </AttributeList>
@@ -1491,6 +1775,9 @@
       <SW.Tags.PlcTag ID="EB" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB6002</LogicalAddress>
           <Name>KP8_6_QB_Blau</Name>
         </AttributeList>
@@ -1510,6 +1797,9 @@
       <SW.Tags.PlcTag ID="EE" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB6003</LogicalAddress>
           <Name>KP8_6_QB_DO</Name>
         </AttributeList>
@@ -1529,6 +1819,9 @@
       <SW.Tags.PlcTag ID="F1" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB7000</LogicalAddress>
           <Name>KP8_7_QB_Rot</Name>
         </AttributeList>
@@ -1548,6 +1841,9 @@
       <SW.Tags.PlcTag ID="F4" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB7001</LogicalAddress>
           <Name>KP8_7_QB_Gruen</Name>
         </AttributeList>
@@ -1567,6 +1863,9 @@
       <SW.Tags.PlcTag ID="F7" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB7002</LogicalAddress>
           <Name>KP8_7_QB_Blau</Name>
         </AttributeList>
@@ -1586,6 +1885,9 @@
       <SW.Tags.PlcTag ID="FA" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB7003</LogicalAddress>
           <Name>KP8_7_QB_DO</Name>
         </AttributeList>
@@ -1605,6 +1907,9 @@
       <SW.Tags.PlcTag ID="FD" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB8000</LogicalAddress>
           <Name>KP8_8_QB_Rot</Name>
         </AttributeList>
@@ -1624,6 +1929,9 @@
       <SW.Tags.PlcTag ID="100" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB8001</LogicalAddress>
           <Name>KP8_8_QB_Gruen</Name>
         </AttributeList>
@@ -1643,6 +1951,9 @@
       <SW.Tags.PlcTag ID="103" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB8002</LogicalAddress>
           <Name>KP8_8_QB_Blau</Name>
         </AttributeList>
@@ -1662,6 +1973,9 @@
       <SW.Tags.PlcTag ID="106" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB8003</LogicalAddress>
           <Name>KP8_8_QB_DO</Name>
         </AttributeList>
@@ -1681,6 +1995,9 @@
       <SW.Tags.PlcTag ID="109" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB9000</LogicalAddress>
           <Name>KP8_9_QB_Rot</Name>
         </AttributeList>
@@ -1700,6 +2017,9 @@
       <SW.Tags.PlcTag ID="10C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB9001</LogicalAddress>
           <Name>KP8_9_QB_Gruen</Name>
         </AttributeList>
@@ -1719,6 +2039,9 @@
       <SW.Tags.PlcTag ID="10F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB9002</LogicalAddress>
           <Name>KP8_9_QB_Blau</Name>
         </AttributeList>
@@ -1738,6 +2061,9 @@
       <SW.Tags.PlcTag ID="112" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB9003</LogicalAddress>
           <Name>KP8_9_QB_DO</Name>
         </AttributeList>
@@ -1757,6 +2083,9 @@
       <SW.Tags.PlcTag ID="115" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB10000</LogicalAddress>
           <Name>KP8_10_QB_Rot</Name>
         </AttributeList>
@@ -1776,6 +2105,9 @@
       <SW.Tags.PlcTag ID="118" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB10001</LogicalAddress>
           <Name>KP8_10_QB_Gruen</Name>
         </AttributeList>
@@ -1795,6 +2127,9 @@
       <SW.Tags.PlcTag ID="11B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB10002</LogicalAddress>
           <Name>KP8_10_QB_Blau</Name>
         </AttributeList>
@@ -1814,6 +2149,9 @@
       <SW.Tags.PlcTag ID="11E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB10003</LogicalAddress>
           <Name>KP8_10_QB_DO</Name>
         </AttributeList>
@@ -1833,6 +2171,9 @@
       <SW.Tags.PlcTag ID="121" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB11000</LogicalAddress>
           <Name>KP8_11_QB_Rot</Name>
         </AttributeList>
@@ -1852,6 +2193,9 @@
       <SW.Tags.PlcTag ID="124" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB11001</LogicalAddress>
           <Name>KP8_11_QB_Gruen</Name>
         </AttributeList>
@@ -1871,6 +2215,9 @@
       <SW.Tags.PlcTag ID="127" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB11002</LogicalAddress>
           <Name>KP8_11_QB_Blau</Name>
         </AttributeList>
@@ -1890,6 +2237,9 @@
       <SW.Tags.PlcTag ID="12A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB11003</LogicalAddress>
           <Name>KP8_11_QB_DO</Name>
         </AttributeList>
@@ -1909,6 +2259,9 @@
       <SW.Tags.PlcTag ID="12D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB12000</LogicalAddress>
           <Name>KP8_12_QB_Rot</Name>
         </AttributeList>
@@ -1928,6 +2281,9 @@
       <SW.Tags.PlcTag ID="130" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB12001</LogicalAddress>
           <Name>KP8_12_QB_Gruen</Name>
         </AttributeList>
@@ -1947,6 +2303,9 @@
       <SW.Tags.PlcTag ID="133" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB12002</LogicalAddress>
           <Name>KP8_12_QB_Blau</Name>
         </AttributeList>
@@ -1966,6 +2325,9 @@
       <SW.Tags.PlcTag ID="136" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB12003</LogicalAddress>
           <Name>KP8_12_QB_DO</Name>
         </AttributeList>
@@ -1985,6 +2347,9 @@
       <SW.Tags.PlcTag ID="139" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB13000</LogicalAddress>
           <Name>KP8_13_QB_Rot</Name>
         </AttributeList>
@@ -2004,6 +2369,9 @@
       <SW.Tags.PlcTag ID="13C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB13001</LogicalAddress>
           <Name>KP8_13_QB_Gruen</Name>
         </AttributeList>
@@ -2023,6 +2391,9 @@
       <SW.Tags.PlcTag ID="13F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB13002</LogicalAddress>
           <Name>KP8_13_QB_Blau</Name>
         </AttributeList>
@@ -2042,6 +2413,9 @@
       <SW.Tags.PlcTag ID="142" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB13003</LogicalAddress>
           <Name>KP8_13_QB_DO</Name>
         </AttributeList>
@@ -2061,6 +2435,9 @@
       <SW.Tags.PlcTag ID="145" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB14000</LogicalAddress>
           <Name>KP8_14_QB_Rot</Name>
         </AttributeList>
@@ -2080,6 +2457,9 @@
       <SW.Tags.PlcTag ID="148" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB14001</LogicalAddress>
           <Name>KP8_14_QB_Gruen</Name>
         </AttributeList>
@@ -2099,6 +2479,9 @@
       <SW.Tags.PlcTag ID="14B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB14002</LogicalAddress>
           <Name>KP8_14_QB_Blau</Name>
         </AttributeList>
@@ -2118,6 +2501,9 @@
       <SW.Tags.PlcTag ID="14E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB14003</LogicalAddress>
           <Name>KP8_14_QB_DO</Name>
         </AttributeList>
@@ -2137,6 +2523,9 @@
       <SW.Tags.PlcTag ID="151" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB15000</LogicalAddress>
           <Name>KP8_15_QB_Rot</Name>
         </AttributeList>
@@ -2156,6 +2545,9 @@
       <SW.Tags.PlcTag ID="154" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB15001</LogicalAddress>
           <Name>KP8_15_QB_Gruen</Name>
         </AttributeList>
@@ -2175,6 +2567,9 @@
       <SW.Tags.PlcTag ID="157" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB15002</LogicalAddress>
           <Name>KP8_15_QB_Blau</Name>
         </AttributeList>
@@ -2194,6 +2589,9 @@
       <SW.Tags.PlcTag ID="15A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB15003</LogicalAddress>
           <Name>KP8_15_QB_DO</Name>
         </AttributeList>
@@ -2213,6 +2611,9 @@
       <SW.Tags.PlcTag ID="15D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB16000</LogicalAddress>
           <Name>KP8_16_QB_Rot</Name>
         </AttributeList>
@@ -2232,6 +2633,9 @@
       <SW.Tags.PlcTag ID="160" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB16001</LogicalAddress>
           <Name>KP8_16_QB_Gruen</Name>
         </AttributeList>
@@ -2251,6 +2655,9 @@
       <SW.Tags.PlcTag ID="163" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB16002</LogicalAddress>
           <Name>KP8_16_QB_Blau</Name>
         </AttributeList>
@@ -2270,6 +2677,9 @@
       <SW.Tags.PlcTag ID="166" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB16003</LogicalAddress>
           <Name>KP8_16_QB_DO</Name>
         </AttributeList>
@@ -2289,6 +2699,9 @@
       <SW.Tags.PlcTag ID="169" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB17000</LogicalAddress>
           <Name>KP8_17_QB_Rot</Name>
         </AttributeList>
@@ -2308,6 +2721,9 @@
       <SW.Tags.PlcTag ID="16C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB17001</LogicalAddress>
           <Name>KP8_17_QB_Gruen</Name>
         </AttributeList>
@@ -2327,6 +2743,9 @@
       <SW.Tags.PlcTag ID="16F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB17002</LogicalAddress>
           <Name>KP8_17_QB_Blau</Name>
         </AttributeList>
@@ -2346,6 +2765,9 @@
       <SW.Tags.PlcTag ID="172" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB17003</LogicalAddress>
           <Name>KP8_17_QB_DO</Name>
         </AttributeList>
@@ -2365,6 +2787,9 @@
       <SW.Tags.PlcTag ID="175" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB18000</LogicalAddress>
           <Name>KP8_18_QB_Rot</Name>
         </AttributeList>
@@ -2384,6 +2809,9 @@
       <SW.Tags.PlcTag ID="178" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB18001</LogicalAddress>
           <Name>KP8_18_QB_Gruen</Name>
         </AttributeList>
@@ -2403,6 +2831,9 @@
       <SW.Tags.PlcTag ID="17B" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB18002</LogicalAddress>
           <Name>KP8_18_QB_Blau</Name>
         </AttributeList>
@@ -2422,6 +2853,9 @@
       <SW.Tags.PlcTag ID="17E" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB18003</LogicalAddress>
           <Name>KP8_18_QB_DO</Name>
         </AttributeList>
@@ -2441,6 +2875,9 @@
       <SW.Tags.PlcTag ID="181" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB19000</LogicalAddress>
           <Name>KP8_19_QB_Rot</Name>
         </AttributeList>
@@ -2460,6 +2897,9 @@
       <SW.Tags.PlcTag ID="184" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB19001</LogicalAddress>
           <Name>KP8_19_QB_Gruen</Name>
         </AttributeList>
@@ -2479,6 +2919,9 @@
       <SW.Tags.PlcTag ID="187" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB19002</LogicalAddress>
           <Name>KP8_19_QB_Blau</Name>
         </AttributeList>
@@ -2498,6 +2941,9 @@
       <SW.Tags.PlcTag ID="18A" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB19003</LogicalAddress>
           <Name>KP8_19_QB_DO</Name>
         </AttributeList>
@@ -2517,6 +2963,9 @@
       <SW.Tags.PlcTag ID="18D" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB20000</LogicalAddress>
           <Name>KP8_20_QB_Rot</Name>
         </AttributeList>
@@ -2536,6 +2985,9 @@
       <SW.Tags.PlcTag ID="190" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB20001</LogicalAddress>
           <Name>KP8_20_QB_Gruen</Name>
         </AttributeList>
@@ -2555,6 +3007,9 @@
       <SW.Tags.PlcTag ID="193" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB20002</LogicalAddress>
           <Name>KP8_20_QB_Blau</Name>
         </AttributeList>
@@ -2574,6 +3029,9 @@
       <SW.Tags.PlcTag ID="196" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB20003</LogicalAddress>
           <Name>KP8_20_QB_DO</Name>
         </AttributeList>
@@ -2593,6 +3051,9 @@
       <SW.Tags.PlcTag ID="199" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB21000</LogicalAddress>
           <Name>KP8_21_QB_Rot</Name>
         </AttributeList>
@@ -2612,6 +3073,9 @@
       <SW.Tags.PlcTag ID="19C" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB21001</LogicalAddress>
           <Name>KP8_21_QB_Gruen</Name>
         </AttributeList>
@@ -2631,6 +3095,9 @@
       <SW.Tags.PlcTag ID="19F" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB21002</LogicalAddress>
           <Name>KP8_21_QB_Blau</Name>
         </AttributeList>
@@ -2650,6 +3117,9 @@
       <SW.Tags.PlcTag ID="1A2" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB21003</LogicalAddress>
           <Name>KP8_21_QB_DO</Name>
         </AttributeList>
@@ -2669,6 +3139,9 @@
       <SW.Tags.PlcTag ID="1A5" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB22000</LogicalAddress>
           <Name>KP8_22_QB_Rot</Name>
         </AttributeList>
@@ -2688,6 +3161,9 @@
       <SW.Tags.PlcTag ID="1A8" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB22001</LogicalAddress>
           <Name>KP8_22_QB_Gruen</Name>
         </AttributeList>
@@ -2707,6 +3183,9 @@
       <SW.Tags.PlcTag ID="1AB" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB22002</LogicalAddress>
           <Name>KP8_22_QB_Blau</Name>
         </AttributeList>
@@ -2726,6 +3205,9 @@
       <SW.Tags.PlcTag ID="1AE" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB22003</LogicalAddress>
           <Name>KP8_22_QB_DO</Name>
         </AttributeList>
@@ -2745,6 +3227,9 @@
       <SW.Tags.PlcTag ID="1B1" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB23000</LogicalAddress>
           <Name>KP8_23_QB_Rot</Name>
         </AttributeList>
@@ -2764,6 +3249,9 @@
       <SW.Tags.PlcTag ID="1B4" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB23001</LogicalAddress>
           <Name>KP8_23_QB_Gruen</Name>
         </AttributeList>
@@ -2783,6 +3271,9 @@
       <SW.Tags.PlcTag ID="1B7" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB23002</LogicalAddress>
           <Name>KP8_23_QB_Blau</Name>
         </AttributeList>
@@ -2802,6 +3293,9 @@
       <SW.Tags.PlcTag ID="1BA" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB23003</LogicalAddress>
           <Name>KP8_23_QB_DO</Name>
         </AttributeList>
@@ -2821,6 +3315,9 @@
       <SW.Tags.PlcTag ID="1BD" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB24000</LogicalAddress>
           <Name>KP8_24_QB_Rot</Name>
         </AttributeList>
@@ -2840,6 +3337,9 @@
       <SW.Tags.PlcTag ID="1C0" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB24001</LogicalAddress>
           <Name>KP8_24_QB_Gruen</Name>
         </AttributeList>
@@ -2859,6 +3359,9 @@
       <SW.Tags.PlcTag ID="1C3" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB24002</LogicalAddress>
           <Name>KP8_24_QB_Blau</Name>
         </AttributeList>
@@ -2878,6 +3381,9 @@
       <SW.Tags.PlcTag ID="1C6" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB24003</LogicalAddress>
           <Name>KP8_24_QB_DO</Name>
         </AttributeList>
@@ -2897,6 +3403,9 @@
       <SW.Tags.PlcTag ID="1C9" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB25000</LogicalAddress>
           <Name>KP8_25_QB_Rot</Name>
         </AttributeList>
@@ -2916,6 +3425,9 @@
       <SW.Tags.PlcTag ID="1CC" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB25001</LogicalAddress>
           <Name>KP8_25_QB_Gruen</Name>
         </AttributeList>
@@ -2935,6 +3447,9 @@
       <SW.Tags.PlcTag ID="1CF" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB25002</LogicalAddress>
           <Name>KP8_25_QB_Blau</Name>
         </AttributeList>
@@ -2954,6 +3469,9 @@
       <SW.Tags.PlcTag ID="1D2" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB25003</LogicalAddress>
           <Name>KP8_25_QB_DO</Name>
         </AttributeList>
@@ -2973,6 +3491,9 @@
       <SW.Tags.PlcTag ID="1D5" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB26000</LogicalAddress>
           <Name>KP8_26_QB_Rot</Name>
         </AttributeList>
@@ -2992,6 +3513,9 @@
       <SW.Tags.PlcTag ID="1D8" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB26001</LogicalAddress>
           <Name>KP8_26_QB_Gruen</Name>
         </AttributeList>
@@ -3011,6 +3535,9 @@
       <SW.Tags.PlcTag ID="1DB" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB26002</LogicalAddress>
           <Name>KP8_26_QB_Blau</Name>
         </AttributeList>
@@ -3030,6 +3557,9 @@
       <SW.Tags.PlcTag ID="1DE" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB26003</LogicalAddress>
           <Name>KP8_26_QB_DO</Name>
         </AttributeList>
@@ -3049,6 +3579,9 @@
       <SW.Tags.PlcTag ID="1E1" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB27000</LogicalAddress>
           <Name>KP8_27_QB_Rot</Name>
         </AttributeList>
@@ -3068,6 +3601,9 @@
       <SW.Tags.PlcTag ID="1E4" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB27001</LogicalAddress>
           <Name>KP8_27_QB_Gruen</Name>
         </AttributeList>
@@ -3087,6 +3623,9 @@
       <SW.Tags.PlcTag ID="1E7" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB27002</LogicalAddress>
           <Name>KP8_27_QB_Blau</Name>
         </AttributeList>
@@ -3106,6 +3645,9 @@
       <SW.Tags.PlcTag ID="1EA" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB27003</LogicalAddress>
           <Name>KP8_27_QB_DO</Name>
         </AttributeList>
@@ -3125,6 +3667,9 @@
       <SW.Tags.PlcTag ID="1ED" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB28000</LogicalAddress>
           <Name>KP8_28_QB_Rot</Name>
         </AttributeList>
@@ -3144,6 +3689,9 @@
       <SW.Tags.PlcTag ID="1F0" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB28001</LogicalAddress>
           <Name>KP8_28_QB_Gruen</Name>
         </AttributeList>
@@ -3163,6 +3711,9 @@
       <SW.Tags.PlcTag ID="1F3" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB28002</LogicalAddress>
           <Name>KP8_28_QB_Blau</Name>
         </AttributeList>
@@ -3182,6 +3733,9 @@
       <SW.Tags.PlcTag ID="1F6" CompositionName="Tags">
         <AttributeList>
           <DataTypeName>Byte</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%QB28003</LogicalAddress>
           <Name>KP8_28_QB_DO</Name>
         </AttributeList>
