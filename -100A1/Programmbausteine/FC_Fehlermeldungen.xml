@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V20" />
   <DocumentInfo>
-    <Created>2026-10-12T18:08:14.8972404Z</Created>
+    <Created>2026-10-12T18:16:05.7518173Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -1538,7 +1538,7 @@
   <Blank Num="1" UId="1140" />
   <Access Scope="GlobalVariable" UId="1141">
     <Symbol UId="1142">
-      <Component Name="Motorschutz 275aQ1 Pumpe Bad 25 ist O.K." UId="1143" />
+      <Component Name="Motorschutz 275aQ1 Pumpe Bad 26 ist O.K." UId="1143" />
     </Symbol>
   </Access>
   <Token Text=";" UId="1144" />
@@ -1560,7 +1560,7 @@
   <Blank Num="1" UId="1157" />
   <Access Scope="GlobalVariable" UId="1158">
     <Symbol UId="1159">
-      <Component Name="Wartungsschalter Pumpe Bad 25 ist eingeschaltet(1)" UId="1160" />
+      <Component Name="Wartungsschalter Pumpe Bad 26 ist eingeschaltet(1)" UId="1160" />
     </Symbol>
   </Access>
   <Token Text=";" UId="1161" />

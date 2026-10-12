@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V20" />
   <DocumentInfo>
-    <Created>2026-10-12T18:08:15.8388379Z</Created>
+    <Created>2026-10-12T18:16:06.6531385Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -943,7 +943,7 @@
           <ExternalVisible>true</ExternalVisible>
           <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%I8.7</LogicalAddress>
-          <Name>Motorschutz 275aQ1 Pumpe Bad 25 ist O.K.</Name>
+          <Name>Motorschutz 275aQ1 Pumpe Bad 26 ist O.K.</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="7A" CompositionName="Comment">
@@ -1009,7 +1009,7 @@
           <ExternalVisible>true</ExternalVisible>
           <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%I9.7</LogicalAddress>
-          <Name>Wartungsschalter Pumpe Bad 25 ist eingeschaltet(1)</Name>
+          <Name>Wartungsschalter Pumpe Bad 26 ist eingeschaltet(1)</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="83" CompositionName="Comment">
